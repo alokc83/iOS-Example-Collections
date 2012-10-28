@@ -1,4 +1,4 @@
 iOS-Learning
 ============
 
-all proggies while learning
+All proggies which I wrote while learning iOS 
