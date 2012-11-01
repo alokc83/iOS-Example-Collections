@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA6DDC56164248EF008F5D87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6DDC55164248EF008F5D87 /* UIKit.framework */; };
+		CA6DDC58164248F0008F5D87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6DDC57164248EF008F5D87 /* Foundation.framework */; };
+		CA6DDC5A164248F0008F5D87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6DDC59164248F0008F5D87 /* CoreGraphics.framework */; };
+		CA6DDC60164248F0008F5D87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA6DDC5E164248F0008F5D87 /* InfoPlist.strings */; };
+		CA6DDC62164248F0008F5D87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6DDC61164248F0008F5D87 /* main.m */; };
+		CA6DDC66164248F0008F5D87 /* sliderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6DDC65164248F0008F5D87 /* sliderAppDelegate.m */; };
+		CA6DDC68164248F0008F5D87 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CA6DDC67164248F0008F5D87 /* Default.png */; };
+		CA6DDC6A164248F0008F5D87 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA6DDC69164248F0008F5D87 /* Default@2x.png */; };
+		CA6DDC6C164248F0008F5D87 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA6DDC6B164248F0008F5D87 /* Default-568h@2x.png */; };
+		CA6DDC6F164248F0008F5D87 /* sliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6DDC6E164248F0008F5D87 /* sliderViewController.m */; };
+		CA6DDC72164248F0008F5D87 /* sliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA6DDC70164248F0008F5D87 /* sliderViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA6DDC51164248EF008F5D87 /* Stanford_slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stanford_slider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6DDC55164248EF008F5D87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CA6DDC57164248EF008F5D87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CA6DDC59164248F0008F5D87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CA6DDC5D164248F0008F5D87 /* Stanford_slider-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stanford_slider-Info.plist"; sourceTree = "<group>"; };
+		CA6DDC5F164248F0008F5D87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA6DDC61164248F0008F5D87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA6DDC63164248F0008F5D87 /* Stanford_slider-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stanford_slider-Prefix.pch"; sourceTree = "<group>"; };
+		CA6DDC64164248F0008F5D87 /* sliderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sliderAppDelegate.h; sourceTree = "<group>"; };
+		CA6DDC65164248F0008F5D87 /* sliderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sliderAppDelegate.m; sourceTree = "<group>"; };
+		CA6DDC67164248F0008F5D87 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CA6DDC69164248F0008F5D87 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CA6DDC6B164248F0008F5D87 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CA6DDC6D164248F0008F5D87 /* sliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sliderViewController.h; sourceTree = "<group>"; };
+		CA6DDC6E164248F0008F5D87 /* sliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sliderViewController.m; sourceTree = "<group>"; };
+		CA6DDC71164248F0008F5D87 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/sliderViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA6DDC4E164248EF008F5D87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6DDC56164248EF008F5D87 /* UIKit.framework in Frameworks */,
+				CA6DDC58164248F0008F5D87 /* Foundation.framework in Frameworks */,
+				CA6DDC5A164248F0008F5D87 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA6DDC46164248EF008F5D87 = {
+			isa = PBXGroup;
+			children = (
+				CA6DDC5B164248F0008F5D87 /* Stanford_slider */,
+				CA6DDC54164248EF008F5D87 /* Frameworks */,
+				CA6DDC52164248EF008F5D87 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA6DDC52164248EF008F5D87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA6DDC51164248EF008F5D87 /* Stanford_slider.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA6DDC54164248EF008F5D87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA6DDC55164248EF008F5D87 /* UIKit.framework */,
+				CA6DDC57164248EF008F5D87 /* Foundation.framework */,
+				CA6DDC59164248F0008F5D87 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA6DDC5B164248F0008F5D87 /* Stanford_slider */ = {
+			isa = PBXGroup;
+			children = (
+				CA6DDC64164248F0008F5D87 /* sliderAppDelegate.h */,
+				CA6DDC65164248F0008F5D87 /* sliderAppDelegate.m */,
+				CA6DDC6D164248F0008F5D87 /* sliderViewController.h */,
+				CA6DDC6E164248F0008F5D87 /* sliderViewController.m */,
+				CA6DDC70164248F0008F5D87 /* sliderViewController.xib */,
+				CA6DDC5C164248F0008F5D87 /* Supporting Files */,
+			);
+			path = Stanford_slider;
+			sourceTree = "<group>";
+		};
+		CA6DDC5C164248F0008F5D87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA6DDC5D164248F0008F5D87 /* Stanford_slider-Info.plist */,
+				CA6DDC5E164248F0008F5D87 /* InfoPlist.strings */,
+				CA6DDC61164248F0008F5D87 /* main.m */,
+				CA6DDC63164248F0008F5D87 /* Stanford_slider-Prefix.pch */,
+				CA6DDC67164248F0008F5D87 /* Default.png */,
+				CA6DDC69164248F0008F5D87 /* Default@2x.png */,
+				CA6DDC6B164248F0008F5D87 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA6DDC50164248EF008F5D87 /* Stanford_slider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6DDC75164248F0008F5D87 /* Build configuration list for PBXNativeTarget "Stanford_slider" */;
+			buildPhases = (
+				CA6DDC4D164248EF008F5D87 /* Sources */,
+				CA6DDC4E164248EF008F5D87 /* Frameworks */,
+				CA6DDC4F164248EF008F5D87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stanford_slider;
+			productName = Stanford_slider;
+			productReference = CA6DDC51164248EF008F5D87 /* Stanford_slider.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA6DDC48164248EF008F5D87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = slider;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = AC;
+			};
+			buildConfigurationList = CA6DDC4B164248EF008F5D87 /* Build configuration list for PBXProject "Stanford_slider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA6DDC46164248EF008F5D87;
+			productRefGroup = CA6DDC52164248EF008F5D87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA6DDC50164248EF008F5D87 /* Stanford_slider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA6DDC4F164248EF008F5D87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6DDC60164248F0008F5D87 /* InfoPlist.strings in Resources */,
+				CA6DDC68164248F0008F5D87 /* Default.png in Resources */,
+				CA6DDC6A164248F0008F5D87 /* Default@2x.png in Resources */,
+				CA6DDC6C164248F0008F5D87 /* Default-568h@2x.png in Resources */,
+				CA6DDC72164248F0008F5D87 /* sliderViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA6DDC4D164248EF008F5D87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6DDC62164248F0008F5D87 /* main.m in Sources */,
+				CA6DDC66164248F0008F5D87 /* sliderAppDelegate.m in Sources */,
+				CA6DDC6F164248F0008F5D87 /* sliderViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA6DDC5E164248F0008F5D87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA6DDC5F164248F0008F5D87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CA6DDC70164248F0008F5D87 /* sliderViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA6DDC71164248F0008F5D87 /* en */,
+			);
+			name = sliderViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA6DDC73164248F0008F5D87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA6DDC74164248F0008F5D87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA6DDC76164248F0008F5D87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stanford_slider/Stanford_slider-Prefix.pch";
+				INFOPLIST_FILE = "Stanford_slider/Stanford_slider-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA6DDC77164248F0008F5D87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stanford_slider/Stanford_slider-Prefix.pch";
+				INFOPLIST_FILE = "Stanford_slider/Stanford_slider-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA6DDC4B164248EF008F5D87 /* Build configuration list for PBXProject "Stanford_slider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6DDC73164248F0008F5D87 /* Debug */,
+				CA6DDC74164248F0008F5D87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6DDC75164248F0008F5D87 /* Build configuration list for PBXNativeTarget "Stanford_slider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6DDC76164248F0008F5D87 /* Debug */,
+				CA6DDC77164248F0008F5D87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA6DDC48164248EF008F5D87 /* Project object */;
+}
