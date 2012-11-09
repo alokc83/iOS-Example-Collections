@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA9D0476164CC5D400A7BF8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9D0475164CC5D400A7BF8A /* UIKit.framework */; };
+		CA9D0478164CC5D400A7BF8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9D0477164CC5D400A7BF8A /* Foundation.framework */; };
+		CA9D047A164CC5D400A7BF8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9D0479164CC5D400A7BF8A /* CoreGraphics.framework */; };
+		CA9D0480164CC5D400A7BF8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA9D047E164CC5D400A7BF8A /* InfoPlist.strings */; };
+		CA9D0482164CC5D400A7BF8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9D0481164CC5D400A7BF8A /* main.m */; };
+		CA9D0486164CC5D400A7BF8A /* whayDayAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9D0485164CC5D400A7BF8A /* whayDayAppDelegate.m */; };
+		CA9D0488164CC5D400A7BF8A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CA9D0487164CC5D400A7BF8A /* Default.png */; };
+		CA9D048A164CC5D400A7BF8A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA9D0489164CC5D400A7BF8A /* Default@2x.png */; };
+		CA9D048C164CC5D400A7BF8A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA9D048B164CC5D400A7BF8A /* Default-568h@2x.png */; };
+		CA9D048F164CC5D400A7BF8A /* whayDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9D048E164CC5D400A7BF8A /* whayDayViewController.m */; };
+		CA9D0492164CC5D400A7BF8A /* whayDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9D0490164CC5D400A7BF8A /* whayDayViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA9D0471164CC5D400A7BF8A /* 2_whatDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2_whatDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9D0475164CC5D400A7BF8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CA9D0477164CC5D400A7BF8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CA9D0479164CC5D400A7BF8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CA9D047D164CC5D400A7BF8A /* 2_whatDay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "2_whatDay-Info.plist"; sourceTree = "<group>"; };
+		CA9D047F164CC5D400A7BF8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA9D0481164CC5D400A7BF8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA9D0483164CC5D400A7BF8A /* 2_whatDay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "2_whatDay-Prefix.pch"; sourceTree = "<group>"; };
+		CA9D0484164CC5D400A7BF8A /* whayDayAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whayDayAppDelegate.h; sourceTree = "<group>"; };
+		CA9D0485164CC5D400A7BF8A /* whayDayAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = whayDayAppDelegate.m; sourceTree = "<group>"; };
+		CA9D0487164CC5D400A7BF8A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CA9D0489164CC5D400A7BF8A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CA9D048B164CC5D400A7BF8A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CA9D048D164CC5D400A7BF8A /* whayDayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whayDayViewController.h; sourceTree = "<group>"; };
+		CA9D048E164CC5D400A7BF8A /* whayDayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = whayDayViewController.m; sourceTree = "<group>"; };
+		CA9D0491164CC5D400A7BF8A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/whayDayViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA9D046E164CC5D400A7BF8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9D0476164CC5D400A7BF8A /* UIKit.framework in Frameworks */,
+				CA9D0478164CC5D400A7BF8A /* Foundation.framework in Frameworks */,
+				CA9D047A164CC5D400A7BF8A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA9D0466164CC5D400A7BF8A = {
+			isa = PBXGroup;
+			children = (
+				CA9D047B164CC5D400A7BF8A /* 2_whatDay */,
+				CA9D0474164CC5D400A7BF8A /* Frameworks */,
+				CA9D0472164CC5D400A7BF8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA9D0472164CC5D400A7BF8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA9D0471164CC5D400A7BF8A /* 2_whatDay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA9D0474164CC5D400A7BF8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA9D0475164CC5D400A7BF8A /* UIKit.framework */,
+				CA9D0477164CC5D400A7BF8A /* Foundation.framework */,
+				CA9D0479164CC5D400A7BF8A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA9D047B164CC5D400A7BF8A /* 2_whatDay */ = {
+			isa = PBXGroup;
+			children = (
+				CA9D0484164CC5D400A7BF8A /* whayDayAppDelegate.h */,
+				CA9D0485164CC5D400A7BF8A /* whayDayAppDelegate.m */,
+				CA9D048D164CC5D400A7BF8A /* whayDayViewController.h */,
+				CA9D048E164CC5D400A7BF8A /* whayDayViewController.m */,
+				CA9D0490164CC5D400A7BF8A /* whayDayViewController.xib */,
+				CA9D047C164CC5D400A7BF8A /* Supporting Files */,
+			);
+			path = 2_whatDay;
+			sourceTree = "<group>";
+		};
+		CA9D047C164CC5D400A7BF8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA9D047D164CC5D400A7BF8A /* 2_whatDay-Info.plist */,
+				CA9D047E164CC5D400A7BF8A /* InfoPlist.strings */,
+				CA9D0481164CC5D400A7BF8A /* main.m */,
+				CA9D0483164CC5D400A7BF8A /* 2_whatDay-Prefix.pch */,
+				CA9D0487164CC5D400A7BF8A /* Default.png */,
+				CA9D0489164CC5D400A7BF8A /* Default@2x.png */,
+				CA9D048B164CC5D400A7BF8A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA9D0470164CC5D400A7BF8A /* 2_whatDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA9D0495164CC5D400A7BF8A /* Build configuration list for PBXNativeTarget "2_whatDay" */;
+			buildPhases = (
+				CA9D046D164CC5D400A7BF8A /* Sources */,
+				CA9D046E164CC5D400A7BF8A /* Frameworks */,
+				CA9D046F164CC5D400A7BF8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 2_whatDay;
+			productName = 2_whatDay;
+			productReference = CA9D0471164CC5D400A7BF8A /* 2_whatDay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA9D0468164CC5D400A7BF8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = whayDay;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = AC;
+			};
+			buildConfigurationList = CA9D046B164CC5D400A7BF8A /* Build configuration list for PBXProject "2_whatDay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA9D0466164CC5D400A7BF8A;
+			productRefGroup = CA9D0472164CC5D400A7BF8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA9D0470164CC5D400A7BF8A /* 2_whatDay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA9D046F164CC5D400A7BF8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9D0480164CC5D400A7BF8A /* InfoPlist.strings in Resources */,
+				CA9D0488164CC5D400A7BF8A /* Default.png in Resources */,
+				CA9D048A164CC5D400A7BF8A /* Default@2x.png in Resources */,
+				CA9D048C164CC5D400A7BF8A /* Default-568h@2x.png in Resources */,
+				CA9D0492164CC5D400A7BF8A /* whayDayViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA9D046D164CC5D400A7BF8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9D0482164CC5D400A7BF8A /* main.m in Sources */,
+				CA9D0486164CC5D400A7BF8A /* whayDayAppDelegate.m in Sources */,
+				CA9D048F164CC5D400A7BF8A /* whayDayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA9D047E164CC5D400A7BF8A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA9D047F164CC5D400A7BF8A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CA9D0490164CC5D400A7BF8A /* whayDayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA9D0491164CC5D400A7BF8A /* en */,
+			);
+			name = whayDayViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA9D0493164CC5D400A7BF8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA9D0494164CC5D400A7BF8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA9D0496164CC5D400A7BF8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "2_whatDay/2_whatDay-Prefix.pch";
+				INFOPLIST_FILE = "2_whatDay/2_whatDay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA9D0497164CC5D400A7BF8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "2_whatDay/2_whatDay-Prefix.pch";
+				INFOPLIST_FILE = "2_whatDay/2_whatDay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA9D046B164CC5D400A7BF8A /* Build configuration list for PBXProject "2_whatDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9D0493164CC5D400A7BF8A /* Debug */,
+				CA9D0494164CC5D400A7BF8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA9D0495164CC5D400A7BF8A /* Build configuration list for PBXNativeTarget "2_whatDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9D0496164CC5D400A7BF8A /* Debug */,
+				CA9D0497164CC5D400A7BF8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA9D0468164CC5D400A7BF8A /* Project object */;
+}
