@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		847CA1031561CA8B0086A1C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847CA1021561CA8B0086A1C3 /* UIKit.framework */; };
+		847CA1051561CA8B0086A1C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847CA1041561CA8B0086A1C3 /* Foundation.framework */; };
+		847CA1071561CA8B0086A1C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847CA1061561CA8B0086A1C3 /* CoreGraphics.framework */; };
+		847CA10D1561CA8B0086A1C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 847CA10B1561CA8B0086A1C3 /* InfoPlist.strings */; };
+		847CA10F1561CA8B0086A1C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 847CA10E1561CA8B0086A1C3 /* main.m */; };
+		847CA1131561CA8B0086A1C3 /* PNVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 847CA1121561CA8B0086A1C3 /* PNVAppDelegate.m */; };
+		847CA1181561CA8B0086A1C3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847CA1161561CA8B0086A1C3 /* MainStoryboard_iPhone.storyboard */; };
+		847CA11B1561CA8B0086A1C3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847CA1191561CA8B0086A1C3 /* MainStoryboard_iPad.storyboard */; };
+		847CA11E1561CA8B0086A1C3 /* PNViOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847CA11D1561CA8B0086A1C3 /* PNViOSViewController.m */; };
+		847CA1291561D2D10086A1C3 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847CA1271561D2D10086A1C3 /* EventKit.framework */; };
+		847CA12A1561D2D10086A1C3 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847CA1281561D2D10086A1C3 /* EventKitUI.framework */; };
+		847CA12B1561D5BA0086A1C3 /* PNVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC5DD4147EDC1C00C4FFB6 /* PNVModel.m */; };
+		8485F2721485DC2C00F8D7B4 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8485F2701485DC1D00F8D7B4 /* EventKit.framework */; };
+		84AC5DD5147EDC1C00C4FFB6 /* PNVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC5DD4147EDC1C00C4FFB6 /* PNVModel.m */; };
+		84F9D764147E21EF00DFF387 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F9D763147E21EF00DFF387 /* Cocoa.framework */; };
+		84F9D76E147E21EF00DFF387 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D76C147E21EF00DFF387 /* InfoPlist.strings */; };
+		84F9D770147E21EF00DFF387 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F9D76F147E21EF00DFF387 /* main.m */; };
+		84F9D777147E21EF00DFF387 /* PokerNightVotingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F9D776147E21EF00DFF387 /* PokerNightVotingAppDelegate.m */; };
+		84F9D77A147E21F000DFF387 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D778147E21F000DFF387 /* MainMenu.xib */; };
+		84F9D782147E2BBC00DFF387 /* PNVOSXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F9D781147E2BBC00DFF387 /* PNVOSXViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		847CA1001561CA8B0086A1C3 /* PokerNightVoting Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PokerNightVoting Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		847CA1021561CA8B0086A1C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		847CA1041561CA8B0086A1C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		847CA1061561CA8B0086A1C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		847CA10A1561CA8B0086A1C3 /* PokerNightVoting Mobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PokerNightVoting Mobile-Info.plist"; sourceTree = "<group>"; };
+		847CA10C1561CA8B0086A1C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		847CA10E1561CA8B0086A1C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		847CA1101561CA8B0086A1C3 /* PokerNightVoting Mobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokerNightVoting Mobile-Prefix.pch"; sourceTree = "<group>"; };
+		847CA1111561CA8B0086A1C3 /* PNVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNVAppDelegate.h; sourceTree = "<group>"; };
+		847CA1121561CA8B0086A1C3 /* PNVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNVAppDelegate.m; sourceTree = "<group>"; };
+		847CA1171561CA8B0086A1C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		847CA11A1561CA8B0086A1C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		847CA11C1561CA8B0086A1C3 /* PNViOSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNViOSViewController.h; sourceTree = "<group>"; };
+		847CA11D1561CA8B0086A1C3 /* PNViOSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNViOSViewController.m; sourceTree = "<group>"; };
+		847CA1271561D2D10086A1C3 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
+		847CA1281561D2D10086A1C3 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/EventKitUI.framework; sourceTree = DEVELOPER_DIR; };
+		8485F2701485DC1D00F8D7B4 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = /System/Library/Frameworks/EventKit.framework; sourceTree = "<absolute>"; };
+		84AC5DD3147EDC1C00C4FFB6 /* PNVModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNVModel.h; sourceTree = "<group>"; };
+		84AC5DD4147EDC1C00C4FFB6 /* PNVModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNVModel.m; sourceTree = "<group>"; };
+		84E05F3A156AFDAD00298A74 /* PokerNightVoting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PokerNightVoting.entitlements; sourceTree = "<group>"; };
+		84F9D75F147E21EF00DFF387 /* PokerNightVoting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerNightVoting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F9D763147E21EF00DFF387 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		84F9D766147E21EF00DFF387 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		84F9D767147E21EF00DFF387 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		84F9D768147E21EF00DFF387 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84F9D76B147E21EF00DFF387 /* PokerNightVoting-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PokerNightVoting-Info.plist"; sourceTree = "<group>"; };
+		84F9D76D147E21EF00DFF387 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84F9D76F147E21EF00DFF387 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84F9D771147E21EF00DFF387 /* PokerNightVoting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokerNightVoting-Prefix.pch"; sourceTree = "<group>"; };
+		84F9D775147E21EF00DFF387 /* PokerNightVotingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokerNightVotingAppDelegate.h; sourceTree = "<group>"; };
+		84F9D776147E21EF00DFF387 /* PokerNightVotingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokerNightVotingAppDelegate.m; sourceTree = "<group>"; };
+		84F9D779147E21F000DFF387 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		84F9D780147E2BBC00DFF387 /* PNVOSXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNVOSXViewController.h; sourceTree = "<group>"; };
+		84F9D781147E2BBC00DFF387 /* PNVOSXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNVOSXViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		847CA0FD1561CA8B0086A1C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847CA1291561D2D10086A1C3 /* EventKit.framework in Frameworks */,
+				847CA12A1561D2D10086A1C3 /* EventKitUI.framework in Frameworks */,
+				847CA1031561CA8B0086A1C3 /* UIKit.framework in Frameworks */,
+				847CA1051561CA8B0086A1C3 /* Foundation.framework in Frameworks */,
+				847CA1071561CA8B0086A1C3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F9D75C147E21EF00DFF387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F9D764147E21EF00DFF387 /* Cocoa.framework in Frameworks */,
+				8485F2721485DC2C00F8D7B4 /* EventKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		847CA1081561CA8B0086A1C3 /* PNV - iOS */ = {
+			isa = PBXGroup;
+			children = (
+				847CA11C1561CA8B0086A1C3 /* PNViOSViewController.h */,
+				847CA11D1561CA8B0086A1C3 /* PNViOSViewController.m */,
+				847CA1161561CA8B0086A1C3 /* MainStoryboard_iPhone.storyboard */,
+				847CA1191561CA8B0086A1C3 /* MainStoryboard_iPad.storyboard */,
+				847CA1111561CA8B0086A1C3 /* PNVAppDelegate.h */,
+				847CA1121561CA8B0086A1C3 /* PNVAppDelegate.m */,
+				847CA1091561CA8B0086A1C3 /* Supporting Files */,
+			);
+			path = "PNV - iOS";
+			sourceTree = "<group>";
+		};
+		847CA1091561CA8B0086A1C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				847CA10A1561CA8B0086A1C3 /* PokerNightVoting Mobile-Info.plist */,
+				847CA10B1561CA8B0086A1C3 /* InfoPlist.strings */,
+				847CA10E1561CA8B0086A1C3 /* main.m */,
+				847CA1101561CA8B0086A1C3 /* PokerNightVoting Mobile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84F9D754147E21EF00DFF387 = {
+			isa = PBXGroup;
+			children = (
+				84F9D769147E21EF00DFF387 /* PNV - OS X */,
+				847CA1081561CA8B0086A1C3 /* PNV - iOS */,
+				84F9D762147E21EF00DFF387 /* Frameworks */,
+				84F9D760147E21EF00DFF387 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84F9D760147E21EF00DFF387 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F9D75F147E21EF00DFF387 /* PokerNightVoting.app */,
+				847CA1001561CA8B0086A1C3 /* PokerNightVoting Mobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F9D762147E21EF00DFF387 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				847CA1271561D2D10086A1C3 /* EventKit.framework */,
+				847CA1281561D2D10086A1C3 /* EventKitUI.framework */,
+				8485F2701485DC1D00F8D7B4 /* EventKit.framework */,
+				84F9D763147E21EF00DFF387 /* Cocoa.framework */,
+				847CA1021561CA8B0086A1C3 /* UIKit.framework */,
+				847CA1041561CA8B0086A1C3 /* Foundation.framework */,
+				847CA1061561CA8B0086A1C3 /* CoreGraphics.framework */,
+				84F9D765147E21EF00DFF387 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84F9D765147E21EF00DFF387 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F9D766147E21EF00DFF387 /* AppKit.framework */,
+				84F9D767147E21EF00DFF387 /* CoreData.framework */,
+				84F9D768147E21EF00DFF387 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		84F9D769147E21EF00DFF387 /* PNV - OS X */ = {
+			isa = PBXGroup;
+			children = (
+				84AC5DD3147EDC1C00C4FFB6 /* PNVModel.h */,
+				84AC5DD4147EDC1C00C4FFB6 /* PNVModel.m */,
+				84F9D780147E2BBC00DFF387 /* PNVOSXViewController.h */,
+				84F9D781147E2BBC00DFF387 /* PNVOSXViewController.m */,
+				84F9D778147E21F000DFF387 /* MainMenu.xib */,
+				84F9D775147E21EF00DFF387 /* PokerNightVotingAppDelegate.h */,
+				84F9D776147E21EF00DFF387 /* PokerNightVotingAppDelegate.m */,
+				84F9D76A147E21EF00DFF387 /* Supporting Files */,
+			);
+			path = "PNV - OS X";
+			sourceTree = "<group>";
+		};
+		84F9D76A147E21EF00DFF387 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84E05F3A156AFDAD00298A74 /* PokerNightVoting.entitlements */,
+				84F9D76B147E21EF00DFF387 /* PokerNightVoting-Info.plist */,
+				84F9D76C147E21EF00DFF387 /* InfoPlist.strings */,
+				84F9D76F147E21EF00DFF387 /* main.m */,
+				84F9D771147E21EF00DFF387 /* PokerNightVoting-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		847CA0FF1561CA8B0086A1C3 /* PokerNightVoting Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847CA1211561CA8B0086A1C3 /* Build configuration list for PBXNativeTarget "PokerNightVoting Mobile" */;
+			buildPhases = (
+				847CA0FC1561CA8B0086A1C3 /* Sources */,
+				847CA0FD1561CA8B0086A1C3 /* Frameworks */,
+				847CA0FE1561CA8B0086A1C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PokerNightVoting Mobile";
+			productName = "PokerNightVoting Mobile";
+			productReference = 847CA1001561CA8B0086A1C3 /* PokerNightVoting Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84F9D75E147E21EF00DFF387 /* PokerNightVoting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F9D77D147E21F000DFF387 /* Build configuration list for PBXNativeTarget "PokerNightVoting" */;
+			buildPhases = (
+				84F9D75B147E21EF00DFF387 /* Sources */,
+				84F9D75C147E21EF00DFF387 /* Frameworks */,
+				84F9D75D147E21EF00DFF387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokerNightVoting;
+			productName = PokerNightVoting;
+			productReference = 84F9D75F147E21EF00DFF387 /* PokerNightVoting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F9D756147E21EF00DFF387 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 84F9D759147E21EF00DFF387 /* Build configuration list for PBXProject "PokerNightVoting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84F9D754147E21EF00DFF387;
+			productRefGroup = 84F9D760147E21EF00DFF387 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F9D75E147E21EF00DFF387 /* PokerNightVoting */,
+				847CA0FF1561CA8B0086A1C3 /* PokerNightVoting Mobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		847CA0FE1561CA8B0086A1C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847CA10D1561CA8B0086A1C3 /* InfoPlist.strings in Resources */,
+				847CA1181561CA8B0086A1C3 /* MainStoryboard_iPhone.storyboard in Resources */,
+				847CA11B1561CA8B0086A1C3 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F9D75D147E21EF00DFF387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F9D76E147E21EF00DFF387 /* InfoPlist.strings in Resources */,
+				84F9D77A147E21F000DFF387 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		847CA0FC1561CA8B0086A1C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847CA12B1561D5BA0086A1C3 /* PNVModel.m in Sources */,
+				847CA10F1561CA8B0086A1C3 /* main.m in Sources */,
+				847CA1131561CA8B0086A1C3 /* PNVAppDelegate.m in Sources */,
+				847CA11E1561CA8B0086A1C3 /* PNViOSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F9D75B147E21EF00DFF387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F9D770147E21EF00DFF387 /* main.m in Sources */,
+				84F9D777147E21EF00DFF387 /* PokerNightVotingAppDelegate.m in Sources */,
+				84F9D782147E2BBC00DFF387 /* PNVOSXViewController.m in Sources */,
+				84AC5DD5147EDC1C00C4FFB6 /* PNVModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		847CA10B1561CA8B0086A1C3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847CA10C1561CA8B0086A1C3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		847CA1161561CA8B0086A1C3 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847CA1171561CA8B0086A1C3 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		847CA1191561CA8B0086A1C3 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847CA11A1561CA8B0086A1C3 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		84F9D76C147E21EF00DFF387 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F9D76D147E21EF00DFF387 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84F9D778147E21F000DFF387 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F9D779147E21F000DFF387 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		847CA11F1561CA8B0086A1C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PNV - iOS/PokerNightVoting Mobile-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "PNV - iOS/PokerNightVoting Mobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "PokerNightVoting Mobile";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		847CA1201561CA8B0086A1C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PNV - iOS/PokerNightVoting Mobile-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "PNV - iOS/PokerNightVoting Mobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "PokerNightVoting Mobile";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84F9D77B147E21F000DFF387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		84F9D77C147E21F000DFF387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		84F9D77E147E21F000DFF387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "PNV - OS X/PokerNightVoting.entitlements";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PNV - OS X/PokerNightVoting-Prefix.pch";
+				INFOPLIST_FILE = "PNV - OS X/PokerNightVoting-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = PokerNightVoting;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84F9D77F147E21F000DFF387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "PNV - OS X/PokerNightVoting.entitlements";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PNV - OS X/PokerNightVoting-Prefix.pch";
+				INFOPLIST_FILE = "PNV - OS X/PokerNightVoting-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = PokerNightVoting;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		847CA1211561CA8B0086A1C3 /* Build configuration list for PBXNativeTarget "PokerNightVoting Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847CA11F1561CA8B0086A1C3 /* Debug */,
+				847CA1201561CA8B0086A1C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F9D759147E21EF00DFF387 /* Build configuration list for PBXProject "PokerNightVoting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F9D77B147E21F000DFF387 /* Debug */,
+				84F9D77C147E21F000DFF387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F9D77D147E21F000DFF387 /* Build configuration list for PBXNativeTarget "PokerNightVoting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F9D77E147E21F000DFF387 /* Debug */,
+				84F9D77F147E21F000DFF387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F9D756147E21EF00DFF387 /* Project object */;
+}

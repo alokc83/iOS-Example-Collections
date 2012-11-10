@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17434550157EA9B50031AA96 /* NSComboBox+MyExpansionAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1743454F157EA9B50031AA96 /* NSComboBox+MyExpansionAPI.m */; };
+		17C4C8C31561B288003D6299 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C4C8C21561B288003D6299 /* Cocoa.framework */; };
+		17C4C8CD1561B288003D6299 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17C4C8CB1561B288003D6299 /* InfoPlist.strings */; };
+		17C4C8CF1561B288003D6299 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4C8CE1561B288003D6299 /* main.m */; };
+		17C4C8D31561B288003D6299 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 17C4C8D11561B288003D6299 /* Credits.rtf */; };
+		17C4C8D61561B288003D6299 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4C8D51561B288003D6299 /* AppDelegate.m */; };
+		17C4C8D91561B288003D6299 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17C4C8D71561B288003D6299 /* MainMenu.xib */; };
+		17C4C8E01561B2B7003D6299 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C4C8DF1561B2B7003D6299 /* CoreLocation.framework */; };
+		17C4C8E71561B608003D6299 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4C8E61561B608003D6299 /* LocationController.m */; };
+		17C4C90C1562CBDE003D6299 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C4C90B1562CBDE003D6299 /* AddressBook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1743454E157EA9B50031AA96 /* NSComboBox+MyExpansionAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSComboBox+MyExpansionAPI.h"; sourceTree = "<group>"; };
+		1743454F157EA9B50031AA96 /* NSComboBox+MyExpansionAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSComboBox+MyExpansionAPI.m"; sourceTree = "<group>"; };
+		17C4C8BE1561B288003D6299 /* MonitorAddress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonitorAddress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C4C8C21561B288003D6299 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		17C4C8C51561B288003D6299 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		17C4C8C61561B288003D6299 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		17C4C8C71561B288003D6299 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		17C4C8CA1561B288003D6299 /* MonitorAddress-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MonitorAddress-Info.plist"; sourceTree = "<group>"; };
+		17C4C8CC1561B288003D6299 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17C4C8CE1561B288003D6299 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17C4C8D01561B288003D6299 /* MonitorAddress-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MonitorAddress-Prefix.pch"; sourceTree = "<group>"; };
+		17C4C8D21561B288003D6299 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		17C4C8D41561B288003D6299 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17C4C8D51561B288003D6299 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17C4C8D81561B288003D6299 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		17C4C8DF1561B2B7003D6299 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		17C4C8E51561B608003D6299 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		17C4C8E61561B608003D6299 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		17C4C90B1562CBDE003D6299 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		28916A4E1588138400A2DBBA /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17C4C8BB1561B288003D6299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C4C90C1562CBDE003D6299 /* AddressBook.framework in Frameworks */,
+				17C4C8E01561B2B7003D6299 /* CoreLocation.framework in Frameworks */,
+				17C4C8C31561B288003D6299 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17C4C8B31561B288003D6299 = {
+			isa = PBXGroup;
+			children = (
+				28916A4E1588138400A2DBBA /* ReadMe.txt */,
+				17C4C8C81561B288003D6299 /* MonitorAddress */,
+				17C4C8C11561B288003D6299 /* Frameworks */,
+				17C4C8BF1561B288003D6299 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17C4C8BF1561B288003D6299 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17C4C8BE1561B288003D6299 /* MonitorAddress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17C4C8C11561B288003D6299 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17C4C90B1562CBDE003D6299 /* AddressBook.framework */,
+				17C4C8DF1561B2B7003D6299 /* CoreLocation.framework */,
+				17C4C8C21561B288003D6299 /* Cocoa.framework */,
+				17C4C8C41561B288003D6299 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17C4C8C41561B288003D6299 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17C4C8C51561B288003D6299 /* AppKit.framework */,
+				17C4C8C61561B288003D6299 /* CoreData.framework */,
+				17C4C8C71561B288003D6299 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		17C4C8C81561B288003D6299 /* MonitorAddress */ = {
+			isa = PBXGroup;
+			children = (
+				17C4C8D41561B288003D6299 /* AppDelegate.h */,
+				17C4C8D51561B288003D6299 /* AppDelegate.m */,
+				17C4C8E51561B608003D6299 /* LocationController.h */,
+				17C4C8E61561B608003D6299 /* LocationController.m */,
+				1743454E157EA9B50031AA96 /* NSComboBox+MyExpansionAPI.h */,
+				1743454F157EA9B50031AA96 /* NSComboBox+MyExpansionAPI.m */,
+				17C4C8D71561B288003D6299 /* MainMenu.xib */,
+				17C4C8C91561B288003D6299 /* Supporting Files */,
+			);
+			path = MonitorAddress;
+			sourceTree = "<group>";
+		};
+		17C4C8C91561B288003D6299 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17C4C8CA1561B288003D6299 /* MonitorAddress-Info.plist */,
+				17C4C8CB1561B288003D6299 /* InfoPlist.strings */,
+				17C4C8CE1561B288003D6299 /* main.m */,
+				17C4C8D01561B288003D6299 /* MonitorAddress-Prefix.pch */,
+				17C4C8D11561B288003D6299 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17C4C8BD1561B288003D6299 /* MonitorAddress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C4C8DC1561B288003D6299 /* Build configuration list for PBXNativeTarget "MonitorAddress" */;
+			buildPhases = (
+				17C4C8BA1561B288003D6299 /* Sources */,
+				17C4C8BB1561B288003D6299 /* Frameworks */,
+				17C4C8BC1561B288003D6299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonitorAddress;
+			productName = MonitorAddress;
+			productReference = 17C4C8BE1561B288003D6299 /* MonitorAddress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17C4C8B51561B288003D6299 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 17C4C8B81561B288003D6299 /* Build configuration list for PBXProject "MonitorAddress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 17C4C8B31561B288003D6299;
+			productRefGroup = 17C4C8BF1561B288003D6299 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17C4C8BD1561B288003D6299 /* MonitorAddress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17C4C8BC1561B288003D6299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C4C8CD1561B288003D6299 /* InfoPlist.strings in Resources */,
+				17C4C8D31561B288003D6299 /* Credits.rtf in Resources */,
+				17C4C8D91561B288003D6299 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17C4C8BA1561B288003D6299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C4C8CF1561B288003D6299 /* main.m in Sources */,
+				17C4C8D61561B288003D6299 /* AppDelegate.m in Sources */,
+				17C4C8E71561B608003D6299 /* LocationController.m in Sources */,
+				17434550157EA9B50031AA96 /* NSComboBox+MyExpansionAPI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		17C4C8CB1561B288003D6299 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17C4C8CC1561B288003D6299 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		17C4C8D11561B288003D6299 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17C4C8D21561B288003D6299 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		17C4C8D71561B288003D6299 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17C4C8D81561B288003D6299 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17C4C8DA1561B288003D6299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		17C4C8DB1561B288003D6299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		17C4C8DD1561B288003D6299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonitorAddress/MonitorAddress-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				INFOPLIST_FILE = "MonitorAddress/MonitorAddress-Info.plist";
+				PRODUCT_NAME = MonitorAddress;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		17C4C8DE1561B288003D6299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonitorAddress/MonitorAddress-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				INFOPLIST_FILE = "MonitorAddress/MonitorAddress-Info.plist";
+				PRODUCT_NAME = MonitorAddress;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17C4C8B81561B288003D6299 /* Build configuration list for PBXProject "MonitorAddress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C4C8DA1561B288003D6299 /* Debug */,
+				17C4C8DB1561B288003D6299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17C4C8DC1561B288003D6299 /* Build configuration list for PBXNativeTarget "MonitorAddress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C4C8DD1561B288003D6299 /* Debug */,
+				17C4C8DE1561B288003D6299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17C4C8B51561B288003D6299 /* Project object */;
+}

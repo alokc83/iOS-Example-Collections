@@ -1,0 +1,20 @@
+
+Passbook Session Notes, WWDC 2012
+
+This project contains starting points for working with Passbook!  There are three components.
+
+(1) The Passes folder contains a sample passes in each of our five pass styles.  To add them to Passbook, email the .pkpass files to yourself on your iPhone.  The .raw directories contain the materials that go into the zipped, signed pkpass. You can copy these as starting points for your own passes.
+
+
+(2) The signpass project builds a tool that turns .raw directories into .pkpass files.  It serves two purposes:
+	(a) It's an example of how to cryptographically sign a pass. In real life, pass signing likely happens on a server in response to an http request. So, you may need to write a version of this that can run in your server environment. You may wish to use this source code in conjunction with the documentation as a reference.
+	(b) It's a useful tool during development, so that you see what a pass looks like on your device without having to deal with signing and server-side stuff right out the gate.
+
+Invoke it like so:
+
+	signpass -p /path/to/MyPass.raw
+
+where MyPass.raw is a directory like the included .raw directories in the Passes folder. The tool finds the appropriate certificate for signing out of the keychain. Thus, note that signpass requires a certificate matching the passTypeIdentifier of the pass to be signed to be present in the Keychain. See the WWDC 2012 talk "Passbook Part 1" to see us go through getting such a certificate on stage.  As a corollary, you won't be able to sign an included sample pass unless you change its passTypeIdentifier to match a cert you've been granted. There are pre-signed passes already included, though. 
+
+
+(3) The ServerReference. This is a Ruby app that implements Passbook's web service. It can update a pass via push. It also has an implementation of pass signing. 

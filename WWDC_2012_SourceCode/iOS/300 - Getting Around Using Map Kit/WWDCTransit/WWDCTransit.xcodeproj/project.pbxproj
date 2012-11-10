@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4325108815604AE300165623 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4325108715604AE300165623 /* UIKit.framework */; };
+		4325108A15604AE300165623 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4325108915604AE300165623 /* Foundation.framework */; };
+		4325108C15604AE300165623 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4325108B15604AE300165623 /* CoreGraphics.framework */; };
+		4325109215604AE300165623 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4325109015604AE300165623 /* InfoPlist.strings */; };
+		4325109415604AE300165623 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4325109315604AE300165623 /* main.m */; };
+		4325109815604AE300165623 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4325109715604AE300165623 /* AppDelegate.m */; };
+		4325109A15604AE300165623 /* WWDCTransit.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 4325109915604AE300165623 /* WWDCTransit.entitlements */; };
+		432510A515604CF600165623 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 432510A315604CF600165623 /* MapViewController.m */; };
+		432510A615604CF600165623 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 432510A415604CF600165623 /* MapViewController.xib */; };
+		432510A815604ED500165623 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432510A715604ED500165623 /* MapKit.framework */; };
+		4348FA5B1560818000D308B8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4348FA5A1560818000D308B8 /* CoreLocation.framework */; };
+		4377D5A015685446004EDDA2 /* station.png in Resources */ = {isa = PBXBuildFile; fileRef = 4377D59F15685446004EDDA2 /* station.png */; };
+		43B81B3E156898BD00AB7961 /* station@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B81B3D156898BD00AB7961 /* station@2x.png */; };
+		43C076FC156085C200A3AAAB /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C076F2156085C200A3AAAB /* agency.txt */; };
+		43C076FD156085C200A3AAAB /* calendar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C076F3156085C200A3AAAB /* calendar.txt */; };
+		43C076FE156085C200A3AAAB /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C076F4156085C200A3AAAB /* calendar_dates.txt */; };
+		43C076FF156085C200A3AAAB /* fare_attributes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C076F5156085C200A3AAAB /* fare_attributes.txt */; };
+		43C07700156085C200A3AAAB /* fare_rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C076F6156085C200A3AAAB /* fare_rules.txt */; };
+		43C07701156085C200A3AAAB /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C076F7156085C200A3AAAB /* routes.txt */; };
+		43C07702156085C200A3AAAB /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C076F8156085C200A3AAAB /* shapes.txt */; };
+		43C07703156085C200A3AAAB /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C076F9156085C200A3AAAB /* stop_times.txt */; };
+		43C07704156085C200A3AAAB /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C076FA156085C200A3AAAB /* stops.txt */; };
+		43C07705156085C200A3AAAB /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C076FB156085C200A3AAAB /* trips.txt */; };
+		43C077091560867E00A3AAAB /* TransitInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C077081560867E00A3AAAB /* TransitInfo.m */; };
+		43C0770C1560878600A3AAAB /* TransitStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C0770B1560878600A3AAAB /* TransitStop.m */; };
+		43C0772915609C9400A3AAAB /* DirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C0772715609C9400A3AAAB /* DirectionsViewController.m */; };
+		43C0772A15609C9400A3AAAB /* DirectionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43C0772815609C9400A3AAAB /* DirectionsViewController.xib */; };
+		43C0772D1560A84400A3AAAB /* MyPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C0772C1560A84400A3AAAB /* MyPlace.m */; };
+		43C077301560C97600A3AAAB /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C0772F1560C97600A3AAAB /* Route.m */; };
+		43C077331560D18400A3AAAB /* TransitTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C077321560D18300A3AAAB /* TransitTrip.m */; };
+		43C077361561706000A3AAAB /* TransitShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C077351561706000A3AAAB /* TransitShape.m */; };
+		C92B399A1575555C00E2964D /* SF.geojson in Resources */ = {isa = PBXBuildFile; fileRef = C92B39991575555C00E2964D /* SF.geojson */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28A368E51588F77900C0B779 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		4325108315604AE300165623 /* WWDCTransit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4325108715604AE300165623 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4325108915604AE300165623 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4325108B15604AE300165623 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4325108F15604AE300165623 /* WWDCTransit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WWDCTransit-Info.plist"; sourceTree = "<group>"; };
+		4325109115604AE300165623 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4325109315604AE300165623 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4325109515604AE300165623 /* WWDCTransit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWDCTransit-Prefix.pch"; sourceTree = "<group>"; };
+		4325109615604AE300165623 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4325109715604AE300165623 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4325109915604AE300165623 /* WWDCTransit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WWDCTransit.entitlements; sourceTree = "<group>"; };
+		432510A215604CF600165623 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		432510A315604CF600165623 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		432510A415604CF600165623 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		432510A715604ED500165623 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4348FA5A1560818000D308B8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4377D59F15685446004EDDA2 /* station.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station.png; sourceTree = "<group>"; };
+		43B81B3D156898BD00AB7961 /* station@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station@2x.png"; sourceTree = "<group>"; };
+		43C076F2156085C200A3AAAB /* agency.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = agency.txt; sourceTree = "<group>"; };
+		43C076F3156085C200A3AAAB /* calendar.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar.txt; sourceTree = "<group>"; };
+		43C076F4156085C200A3AAAB /* calendar_dates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar_dates.txt; sourceTree = "<group>"; };
+		43C076F5156085C200A3AAAB /* fare_attributes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fare_attributes.txt; sourceTree = "<group>"; };
+		43C076F6156085C200A3AAAB /* fare_rules.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fare_rules.txt; sourceTree = "<group>"; };
+		43C076F7156085C200A3AAAB /* routes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routes.txt; sourceTree = "<group>"; };
+		43C076F8156085C200A3AAAB /* shapes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shapes.txt; sourceTree = "<group>"; };
+		43C076F9156085C200A3AAAB /* stop_times.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stop_times.txt; sourceTree = "<group>"; };
+		43C076FA156085C200A3AAAB /* stops.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stops.txt; sourceTree = "<group>"; };
+		43C076FB156085C200A3AAAB /* trips.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trips.txt; sourceTree = "<group>"; };
+		43C077071560867E00A3AAAB /* TransitInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitInfo.h; sourceTree = "<group>"; };
+		43C077081560867E00A3AAAB /* TransitInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitInfo.m; sourceTree = "<group>"; };
+		43C0770A1560878600A3AAAB /* TransitStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitStop.h; sourceTree = "<group>"; };
+		43C0770B1560878600A3AAAB /* TransitStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitStop.m; sourceTree = "<group>"; };
+		43C0772615609C9400A3AAAB /* DirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionsViewController.h; sourceTree = "<group>"; };
+		43C0772715609C9400A3AAAB /* DirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionsViewController.m; sourceTree = "<group>"; };
+		43C0772815609C9400A3AAAB /* DirectionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DirectionsViewController.xib; sourceTree = "<group>"; };
+		43C0772B1560A84400A3AAAB /* MyPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPlace.h; sourceTree = "<group>"; };
+		43C0772C1560A84400A3AAAB /* MyPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPlace.m; sourceTree = "<group>"; };
+		43C0772E1560C97600A3AAAB /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		43C0772F1560C97600A3AAAB /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		43C077311560D18300A3AAAB /* TransitTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitTrip.h; sourceTree = "<group>"; };
+		43C077321560D18300A3AAAB /* TransitTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitTrip.m; sourceTree = "<group>"; };
+		43C077341561706000A3AAAB /* TransitShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitShape.h; sourceTree = "<group>"; };
+		43C077351561706000A3AAAB /* TransitShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitShape.m; sourceTree = "<group>"; };
+		C92B39991575555C00E2964D /* SF.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SF.geojson; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4325108015604AE300165623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4348FA5B1560818000D308B8 /* CoreLocation.framework in Frameworks */,
+				432510A815604ED500165623 /* MapKit.framework in Frameworks */,
+				4325108815604AE300165623 /* UIKit.framework in Frameworks */,
+				4325108A15604AE300165623 /* Foundation.framework in Frameworks */,
+				4325108C15604AE300165623 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4325107815604AE300165623 = {
+			isa = PBXGroup;
+			children = (
+				28A368E51588F77900C0B779 /* ReadMe.txt */,
+				4325108D15604AE300165623 /* WWDCTransit */,
+				4325108615604AE300165623 /* Frameworks */,
+				4325108415604AE300165623 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4325108415604AE300165623 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4325108315604AE300165623 /* WWDCTransit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4325108615604AE300165623 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4348FA5A1560818000D308B8 /* CoreLocation.framework */,
+				432510A715604ED500165623 /* MapKit.framework */,
+				4325108715604AE300165623 /* UIKit.framework */,
+				4325108915604AE300165623 /* Foundation.framework */,
+				4325108B15604AE300165623 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4325108D15604AE300165623 /* WWDCTransit */ = {
+			isa = PBXGroup;
+			children = (
+				4325109615604AE300165623 /* AppDelegate.h */,
+				4325109715604AE300165623 /* AppDelegate.m */,
+				432510A215604CF600165623 /* MapViewController.h */,
+				432510A315604CF600165623 /* MapViewController.m */,
+				43C0772615609C9400A3AAAB /* DirectionsViewController.h */,
+				43C0772715609C9400A3AAAB /* DirectionsViewController.m */,
+				43C0772B1560A84400A3AAAB /* MyPlace.h */,
+				43C0772C1560A84400A3AAAB /* MyPlace.m */,
+				43C0772E1560C97600A3AAAB /* Route.h */,
+				43C0772F1560C97600A3AAAB /* Route.m */,
+				432510A415604CF600165623 /* MapViewController.xib */,
+				43C0772815609C9400A3AAAB /* DirectionsViewController.xib */,
+				C92B39991575555C00E2964D /* SF.geojson */,
+				4353BF9C15649BF600C28252 /* Transit Classes */,
+				4325108E15604AE300165623 /* Supporting Files */,
+			);
+			path = WWDCTransit;
+			sourceTree = "<group>";
+		};
+		4325108E15604AE300165623 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4377D59F15685446004EDDA2 /* station.png */,
+				43B81B3D156898BD00AB7961 /* station@2x.png */,
+				43C076F1156085C200A3AAAB /* Transit Data */,
+				4325108F15604AE300165623 /* WWDCTransit-Info.plist */,
+				4325109015604AE300165623 /* InfoPlist.strings */,
+				4325109315604AE300165623 /* main.m */,
+				4325109515604AE300165623 /* WWDCTransit-Prefix.pch */,
+				4325109915604AE300165623 /* WWDCTransit.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4353BF9C15649BF600C28252 /* Transit Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43C077071560867E00A3AAAB /* TransitInfo.h */,
+				43C077081560867E00A3AAAB /* TransitInfo.m */,
+				43C0770A1560878600A3AAAB /* TransitStop.h */,
+				43C0770B1560878600A3AAAB /* TransitStop.m */,
+				43C077311560D18300A3AAAB /* TransitTrip.h */,
+				43C077321560D18300A3AAAB /* TransitTrip.m */,
+				43C077341561706000A3AAAB /* TransitShape.h */,
+				43C077351561706000A3AAAB /* TransitShape.m */,
+			);
+			name = "Transit Classes";
+			sourceTree = "<group>";
+		};
+		43C076F1156085C200A3AAAB /* Transit Data */ = {
+			isa = PBXGroup;
+			children = (
+				43C076F2156085C200A3AAAB /* agency.txt */,
+				43C076F3156085C200A3AAAB /* calendar.txt */,
+				43C076F4156085C200A3AAAB /* calendar_dates.txt */,
+				43C076F5156085C200A3AAAB /* fare_attributes.txt */,
+				43C076F6156085C200A3AAAB /* fare_rules.txt */,
+				43C076F7156085C200A3AAAB /* routes.txt */,
+				43C076F8156085C200A3AAAB /* shapes.txt */,
+				43C076F9156085C200A3AAAB /* stop_times.txt */,
+				43C076FA156085C200A3AAAB /* stops.txt */,
+				43C076FB156085C200A3AAAB /* trips.txt */,
+			);
+			name = "Transit Data";
+			path = GTFS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4325108215604AE300165623 /* WWDCTransit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4325109D15604AE300165623 /* Build configuration list for PBXNativeTarget "WWDCTransit" */;
+			buildPhases = (
+				4325107F15604AE300165623 /* Sources */,
+				4325108015604AE300165623 /* Frameworks */,
+				4325108115604AE300165623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WWDCTransit;
+			productName = WWDCTransit;
+			productReference = 4325108315604AE300165623 /* WWDCTransit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4325107A15604AE300165623 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Apple, Inc";
+			};
+			buildConfigurationList = 4325107D15604AE300165623 /* Build configuration list for PBXProject "WWDCTransit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4325107815604AE300165623;
+			productRefGroup = 4325108415604AE300165623 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4325108215604AE300165623 /* WWDCTransit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4325108115604AE300165623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4325109215604AE300165623 /* InfoPlist.strings in Resources */,
+				4325109A15604AE300165623 /* WWDCTransit.entitlements in Resources */,
+				432510A615604CF600165623 /* MapViewController.xib in Resources */,
+				43C076FC156085C200A3AAAB /* agency.txt in Resources */,
+				43C076FD156085C200A3AAAB /* calendar.txt in Resources */,
+				43C076FE156085C200A3AAAB /* calendar_dates.txt in Resources */,
+				43C076FF156085C200A3AAAB /* fare_attributes.txt in Resources */,
+				43C07700156085C200A3AAAB /* fare_rules.txt in Resources */,
+				43C07701156085C200A3AAAB /* routes.txt in Resources */,
+				43C07702156085C200A3AAAB /* shapes.txt in Resources */,
+				43C07703156085C200A3AAAB /* stop_times.txt in Resources */,
+				43C07704156085C200A3AAAB /* stops.txt in Resources */,
+				43C07705156085C200A3AAAB /* trips.txt in Resources */,
+				43C0772A15609C9400A3AAAB /* DirectionsViewController.xib in Resources */,
+				4377D5A015685446004EDDA2 /* station.png in Resources */,
+				43B81B3E156898BD00AB7961 /* station@2x.png in Resources */,
+				C92B399A1575555C00E2964D /* SF.geojson in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4325107F15604AE300165623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4325109415604AE300165623 /* main.m in Sources */,
+				4325109815604AE300165623 /* AppDelegate.m in Sources */,
+				432510A515604CF600165623 /* MapViewController.m in Sources */,
+				43C077091560867E00A3AAAB /* TransitInfo.m in Sources */,
+				43C0770C1560878600A3AAAB /* TransitStop.m in Sources */,
+				43C0772915609C9400A3AAAB /* DirectionsViewController.m in Sources */,
+				43C0772D1560A84400A3AAAB /* MyPlace.m in Sources */,
+				43C077301560C97600A3AAAB /* Route.m in Sources */,
+				43C077331560D18400A3AAAB /* TransitTrip.m in Sources */,
+				43C077361561706000A3AAAB /* TransitShape.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4325109015604AE300165623 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4325109115604AE300165623 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4325109B15604AE300165623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4325109C15604AE300165623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4325109E15604AE300165623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WWDCTransit/WWDCTransit.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WWDCTransit/WWDCTransit-Prefix.pch";
+				INFOPLIST_FILE = "WWDCTransit/WWDCTransit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4325109F15604AE300165623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WWDCTransit/WWDCTransit.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WWDCTransit/WWDCTransit-Prefix.pch";
+				INFOPLIST_FILE = "WWDCTransit/WWDCTransit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4325107D15604AE300165623 /* Build configuration list for PBXProject "WWDCTransit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4325109B15604AE300165623 /* Debug */,
+				4325109C15604AE300165623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4325109D15604AE300165623 /* Build configuration list for PBXNativeTarget "WWDCTransit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4325109E15604AE300165623 /* Debug */,
+				4325109F15604AE300165623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4325107A15604AE300165623 /* Project object */;
+}

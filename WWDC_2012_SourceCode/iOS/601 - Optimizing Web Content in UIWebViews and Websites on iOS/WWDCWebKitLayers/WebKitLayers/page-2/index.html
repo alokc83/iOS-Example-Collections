@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+ File: index.html
+ 
+ Abstract: Example page showing a flashing content issue easily detectable with tools.
+ 
+ Version: 1.0
+ 
+ Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
+ Apple Inc. ("Apple") in consideration of your agreement to the
+ following terms, and your use, installation, modification or
+ redistribution of this Apple software constitutes acceptance of these
+ terms.  If you do not agree with these terms, please do not use,
+ install, modify or redistribute this Apple software.
+ 
+ In consideration of your agreement to abide by the following terms, and
+ subject to these terms, Apple grants you a personal, non-exclusive
+ license, under Apple's copyrights in this original Apple software (the
+ "Apple Software"), to use, reproduce, modify and redistribute the Apple
+ Software, with or without modifications, in source and/or binary forms;
+ provided that if you redistribute the Apple Software in its entirety and
+ without modifications, you must retain this notice and the following
+ text and disclaimers in all such redistributions of the Apple Software. 
+ Neither the name, trademarks, service marks or logos of Apple Inc. 
+ may be used to endorse or promote products derived from the Apple
+ Software without specific prior written permission from Apple.  Except
+ as expressly stated in this notice, no other rights or licenses, express
+ or implied, are granted by Apple herein, including but not limited to
+ any patent rights that may be infringed by your derivative works or by
+ other works in which the Apple Software may be incorporated.
+ 
+ The Apple Software is provided by Apple on an "AS IS" basis.  APPLE
+ MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
+ THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND
+ OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS.
+ 
+ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL
+ OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION,
+ MODIFICATION AND/OR DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED
+ AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
+ STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ 
+ Copyright (C) 2012 Apple Inc. All Rights Reserved.
+-->
+<html>
+<head>
+    <title>Accidental Layers</title>
+    <meta name="viewport" content="width=800">
+    <style>
+        body {
+            background-color: rgb(124, 184, 231);
+        }
+        #background {
+            background-image: -webkit-linear-gradient(rgb(220, 240, 250),rgb(124, 184, 231)); /* Realistic */
+            background-image: -webkit-linear-gradient(white,rgb(124, 184, 231)); /* Easier to demo, more noticable */
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+            background-size: 1px 128px;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            width: 100%;
+            height: 128px;
+        }
+        #content {
+            margin: auto;
+            margin-top: 75px;
+            width: 600px;            
+            font-family: Helvetica, sans-serif;
+            font-size: 13pt;
+            line-height: 21px;
+        }
+    </style>
+</head>
+<body>
+    <div id="background"></div>
+    <div id="content">
+        <h2>Lorem ipsum dolor sit amet 2</h2>
+        <p>Ligula urna morbi ut esse blandit rutrum, litora dui justo, metus velit blandit wisi, justo aliquet morbi lectus leo bibendum, pretium convallis velit praesent gravida. Magna voluptatem iaculis interdum ornare donec, diam quisque eros arcu, in vel, egestas ultrices elit vestibulum, justo neque consequat erat. Facilisis id wisi augue viverra, aliquet tempor sed, nam non turpis interdum. Ut aliquid dolor tincidunt purus. Non a, dolor sapien mi, faucibus faucibus massa id elementum orci, tincidunt in, bibendum sit sollicitudin semper ac velit. Qui quam scelerisque rutrum sed, posuere ligula iste sed nunc, sed voluptate eros odio a, nibh non fusce proin, fringilla bibendum eu justo nisl vivamus tempor.</p>
+        <p>Sodales rutrum fuga. Diam auctor at ultrices rutrum nec ultrices. Nibh rutrum turpis ligula praesent curabitur. Eros volutpat, at cras eget ante integer urna per, et non donec integer egestas ultricies nibh, libero mauris sed, enim pellentesque massa. Risus sodales, pede sit luctus, non id nec, donec quam, sed scelerisque morbi iaculis. A interdum nascetur, ut sollicitudin nulla enim faucibus nam vel, cursus urna pellentesque hac mattis luctus mauris, nascetur nunc curabitur nibh arcu, massa ad tortor pellentesque eget orci. Suscipit penatibus ac nibh, malesuada dolor rhoncus tortor, iste pellentesque, nulla ac pretium. Nunc euismod elit commodo, tempor nam eros neque quis.</p>
+        <p>Volutpat nulla ut et suspendisse, lorem ante sapien pharetra venenatis amet. Vestibulum sed pellentesque lectus, metus rhoncus diam integer et laoreet, risus rhoncus, mus vestibulum metus vestibulum pulvinar mus leo. Eget ligula suspendisse sed diam sit risus, consequat ut fringilla viverra potenti hymenaeos adipiscing. Sapien nullam eu fusce egestas. Pharetra vel consectetuer amet, ad turpis enim vulputate penatibus ornare dictum, id proin purus sed. Lectus amet sapien. Praesent eu aptent sed rutrum in et, id eget ac, volutpat vestibulum. Ut morbi integer aliquam magna, est quis, magna ac ultricies nullam cursus proin. Mauris magnis ligula magna metus, in sed sit.</p>
+        <p>Purus arcu volutpat amet ultrices convallis, dolor eleifend felis viverra enim sit nunc, aliquet tincidunt nibh ante sed quis. Ipsum leo aenean scelerisque lacinia ligula lobortis, luctus at, dolor wisi molestie neque mollis porta pede, elementum sociis lorem, ullamcorper felis quis. In nisl commodo vel gravida, blandit amet, nulla suspendisse mauris nulla quam class vitae. Tempus duis sodales sed diam, tempor lorem, vitae vivamus. At eget class, amet eros ut est aenean mattis vel, vel vel pede condimentum id pede, sed massa, lorem ante neque vitae pharetra eget elementum. Quam nostra libero lacus, amet eget molestie ultricies nisl, vel congue at in. Adipiscing et, dapibus lorem maecenas, sed adipiscing aliquam egestas eu eu pellentesque. Orci tellus proin vestibulum maiores maecenas, duis urna, placerat vehicula arcu risus habitasse integer facilisis. Pulvinar mauris.</p>
+        <p>Volutpat erat nullam vestibulum, luctus vestibulum nec volutpat purus porttitor a, et id luctus ligula curabitur urna nibh, in aliquam. Ac dolor nisl consequuntur aliquam, tempor nulla turpis, nec a ligula. Sed justo justo, proin in laoreet. Malesuada nec tellus luctus consequat vitae, mauris volutpat luctus ultrices consequat, mi lectus, egestas viverra a aenean viverra. Ligula dapibus facilisis, pede posuere nascetur aliquet nam neque blandit, vitae ultrices molestie scelerisque ullamcorper. Neque blandit a quis tincidunt viverra. Convallis mi tempus et porttitor vestibulum rhoncus, in egestas purus et vel suspendisse.</p>
+        <p>Vitae nullam at proin bibendum. Etiam dui, turpis suspendisse urna, augue adipiscing dolor. Interdum donec cras ornare, quam maecenas nisl hymenaeos vitae ut eget, phasellus morbi mauris ut. Risus scelerisque id. Felis nunc egestas ornare, leo sed malesuada, eu sollicitudin, fermentum leo nam eu mi enim mauris, varius libero venenatis sodales tempus adipiscing sed. Morbi urna ullamcorper sodales cursus, sit cras in bibendum nostra ut, fermentum felis semper in odio iaculis, consequat odio sit justo. In mauris volutpat sapien, porttitor possimus erat pellentesque.</p>
+        <p>Nobis libero a, etiam molestie scelerisque. Urna lacus lacinia justo, est erat, volutpat maecenas eros nonummy arcu, in viverra a orci integer ante. Leo ac, sit reprehenderit morbi ligula hac et dictum, at duis ut ipsum vestibulum, cras tellus porta. Tortor interdum quis porttitor. Augue justo per suspendisse sapien erat, aliquam in dictum, magna sed metus facilisi nulla eu. Eros molestie vivamus cursus dapibus lorem, dolor luctus, aptent commodo wisi cubilia in arcu est.</p>
+        <p>Auctor vel lacinia dui wisi nunc venenatis, enim accumsan bibendum, varius amet, nec fringilla sed semper, at vestibulum ad cras elit sed vestibulum. Nullam phasellus amet sit lobortis, praesent lacinia velit luctus, in neque purus, sapien pellentesque. Integer pellentesque, mauris sapien nulla vitae enim. Elementum sed posuere, ultrices condimentum enim. Vestibulum ipsum consectetuer, aliquet amet et libero, nullam donec amet litora. A erat aliquam diam class blandit, senectus gravida vel volutpat vitae sapien vel, metus suscipit, eget viverra. Vestibulum rhoncus nec a nibh massa, pede quis sociis id repudiandae, ligula elit neque per ullamcorper laborum aliquam, suspendisse integer.</p>
+        <p>Donec a parturient mauris eget. Nunc mauris id dolor ac, pede arcu risus nibh quam. Imperdiet turpis. Condimentum mauris auctor per, massa et sagittis et pulvinar phasellus, tortor risus justo mattis dolor, volutpat nulla quam vestibulum et semper. Eros consectetuer sit condimentum, ac sit, egestas montes. Eros per orci, vitae nec pede a elementum vivamus, lacus turpis rhoncus laudantium, auctor dui.</p>
+        <p>Condimentum elementum lorem quis lorem, rutrum nam hac in cursus. Laoreet lectus dui maecenas tempus, est pellentesque metus arcu fringilla nec donec, sit id tristique pellentesque, dapibus eget etiam eget fringilla et pede, suspendisse quisque vel wisi arcu sed. Vivamus blandit nonummy felis congue nisl eget, et convallis nulla at scelerisque et iaculis. Non est mauris faucibus risus, tortor et aenean sollicitudin nec ullamcorper, tempus in molestie magnis maecenas ut duis, ut nunc vestibulum integer. Tristique viverra etiam vel nunc ipsum duis, mauris sed volutpat justo in in est, rutrum viverra cursus enim justo sodales scelerisque. Morbi vel sollicitudin magna sem, ac laoreet, lorem in, vestibulum urna ultrices. Nunc fermentum, aliquam wisi elementum augue, sit fermentum interdum.</p>
+    </div>    
+</body>
+</html>

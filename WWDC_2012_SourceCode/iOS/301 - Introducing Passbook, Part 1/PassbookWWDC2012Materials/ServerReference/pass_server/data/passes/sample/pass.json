@@ -1,0 +1,94 @@
+{
+  "barcode": {
+    "messageEncoding": "iso-8859-1",
+    "format": "PKBarcodeFormatPDF417",
+    "message": "AAAAAAaaaaa@@@@11111,: Ã©Ã©Ã©Ã©Ã©:::::11111"
+  },
+  "locations": [
+    {
+      "longitude": -122.3748889,
+      "latitude": 37.6189722
+    },
+    {
+      "longitude": -122.03118,
+      "latitude": 37.33182
+    }
+  ],
+  "passTypeIdentifier": "WillBeReplacedByScript",
+  "webServiceURL": "http://WillBeReplacedByScript.local:4567/",
+  "formatVersion": 1,
+  "relevantDate": "2011-12-08T13:00-08:00",
+  "teamIdentifier": "DK9N2M2GK6",
+  "authenticationToken": "30c4cb4ba863fa9d7687959d8fbc6f0c",
+  "boardingPass": {
+    "auxiliaryFields": [
+      {
+        "value": "22:30",
+        "label": "BOARDS",
+        "changeMessage": "Boarding time changed to %@.",
+        "key": "boardingTime"
+      },
+      {
+        "value": "LH451",
+        "label": "FLIGHT",
+        "changeMessage": "Flight number changed to %@",
+        "key": "flightNewName"
+      },
+      {
+        "value": "First",
+        "label": "DESIG.",
+        "key": "class"
+      },
+      {
+        "value": "03/14",
+        "label": "DATE",
+        "key": "date"
+      }
+    ],
+    "transitType": "PKTransitTypeAir",
+    "secondaryFields": [
+      {
+        "value": "Johnny Appleseed",
+        "label": "PASSENGER",
+        "key": "passenger"
+      }
+    ],
+    "primaryFields": [
+      {
+        "value": "SFO",
+        "label": "SAN FRANCISCO",
+        "key": "origin"
+      },
+      {
+        "value": "JFK",
+        "label": "NEW YORK",
+        "key": "destination"
+      }
+    ],
+    "backFields": [
+      {
+        "value": "USA",
+        "label": "PASSPORT",
+        "key": "passport"
+      },
+      {
+        "value": "Extension of Validity\nIf after having commenced your journey, you are prevented from traveling within the period of validity of the Ticket by reason of illness, we may extend the period of validity of your Ticket until the date when you become fit to travel or until our first flight after such date, from the point where the journey is resumed on which space is available in the class of service for which the fare has been paid. Such illness must be attested to by a medical certificate. When the flight coupons remaining in the Ticket involve one or more Stopovers, the validity of such Ticket may be extended for not more than three months from the date shown on such a certificate. In such circumstances, we will similarly extend the period of validity of Tickets of the other members of your immediate family accompanying you.",
+        "label": "TERMS",
+        "key": "terms"
+      }
+    ],
+    "headerFields": [
+      {
+        "value": "29",
+        "label": "GATE",
+        "changeMessage": "Gate changed to %@.",
+        "key": "gate"
+      }
+    ]
+  },
+  "foregroundColor": "rgb(22, 55, 110)",
+  "backgroundColor": "rgb(50, 91, 185)",
+  "logoText": "Skyport Airways",
+  "serialNumber": "sample",
+  "organizationName": "Skyport Airways"
+}

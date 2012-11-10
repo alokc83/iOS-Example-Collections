@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  AccessibilityUIExamples
+
+  Created by Patti Hoa on 5/10/12.
+  Copyright (c) 2012 Apple Inc. All rights reserved.
+*/
+
+
+"APPLE" = "Apple";
+"AUTO" = "auto";
+"OFF" = "off";
+"ON" = "on";
+"SWITCH" = "switch";
+"SWITCH_HINT" = "A three position switch with off, on, and auto options.";
+"INCREASE_PRESS_COUNT" = "Increase press count.";
+"VOLUME" = "volume";
+"VOLUME_FORMATTER" = "Volume: %@";
+"VOLUME_STEPPER_HINT" = "Adjusts the volume";
+"PRESS_COUNT_FORMATTER" = "Press count: %@";

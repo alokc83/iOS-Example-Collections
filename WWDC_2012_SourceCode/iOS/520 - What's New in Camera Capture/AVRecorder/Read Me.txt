@@ -1,0 +1,50 @@
+Read Me About AVRecorder
+========================
+2.0
+
+AVRecorder demonstrates usage of AV Foundation capture API for recording movies and using transport controls.
+
+AVRecorder runs on Mac OS X 10.8 and later.
+
+Packing List
+------------
+The sample contains the following items:
+
+• Read Me.txt -- This file
+• AVRecorder.xcodeproj -- An Xcode project for the sample
+• AVRecorderDocument.[h,m] -- The core AVRecorder code
+• AVCaptureDeviceFormat_AVRecorderAdditions.[h,m] -- Prints a pretty device format NSString
+• AVFrameRateRange_AVRecorderAdditions.[h,m] -- Prints a pretty frame rate NSString
+• main.m -- Creates the app object and the application delegate and sets up the event cycle
+• Resources -- Contains the application xib files and image files for the user interface
+
+Building the Sample
+-------------------
+AVRecorder was built with Xcode 4.5 on Mac OS X 10.8. To build the app, open the project and choose Build from the Product menu.
+
+Using the Sample
+----------------
+Begin and complete video recording with the Record button. If the selected video device supports transport controls, use the Rewind, Play, Stop, and FF buttons to control the tape.
+
+How It Works
+------------
+
+AVRecorder makes use of the following AV Foundation AVCapture classes to provide movie recording:
+
+AVCaptureDevice
+AVCaptureFileOutput
+AVCaptureInput
+AVCaptureMovieFileOutput
+AVCaptureOutput
+AVCaptureSession
+AVCaptureVideoPreviewLayer
+
+See the AV Foundation documentation for more information.
+
+Credits and Version History
+---------------------------
+If you find any problems with this sample, please file a bug against it at <http://developer.apple.com/bugreporter/>.
+
+1.0: Initial version.
+2.0: Added device format, video frame rate range, and lock video device for configuration UI.
+	 Added the captureOutputShouldProvideSampleAccurateRecordingStart: required delegate method for lower power consumption.

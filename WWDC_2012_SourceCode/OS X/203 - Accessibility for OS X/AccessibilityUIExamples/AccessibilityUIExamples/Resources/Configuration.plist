@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Controllers</key>
+	<array>
+		<dict>
+			<key>Class</key>
+			<string>StandardButtonViewController</string>
+			<key>Title</key>
+			<string>NSButton with Text</string>
+			<key>Hide</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>StandardImageButtonViewController</string>
+			<key>Title</key>
+			<string>NSButton with Image</string>
+			<key>Hide</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>CustomButtonViewController</string>
+			<key>Title</key>
+			<string>Custom Button</string>
+			<key>Hide</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>IdealCustomButtonViewController</string>
+			<key>Title</key>
+			<string>Custom Button (Ideal)</string>
+			<key>Hide</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>CoreTextArcViewController</string>
+			<key>Title</key>
+			<string>CoreText Arc</string>
+			<key>Hide</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>CoreTextColumnViewController</string>
+			<key>Title</key>
+			<string>CoreText Columns</string>
+			<key>Hide</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>CustomStepperViewController</string>
+			<key>Title</key>
+			<string>Custom Stepper</string>
+			<key>Hide</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>ThreePositionSwitchViewController</string>
+			<key>Title</key>
+			<string>3-Position Switch</string>
+			<key>Hide</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>

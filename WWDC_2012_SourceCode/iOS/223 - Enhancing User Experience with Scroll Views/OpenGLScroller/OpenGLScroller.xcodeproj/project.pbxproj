@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C92301181578900300F52C20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92301171578900300F52C20 /* UIKit.framework */; };
+		C923011A1578900300F52C20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92301191578900300F52C20 /* Foundation.framework */; };
+		C923011C1578900300F52C20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C923011B1578900300F52C20 /* CoreGraphics.framework */; };
+		C92301221578900300F52C20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C92301201578900300F52C20 /* InfoPlist.strings */; };
+		C92301241578900300F52C20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C92301231578900300F52C20 /* main.m */; };
+		C92301281578900300F52C20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C92301271578900300F52C20 /* AppDelegate.m */; };
+		C923012A1578900300F52C20 /* OpenGLScroller.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = C92301291578900300F52C20 /* OpenGLScroller.entitlements */; };
+		C923012D1578900300F52C20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C923012C1578900300F52C20 /* ViewController.m */; };
+		C92301301578900300F52C20 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C923012E1578900300F52C20 /* ViewController.xib */; };
+		C92301381578903E00F52C20 /* CubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C92301371578903E00F52C20 /* CubeView.m */; };
+		C923013C1578920500F52C20 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92301391578920500F52C20 /* QuartzCore.framework */; };
+		C923013D1578920500F52C20 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C923013A1578920500F52C20 /* GLKit.framework */; };
+		C923013E1578920500F52C20 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C923013B1578920500F52C20 /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28B8D5E61581A06200386DDB /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		C92301131578900300F52C20 /* OpenGLScroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLScroller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92301171578900300F52C20 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C92301191578900300F52C20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C923011B1578900300F52C20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C923011F1578900300F52C20 /* OpenGLScroller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenGLScroller-Info.plist"; sourceTree = "<group>"; };
+		C92301211578900300F52C20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C92301231578900300F52C20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C92301251578900300F52C20 /* OpenGLScroller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenGLScroller-Prefix.pch"; sourceTree = "<group>"; };
+		C92301261578900300F52C20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C92301271578900300F52C20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C92301291578900300F52C20 /* OpenGLScroller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OpenGLScroller.entitlements; sourceTree = "<group>"; };
+		C923012B1578900300F52C20 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C923012C1578900300F52C20 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C923012F1578900300F52C20 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		C92301361578903E00F52C20 /* CubeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeView.h; sourceTree = "<group>"; };
+		C92301371578903E00F52C20 /* CubeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeView.m; sourceTree = "<group>"; };
+		C92301391578920500F52C20 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C923013A1578920500F52C20 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C923013B1578920500F52C20 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C92301101578900300F52C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92301181578900300F52C20 /* UIKit.framework in Frameworks */,
+				C923011A1578900300F52C20 /* Foundation.framework in Frameworks */,
+				C923011C1578900300F52C20 /* CoreGraphics.framework in Frameworks */,
+				C923013C1578920500F52C20 /* QuartzCore.framework in Frameworks */,
+				C923013D1578920500F52C20 /* GLKit.framework in Frameworks */,
+				C923013E1578920500F52C20 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C92301081578900300F52C20 = {
+			isa = PBXGroup;
+			children = (
+				28B8D5E61581A06200386DDB /* ReadMe.txt */,
+				C923011D1578900300F52C20 /* OpenGLScroller */,
+				C92301161578900300F52C20 /* Frameworks */,
+				C92301141578900300F52C20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C92301141578900300F52C20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C92301131578900300F52C20 /* OpenGLScroller.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C92301161578900300F52C20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C92301391578920500F52C20 /* QuartzCore.framework */,
+				C923013A1578920500F52C20 /* GLKit.framework */,
+				C923013B1578920500F52C20 /* OpenGLES.framework */,
+				C92301171578900300F52C20 /* UIKit.framework */,
+				C92301191578900300F52C20 /* Foundation.framework */,
+				C923011B1578900300F52C20 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C923011D1578900300F52C20 /* OpenGLScroller */ = {
+			isa = PBXGroup;
+			children = (
+				C92301261578900300F52C20 /* AppDelegate.h */,
+				C92301271578900300F52C20 /* AppDelegate.m */,
+				C923012B1578900300F52C20 /* ViewController.h */,
+				C923012C1578900300F52C20 /* ViewController.m */,
+				C92301361578903E00F52C20 /* CubeView.h */,
+				C92301371578903E00F52C20 /* CubeView.m */,
+				C923012E1578900300F52C20 /* ViewController.xib */,
+				C923011E1578900300F52C20 /* Supporting Files */,
+			);
+			path = OpenGLScroller;
+			sourceTree = "<group>";
+		};
+		C923011E1578900300F52C20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C923011F1578900300F52C20 /* OpenGLScroller-Info.plist */,
+				C92301201578900300F52C20 /* InfoPlist.strings */,
+				C92301231578900300F52C20 /* main.m */,
+				C92301251578900300F52C20 /* OpenGLScroller-Prefix.pch */,
+				C92301291578900300F52C20 /* OpenGLScroller.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C92301121578900300F52C20 /* OpenGLScroller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C92301331578900300F52C20 /* Build configuration list for PBXNativeTarget "OpenGLScroller" */;
+			buildPhases = (
+				C923010F1578900300F52C20 /* Sources */,
+				C92301101578900300F52C20 /* Frameworks */,
+				C92301111578900300F52C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLScroller;
+			productName = OpenGLScroller;
+			productReference = C92301131578900300F52C20 /* OpenGLScroller.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C923010A1578900300F52C20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Apple;
+			};
+			buildConfigurationList = C923010D1578900300F52C20 /* Build configuration list for PBXProject "OpenGLScroller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C92301081578900300F52C20;
+			productRefGroup = C92301141578900300F52C20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C92301121578900300F52C20 /* OpenGLScroller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C92301111578900300F52C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92301221578900300F52C20 /* InfoPlist.strings in Resources */,
+				C923012A1578900300F52C20 /* OpenGLScroller.entitlements in Resources */,
+				C92301301578900300F52C20 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C923010F1578900300F52C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92301241578900300F52C20 /* main.m in Sources */,
+				C92301281578900300F52C20 /* AppDelegate.m in Sources */,
+				C923012D1578900300F52C20 /* ViewController.m in Sources */,
+				C92301381578903E00F52C20 /* CubeView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C92301201578900300F52C20 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C92301211578900300F52C20 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C923012E1578900300F52C20 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C923012F1578900300F52C20 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C92301311578900300F52C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C92301321578900300F52C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C92301341578900300F52C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OpenGLScroller/OpenGLScroller.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenGLScroller/OpenGLScroller-Prefix.pch";
+				INFOPLIST_FILE = "OpenGLScroller/OpenGLScroller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C92301351578900300F52C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OpenGLScroller/OpenGLScroller.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenGLScroller/OpenGLScroller-Prefix.pch";
+				INFOPLIST_FILE = "OpenGLScroller/OpenGLScroller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C923010D1578900300F52C20 /* Build configuration list for PBXProject "OpenGLScroller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92301311578900300F52C20 /* Debug */,
+				C92301321578900300F52C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C92301331578900300F52C20 /* Build configuration list for PBXNativeTarget "OpenGLScroller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92301341578900300F52C20 /* Debug */,
+				C92301351578900300F52C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C923010A1578900300F52C20 /* Project object */;
+}

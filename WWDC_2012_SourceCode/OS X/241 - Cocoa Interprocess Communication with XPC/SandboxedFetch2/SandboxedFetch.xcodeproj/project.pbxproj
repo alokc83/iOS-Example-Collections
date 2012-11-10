@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAA4B258157AAB310042EB80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA4B257157AAB310042EB80 /* Foundation.framework */; };
+		EAA4B25E157AAB310042EB80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAA4B25C157AAB310042EB80 /* InfoPlist.strings */; };
+		EAA4B261157AAB310042EB80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4B260157AAB310042EB80 /* main.m */; };
+		EAA4B26B157AAB3D0042EB80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA4B257157AAB310042EB80 /* Foundation.framework */; };
+		EAA4B271157AAB3D0042EB80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAA4B26F157AAB3D0042EB80 /* InfoPlist.strings */; };
+		EAA4B274157AAB3D0042EB80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4B273157AAB3D0042EB80 /* main.m */; };
+		EAA4B279157AAB650042EB80 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA4B278157AAB650042EB80 /* libz.dylib */; };
+		EAA4B27B157AAB8C0042EB80 /* com.apple.SandboxedFetch.zip-service.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAA4B256157AAB310042EB80 /* com.apple.SandboxedFetch.zip-service.xpc */; };
+		EAA4B27C157AAB8C0042EB80 /* com.apple.SandboxedFetch.fetch-service.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAA4B26A157AAB3D0042EB80 /* com.apple.SandboxedFetch.fetch-service.xpc */; };
+		EAA4B27E157AABA80042EB80 /* zip-service.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = EAA4B27D157AABA80042EB80 /* zip-service.entitlements */; };
+		EAA4B280157AABB40042EB80 /* fetch-service.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = EAA4B27F157AABB40042EB80 /* fetch-service.entitlements */; };
+		EAA4B286157AADD40042EB80 /* Zipper.m in Sources */ = {isa = PBXBuildFile; fileRef = EA01625C1561B1E800A19C0F /* Zipper.m */; };
+		EAA4B287157AB9E40042EB80 /* Fetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0162591561B07500A19C0F /* Fetcher.m */; };
+		EE1E090A139185DE00E7CB7C /* SandboxedFetch-Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE1E0909139185DE00E7CB7C /* SandboxedFetch-Entitlements.plist */; };
+		EE46A7EF138FF60500EC693A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE46A7EE138FF60500EC693A /* Cocoa.framework */; };
+		EE46A7F9138FF60500EC693A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE46A7F7138FF60500EC693A /* InfoPlist.strings */; };
+		EE46A7FC138FF60500EC693A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE46A7FB138FF60500EC693A /* main.m */; };
+		EE46A802138FF60500EC693A /* SandboxedFetchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE46A801138FF60500EC693A /* SandboxedFetchAppDelegate.m */; };
+		EE46A805138FF60600EC693A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE46A803138FF60600EC693A /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EAA4B27A157AAB730042EB80 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/XPCServices;
+			dstSubfolderSpec = 1;
+			files = (
+				EAA4B27B157AAB8C0042EB80 /* com.apple.SandboxedFetch.zip-service.xpc in CopyFiles */,
+				EAA4B27C157AAB8C0042EB80 /* com.apple.SandboxedFetch.fetch-service.xpc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		286FC70A15869743000AF4CA /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		EA0162581561B07500A19C0F /* Fetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Fetcher.h; path = "fetch-service/Fetcher.h"; sourceTree = "<group>"; };
+		EA0162591561B07500A19C0F /* Fetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fetcher.m; sourceTree = "<group>"; };
+		EA01625B1561B1E800A19C0F /* Zipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Zipper.h; path = "zip-service/Zipper.h"; sourceTree = "<group>"; };
+		EA01625C1561B1E800A19C0F /* Zipper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zipper.m; sourceTree = "<group>"; };
+		EAA4B256157AAB310042EB80 /* com.apple.SandboxedFetch.zip-service.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "com.apple.SandboxedFetch.zip-service.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA4B257157AAB310042EB80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAA4B25B157AAB310042EB80 /* zip-service-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "zip-service-Info.plist"; sourceTree = "<group>"; };
+		EAA4B25D157AAB310042EB80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAA4B25F157AAB310042EB80 /* zip-service-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "zip-service-Prefix.pch"; sourceTree = "<group>"; };
+		EAA4B260157AAB310042EB80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAA4B26A157AAB3D0042EB80 /* com.apple.SandboxedFetch.fetch-service.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "com.apple.SandboxedFetch.fetch-service.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA4B26E157AAB3D0042EB80 /* fetch-service-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fetch-service-Info.plist"; sourceTree = "<group>"; };
+		EAA4B270157AAB3D0042EB80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAA4B272157AAB3D0042EB80 /* fetch-service-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fetch-service-Prefix.pch"; sourceTree = "<group>"; };
+		EAA4B273157AAB3D0042EB80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAA4B278157AAB650042EB80 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		EAA4B27D157AABA80042EB80 /* zip-service.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "zip-service.entitlements"; sourceTree = "<group>"; };
+		EAA4B27F157AABB40042EB80 /* fetch-service.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "fetch-service.entitlements"; sourceTree = "<group>"; };
+		EE1E0909139185DE00E7CB7C /* SandboxedFetch-Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SandboxedFetch-Entitlements.plist"; sourceTree = "<group>"; };
+		EE46A7EA138FF60500EC693A /* SandboxedFetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandboxedFetch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE46A7EE138FF60500EC693A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EE46A7F1138FF60500EC693A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		EE46A7F2138FF60500EC693A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EE46A7F3138FF60500EC693A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE46A7F6138FF60500EC693A /* SandboxedFetch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SandboxedFetch-Info.plist"; sourceTree = "<group>"; };
+		EE46A7F8138FF60500EC693A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE46A7FA138FF60500EC693A /* SandboxedFetch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SandboxedFetch-Prefix.pch"; sourceTree = "<group>"; };
+		EE46A7FB138FF60500EC693A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE46A800138FF60500EC693A /* SandboxedFetchAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandboxedFetchAppDelegate.h; sourceTree = "<group>"; };
+		EE46A801138FF60500EC693A /* SandboxedFetchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandboxedFetchAppDelegate.m; sourceTree = "<group>"; };
+		EE46A804138FF60600EC693A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAA4B253157AAB310042EB80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA4B279157AAB650042EB80 /* libz.dylib in Frameworks */,
+				EAA4B258157AAB310042EB80 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA4B267157AAB3D0042EB80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA4B26B157AAB3D0042EB80 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE46A7E7138FF60500EC693A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE46A7EF138FF60500EC693A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAA4B259157AAB310042EB80 /* zip-service */ = {
+			isa = PBXGroup;
+			children = (
+				EAA4B260157AAB310042EB80 /* main.m */,
+				EA01625C1561B1E800A19C0F /* Zipper.m */,
+				EAA4B25A157AAB310042EB80 /* Supporting Files */,
+			);
+			path = "zip-service";
+			sourceTree = "<group>";
+		};
+		EAA4B25A157AAB310042EB80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAA4B278157AAB650042EB80 /* libz.dylib */,
+				EAA4B25B157AAB310042EB80 /* zip-service-Info.plist */,
+				EAA4B25C157AAB310042EB80 /* InfoPlist.strings */,
+				EAA4B25F157AAB310042EB80 /* zip-service-Prefix.pch */,
+				EAA4B27D157AABA80042EB80 /* zip-service.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAA4B26C157AAB3D0042EB80 /* fetch-service */ = {
+			isa = PBXGroup;
+			children = (
+				EAA4B273157AAB3D0042EB80 /* main.m */,
+				EA0162591561B07500A19C0F /* Fetcher.m */,
+				EAA4B26D157AAB3D0042EB80 /* Supporting Files */,
+			);
+			path = "fetch-service";
+			sourceTree = "<group>";
+		};
+		EAA4B26D157AAB3D0042EB80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAA4B26E157AAB3D0042EB80 /* fetch-service-Info.plist */,
+				EAA4B26F157AAB3D0042EB80 /* InfoPlist.strings */,
+				EAA4B272157AAB3D0042EB80 /* fetch-service-Prefix.pch */,
+				EAA4B27F157AABB40042EB80 /* fetch-service.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAA4B288157ABFC50042EB80 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				EA0162581561B07500A19C0F /* Fetcher.h */,
+				EA01625B1561B1E800A19C0F /* Zipper.h */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		EE46A7DF138FF60500EC693A = {
+			isa = PBXGroup;
+			children = (
+				286FC70A15869743000AF4CA /* ReadMe.rtf */,
+				EAA4B288157ABFC50042EB80 /* Interfaces */,
+				EE46A7F4138FF60500EC693A /* SandboxedFetch */,
+				EAA4B259157AAB310042EB80 /* zip-service */,
+				EAA4B26C157AAB3D0042EB80 /* fetch-service */,
+				EE46A7ED138FF60500EC693A /* Frameworks */,
+				EE46A7EB138FF60500EC693A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE46A7EB138FF60500EC693A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE46A7EA138FF60500EC693A /* SandboxedFetch.app */,
+				EAA4B256157AAB310042EB80 /* com.apple.SandboxedFetch.zip-service.xpc */,
+				EAA4B26A157AAB3D0042EB80 /* com.apple.SandboxedFetch.fetch-service.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE46A7ED138FF60500EC693A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE46A7EE138FF60500EC693A /* Cocoa.framework */,
+				EAA4B257157AAB310042EB80 /* Foundation.framework */,
+				EE46A7F0138FF60500EC693A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE46A7F0138FF60500EC693A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE46A7F1138FF60500EC693A /* AppKit.framework */,
+				EE46A7F2138FF60500EC693A /* CoreData.framework */,
+				EE46A7F3138FF60500EC693A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		EE46A7F4138FF60500EC693A /* SandboxedFetch */ = {
+			isa = PBXGroup;
+			children = (
+				EE46A800138FF60500EC693A /* SandboxedFetchAppDelegate.h */,
+				EE46A801138FF60500EC693A /* SandboxedFetchAppDelegate.m */,
+				EE46A803138FF60600EC693A /* MainMenu.xib */,
+				EE46A7F5138FF60500EC693A /* Supporting Files */,
+			);
+			path = SandboxedFetch;
+			sourceTree = "<group>";
+		};
+		EE46A7F5138FF60500EC693A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE1E0909139185DE00E7CB7C /* SandboxedFetch-Entitlements.plist */,
+				EE46A7F6138FF60500EC693A /* SandboxedFetch-Info.plist */,
+				EE46A7F7138FF60500EC693A /* InfoPlist.strings */,
+				EE46A7FA138FF60500EC693A /* SandboxedFetch-Prefix.pch */,
+				EE46A7FB138FF60500EC693A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAA4B255157AAB310042EB80 /* zip-service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA4B264157AAB310042EB80 /* Build configuration list for PBXNativeTarget "zip-service" */;
+			buildPhases = (
+				EAA4B252157AAB310042EB80 /* Sources */,
+				EAA4B253157AAB310042EB80 /* Frameworks */,
+				EAA4B254157AAB310042EB80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "zip-service";
+			productName = "zip-service";
+			productReference = EAA4B256157AAB310042EB80 /* com.apple.SandboxedFetch.zip-service.xpc */;
+			productType = "com.apple.product-type.bundle";
+		};
+		EAA4B269157AAB3D0042EB80 /* fetch-service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA4B275157AAB3D0042EB80 /* Build configuration list for PBXNativeTarget "fetch-service" */;
+			buildPhases = (
+				EAA4B266157AAB3D0042EB80 /* Sources */,
+				EAA4B267157AAB3D0042EB80 /* Frameworks */,
+				EAA4B268157AAB3D0042EB80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "fetch-service";
+			productName = "fetch-service";
+			productReference = EAA4B26A157AAB3D0042EB80 /* com.apple.SandboxedFetch.fetch-service.xpc */;
+			productType = "com.apple.product-type.bundle";
+		};
+		EE46A7E9138FF60500EC693A /* SandboxedFetch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE46A808138FF60600EC693A /* Build configuration list for PBXNativeTarget "SandboxedFetch" */;
+			buildPhases = (
+				EE46A7E6138FF60500EC693A /* Sources */,
+				EE46A7E7138FF60500EC693A /* Frameworks */,
+				EE46A7E8138FF60500EC693A /* Resources */,
+				EAA4B27A157AAB730042EB80 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SandboxedFetch;
+			productName = SandboxedFetch;
+			productReference = EE46A7EA138FF60500EC693A /* SandboxedFetch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE46A7E1138FF60500EC693A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = EE46A7E4138FF60500EC693A /* Build configuration list for PBXProject "SandboxedFetch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE46A7DF138FF60500EC693A;
+			productRefGroup = EE46A7EB138FF60500EC693A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE46A7E9138FF60500EC693A /* SandboxedFetch */,
+				EAA4B255157AAB310042EB80 /* zip-service */,
+				EAA4B269157AAB3D0042EB80 /* fetch-service */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAA4B254157AAB310042EB80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA4B25E157AAB310042EB80 /* InfoPlist.strings in Resources */,
+				EAA4B27E157AABA80042EB80 /* zip-service.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA4B268157AAB3D0042EB80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA4B271157AAB3D0042EB80 /* InfoPlist.strings in Resources */,
+				EAA4B280157AABB40042EB80 /* fetch-service.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE46A7E8138FF60500EC693A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE46A7F9138FF60500EC693A /* InfoPlist.strings in Resources */,
+				EE46A805138FF60600EC693A /* MainMenu.xib in Resources */,
+				EE1E090A139185DE00E7CB7C /* SandboxedFetch-Entitlements.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAA4B252157AAB310042EB80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA4B261157AAB310042EB80 /* main.m in Sources */,
+				EAA4B286157AADD40042EB80 /* Zipper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA4B266157AAB3D0042EB80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA4B274157AAB3D0042EB80 /* main.m in Sources */,
+				EAA4B287157AB9E40042EB80 /* Fetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE46A7E6138FF60500EC693A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE46A7FC138FF60500EC693A /* main.m in Sources */,
+				EE46A802138FF60500EC693A /* SandboxedFetchAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EAA4B25C157AAB310042EB80 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA4B25D157AAB310042EB80 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAA4B26F157AAB3D0042EB80 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA4B270157AAB3D0042EB80 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EE46A7F7138FF60500EC693A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE46A7F8138FF60500EC693A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EE46A803138FF60600EC693A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE46A804138FF60600EC693A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAA4B262157AAB310042EB80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "zip-service/zip-service.entitlements";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zip-service/zip-service-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "zip-service/zip-service-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "com.apple.SandboxedFetch.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Debug;
+		};
+		EAA4B263157AAB310042EB80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "zip-service/zip-service.entitlements";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zip-service/zip-service-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "zip-service/zip-service-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "com.apple.SandboxedFetch.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Release;
+		};
+		EAA4B276157AAB3D0042EB80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "fetch-service/fetch-service.entitlements";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fetch-service/fetch-service-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "fetch-service/fetch-service-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "com.apple.SandboxedFetch.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Debug;
+		};
+		EAA4B277157AAB3D0042EB80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "fetch-service/fetch-service.entitlements";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fetch-service/fetch-service-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "fetch-service/fetch-service-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "com.apple.SandboxedFetch.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Release;
+		};
+		EE46A806138FF60600EC693A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		EE46A807138FF60600EC693A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		EE46A809138FF60600EC693A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "SandboxedFetch/SandboxedFetch-Entitlements.plist";
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SandboxedFetch/SandboxedFetch-Prefix.pch";
+				INFOPLIST_FILE = "SandboxedFetch/SandboxedFetch-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EE46A80A138FF60600EC693A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "SandboxedFetch/SandboxedFetch-Entitlements.plist";
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SandboxedFetch/SandboxedFetch-Prefix.pch";
+				INFOPLIST_FILE = "SandboxedFetch/SandboxedFetch-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAA4B264157AAB310042EB80 /* Build configuration list for PBXNativeTarget "zip-service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA4B262157AAB310042EB80 /* Debug */,
+				EAA4B263157AAB310042EB80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAA4B275157AAB3D0042EB80 /* Build configuration list for PBXNativeTarget "fetch-service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA4B276157AAB3D0042EB80 /* Debug */,
+				EAA4B277157AAB3D0042EB80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE46A7E4138FF60500EC693A /* Build configuration list for PBXProject "SandboxedFetch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE46A806138FF60600EC693A /* Debug */,
+				EE46A807138FF60600EC693A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE46A808138FF60600EC693A /* Build configuration list for PBXNativeTarget "SandboxedFetch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE46A809138FF60600EC693A /* Debug */,
+				EE46A80A138FF60600EC693A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE46A7E1138FF60500EC693A /* Project object */;
+}

@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require 'sign_pass'
+require 'optparse'
+
+options = {}
+optparse = OptionParser.new do |opts|
+  # Set a banner, displayed at the top of the screen
+  opts.banner = "Usage: rsign_pass -p /path/to/pass/directory -c /path/to/ssl/certificate -w certififcate-password -o /path/for/output/file"
+  
+  options[:pass_path] = ""
+  opts.on('-p', '--pass FILE', String, 'Path to the pass directory') do |file|
+    puts file
+    options[:pass_path] = file
+  end
+  
+  opts.on('-c', '--certificate FILE', String, 'Path to the certificate') do |file|
+    options[:certificate] = file
+  end
+  
+  opts.on('-w', '--password PASSWORD', String, 'Certificate password') do |password|
+    options[:certificate_password] = password
+  end
+  
+  
+  opts.on('-o', '--output FILE', String, 'File location for the output') do |file|
+    options[:output] = file
+  end
+  
+  opts.on('-f', '--force', 'Force pass signing by removing manifest and signiture if needed') do |b|
+    options[:force_pass_signing] = b
+  end
+  
+  opts.on('-h', '--help', 'Display this screen') do 
+    puts opts
+    exit
+  end
+end
+optparse.parse!
+pass = SignPass.new(options[:pass_path], options[:certificate], options[:certificate_password], options[:output])
+puts options[:force_pass_signing]
+pass.sign_pass!(options[:force_pass_signing])

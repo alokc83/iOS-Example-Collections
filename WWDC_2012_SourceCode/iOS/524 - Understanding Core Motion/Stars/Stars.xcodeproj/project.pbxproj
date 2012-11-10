@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1052A6E158916350096C0AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1052A6D158916350096C0AF /* UIKit.framework */; };
+		E1052A70158916350096C0AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1052A6F158916350096C0AF /* Foundation.framework */; };
+		E1052A72158916350096C0AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1052A71158916350096C0AF /* CoreGraphics.framework */; };
+		E1052A74158916350096C0AF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1052A73158916350096C0AF /* GLKit.framework */; };
+		E1052A76158916350096C0AF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1052A75158916350096C0AF /* OpenGLES.framework */; };
+		E1052A7C158916350096C0AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1052A7A158916350096C0AF /* InfoPlist.strings */; };
+		E1052A7E158916350096C0AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1052A7D158916350096C0AF /* main.m */; };
+		E1052A82158916350096C0AF /* StarsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1052A81158916350096C0AF /* StarsAppDelegate.m */; };
+		E1052A85158916350096C0AF /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1052A83158916350096C0AF /* MainStoryboard_iPhone.storyboard */; };
+		E1052A88158916350096C0AF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1052A86158916350096C0AF /* MainStoryboard_iPad.storyboard */; };
+		E1052A8F158916350096C0AF /* StarsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1052A8E158916350096C0AF /* StarsViewController.m */; };
+		E1052AA0158923620096C0AF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1052A9E158923430096C0AF /* CoreMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E1052A69158916350096C0AF /* Stars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1052A6D158916350096C0AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E1052A6F158916350096C0AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E1052A71158916350096C0AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E1052A73158916350096C0AF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		E1052A75158916350096C0AF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E1052A79158916350096C0AF /* Stars-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stars-Info.plist"; sourceTree = "<group>"; };
+		E1052A7B158916350096C0AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1052A7D158916350096C0AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1052A7F158916350096C0AF /* Stars-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stars-Prefix.pch"; sourceTree = "<group>"; };
+		E1052A80158916350096C0AF /* StarsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarsAppDelegate.h; sourceTree = "<group>"; };
+		E1052A81158916350096C0AF /* StarsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarsAppDelegate.m; sourceTree = "<group>"; };
+		E1052A84158916350096C0AF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		E1052A87158916350096C0AF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		E1052A8D158916350096C0AF /* StarsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarsViewController.h; sourceTree = "<group>"; };
+		E1052A8E158916350096C0AF /* StarsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarsViewController.m; sourceTree = "<group>"; };
+		E1052A9E158923430096C0AF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E13AB5601589D176008A2857 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1052A66158916350096C0AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1052AA0158923620096C0AF /* CoreMotion.framework in Frameworks */,
+				E1052A6E158916350096C0AF /* UIKit.framework in Frameworks */,
+				E1052A70158916350096C0AF /* Foundation.framework in Frameworks */,
+				E1052A72158916350096C0AF /* CoreGraphics.framework in Frameworks */,
+				E1052A74158916350096C0AF /* GLKit.framework in Frameworks */,
+				E1052A76158916350096C0AF /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1052A5E158916340096C0AF = {
+			isa = PBXGroup;
+			children = (
+				E13AB5601589D176008A2857 /* ReadMe.txt */,
+				E1052A77158916350096C0AF /* Stars */,
+				E1052A6C158916350096C0AF /* Frameworks */,
+				E1052A6A158916350096C0AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1052A6A158916350096C0AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1052A69158916350096C0AF /* Stars.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1052A6C158916350096C0AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1052A9E158923430096C0AF /* CoreMotion.framework */,
+				E1052A6D158916350096C0AF /* UIKit.framework */,
+				E1052A6F158916350096C0AF /* Foundation.framework */,
+				E1052A71158916350096C0AF /* CoreGraphics.framework */,
+				E1052A73158916350096C0AF /* GLKit.framework */,
+				E1052A75158916350096C0AF /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1052A77158916350096C0AF /* Stars */ = {
+			isa = PBXGroup;
+			children = (
+				E1052A80158916350096C0AF /* StarsAppDelegate.h */,
+				E1052A81158916350096C0AF /* StarsAppDelegate.m */,
+				E1052A8D158916350096C0AF /* StarsViewController.h */,
+				E1052A8E158916350096C0AF /* StarsViewController.m */,
+				E1052A83158916350096C0AF /* MainStoryboard_iPhone.storyboard */,
+				E1052A86158916350096C0AF /* MainStoryboard_iPad.storyboard */,
+				E1052A78158916350096C0AF /* Supporting Files */,
+			);
+			path = Stars;
+			sourceTree = "<group>";
+		};
+		E1052A78158916350096C0AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1052A79158916350096C0AF /* Stars-Info.plist */,
+				E1052A7A158916350096C0AF /* InfoPlist.strings */,
+				E1052A7D158916350096C0AF /* main.m */,
+				E1052A7F158916350096C0AF /* Stars-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1052A68158916350096C0AF /* Stars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1052A92158916350096C0AF /* Build configuration list for PBXNativeTarget "Stars" */;
+			buildPhases = (
+				E1052A65158916350096C0AF /* Sources */,
+				E1052A66158916350096C0AF /* Frameworks */,
+				E1052A67158916350096C0AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stars;
+			productName = Stars;
+			productReference = E1052A69158916350096C0AF /* Stars.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1052A60158916340096C0AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Apple;
+			};
+			buildConfigurationList = E1052A63158916340096C0AF /* Build configuration list for PBXProject "Stars" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E1052A5E158916340096C0AF;
+			productRefGroup = E1052A6A158916350096C0AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1052A68158916350096C0AF /* Stars */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1052A67158916350096C0AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1052A7C158916350096C0AF /* InfoPlist.strings in Resources */,
+				E1052A85158916350096C0AF /* MainStoryboard_iPhone.storyboard in Resources */,
+				E1052A88158916350096C0AF /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1052A65158916350096C0AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1052A7E158916350096C0AF /* main.m in Sources */,
+				E1052A82158916350096C0AF /* StarsAppDelegate.m in Sources */,
+				E1052A8F158916350096C0AF /* StarsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E1052A7A158916350096C0AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1052A7B158916350096C0AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E1052A83158916350096C0AF /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1052A84158916350096C0AF /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		E1052A86158916350096C0AF /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1052A87158916350096C0AF /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1052A90158916350096C0AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1052A91158916350096C0AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1052A93158916350096C0AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stars/Stars-Prefix.pch";
+				INFOPLIST_FILE = "Stars/Stars-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E1052A94158916350096C0AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stars/Stars-Prefix.pch";
+				INFOPLIST_FILE = "Stars/Stars-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1052A63158916340096C0AF /* Build configuration list for PBXProject "Stars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1052A90158916350096C0AF /* Debug */,
+				E1052A91158916350096C0AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1052A92158916350096C0AF /* Build configuration list for PBXNativeTarget "Stars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1052A93158916350096C0AF /* Debug */,
+				E1052A94158916350096C0AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1052A60158916340096C0AF /* Project object */;
+}

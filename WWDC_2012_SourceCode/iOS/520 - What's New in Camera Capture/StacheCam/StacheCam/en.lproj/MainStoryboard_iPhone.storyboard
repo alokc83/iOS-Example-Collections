@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2517" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1854"/>
+    </dependencies>
+    <scenes>
+        <!--Stache Cam View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="StacheCamViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="12">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="23" id="24"/>
+                                    <outletCollection property="gestureRecognizers" destination="QnA-6R-RW3" id="lpr-v3-AiQ"/>
+                                </connections>
+                            </view>
+                            <view hidden="YES" opaque="NO" contentMode="scaleToFill" id="36P-ck-fKf">
+                                <rect key="frame" x="20" y="259" width="280" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" autoshrinkMode="none" minimumFontSize="10" text="AVF Mustache" id="UR4-m3-jDx">
+                                        <rect key="frame" x="20" y="20" width="118" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" autoshrinkMode="none" minimumFontSize="10" text="CoreAnimation" id="2Bp-qV-ND4">
+                                        <rect key="frame" x="20" y="125" width="122" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" autoshrinkMode="none" minimumFontSize="10" text="AVF Rect" id="GNY-6R-Kgg">
+                                        <rect key="frame" x="20" y="55" width="158" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" autoshrinkMode="none" minimumFontSize="10" text="CoreImage Rect" id="RcK-Dv-3bV">
+                                        <rect key="frame" x="20" y="90" width="130" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="bmA-qr-CMq" userLabel="ToggleMustache">
+                                        <rect key="frame" x="181" y="15" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="updateAVFoundationDetection:" destination="2" eventType="valueChanged" id="Czk-ST-0kZ"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="pdk-va-eey" userLabel="ToggleAVFRect">
+                                        <rect key="frame" x="181" y="50" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="updateAVFoundationDetection:" destination="2" eventType="valueChanged" id="OwX-8q-tEV"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="KtR-iF-4jY" userLabel="ToggleCIRect">
+                                        <rect key="frame" x="181" y="85" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="updateCoreImageDetection:" destination="2" eventType="valueChanged" id="LrO-He-zDj"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="z5Y-Q7-wjs" userLabel="ToggleAnimation">
+                                        <rect key="frame" x="181" y="120" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="updateUsingAnimations:" destination="2" eventType="valueChanged" id="Lwc-Mf-k6C"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="0.75" alpha="0.75" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" id="xlM-f4-xUK">
+                                <rect key="frame" x="85" y="15" width="150" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" autoshrinkMode="none" baselineAdjustment="alignBaselines" minimumFontSize="10" text="AVF FPS: " id="Xf1-6N-Lo1">
+                                        <rect key="frame" x="14" y="8" width="136" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" autoshrinkMode="none" baselineAdjustment="alignBaselines" minimumFontSize="10" text="CI FPS: " id="hbs-b7-2Ky">
+                                        <rect key="frame" x="30" y="33" width="120" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.75" alpha="0.75" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8">
+                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="SwapIcon.png" id="PxY-xR-UKT">
+                                        <connections>
+                                            <action selector="switchCameras:" destination="2" id="8qZ-JY-2qI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="11"/>
+                                    <barButtonItem image="SnapIcon.png" id="9">
+                                        <connections>
+                                            <action selector="takePicture:" destination="2" id="14"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="10"/>
+                                    <barButtonItem title="Overlays" id="sWp-0Y-WC6">
+                                        <connections>
+                                            <action selector="toggleFacePicker:" destination="2" id="reI-wJ-Kzh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationSwitch" destination="z5Y-Q7-wjs" id="J0d-SF-1NO"/>
+                        <outlet property="avfFPSLabel" destination="Xf1-6N-Lo1" id="qSX-YT-NZn"/>
+                        <outlet property="avfRectSwitch" destination="pdk-va-eey" id="eYC-H9-gV6"/>
+                        <outlet property="ciFPSLabel" destination="hbs-b7-2Ky" id="drD-sH-WUd"/>
+                        <outlet property="ciRectSwitch" destination="KtR-iF-4jY" id="SaN-FW-7ER"/>
+                        <outlet property="facePicker" destination="36P-ck-fKf" id="tUq-qq-0NA"/>
+                        <outlet property="fpsView" destination="xlM-f4-xUK" id="ZR0-pk-PAp"/>
+                        <outlet property="mustacheSwitch" destination="bmA-qr-CMq" id="Qih-1t-K7h"/>
+                        <outlet property="previewView" destination="12" id="13"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="23">
+                    <connections>
+                        <action selector="handlePinchGesture:" destination="2" id="26"/>
+                        <outlet property="delegate" destination="2" id="25"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <tapGestureRecognizer id="QnA-6R-RW3">
+                    <connections>
+                        <action selector="handleTapGesture:" destination="2" id="jwk-f9-HEy"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-85" y="367"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SnapIcon.png" width="32" height="20"/>
+        <image name="SwapIcon.png" width="32" height="20"/>
+    </resources>
+    <classes>
+        <class className="StacheCamViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StacheCamViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="handlePinchGesture:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="handleTapGesture:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="switchCameras:"/>
+                <relationship kind="action" name="takePicture:"/>
+                <relationship kind="action" name="toggleFacePicker:" candidateClass="UISwitch"/>
+                <relationship kind="action" name="updateAVFoundationDetection:" candidateClass="UISwitch"/>
+                <relationship kind="action" name="updateCoreImageDetection:" candidateClass="UISwitch"/>
+                <relationship kind="action" name="updateUsingAnimations:" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="animationSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="avfFPSLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="avfRectSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="ciFPSLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ciRectSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="facePicker" candidateClass="UIView"/>
+                <relationship kind="outlet" name="fpsView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="mustacheSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="previewView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		061B8B5C155D923400014CAF /* CustomButtonAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 061B8B5B155D923400014CAF /* CustomButtonAccessibility.m */; };
+		061B8B64155DB8C200014CAF /* IdealCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 061B8B63155DB8C200014CAF /* IdealCustomButton.m */; };
+		061B8B74155DBF6600014CAF /* IdealCustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 061B8B72155DBF6600014CAF /* IdealCustomButton.xib */; };
+		0658540E1566C7DF00F81070 /* CustomStepperAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0658540D1566C7DE00F81070 /* CustomStepperAccessibility.m */; };
+		065B8F74157007160069BE77 /* CoreTextColumn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065B8F72157007160069BE77 /* CoreTextColumn.xib */; };
+		065B8F75157007F00069BE77 /* CoreTextColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B8F71157006FD0069BE77 /* CoreTextColumnViewController.m */; };
+		065B8F76157007F00069BE77 /* CoreTextColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B8F6D157006FD0069BE77 /* CoreTextColumnView.m */; };
+		065B8F77157007F00069BE77 /* CoreTextColumnViewAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B8F6F157006FD0069BE77 /* CoreTextColumnViewAccessibility.m */; };
+		066D658C1562CB6A00190958 /* ThreePositionSwitchHandle.png in Resources */ = {isa = PBXBuildFile; fileRef = 066D658B1562CB6A00190958 /* ThreePositionSwitchHandle.png */; };
+		066D65B31563426F00190958 /* CoreTextArcViewAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 066D65B21563426F00190958 /* CoreTextArcViewAccessibility.m */; };
+		066E3F9D1561AFB4007E4D1B /* IdealCustomButtonAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 066E3F9A15619794007E4D1B /* IdealCustomButtonAccessibility.m */; };
+		06AF776915670E480005D523 /* FauxUIElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AF776815670E270005D523 /* FauxUIElement.m */; };
+		4ACD1787155C2EA2006B55AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4ACD1786155C2EA2006B55AB /* Localizable.strings */; };
+		4ACD1795155C35A6006B55AB /* ValueIndicatorUIElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD1794155C35A6006B55AB /* ValueIndicatorUIElement.m */; };
+		4F3E436A155B2886000C8809 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F3E4369155B2886000C8809 /* Configuration.plist */; };
+		4F3EF1CE155B423A0029D4B2 /* CustomStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F3EF1CC155B423A0029D4B2 /* CustomStepper.xib */; };
+		4F3EF1D1155B42600029D4B2 /* CustomStepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3EF1D0155B42600029D4B2 /* CustomStepperViewController.m */; };
+		4F3EF1D4155B44810029D4B2 /* CustomStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3EF1D3155B44810029D4B2 /* CustomStepper.m */; };
+		4F3EF1D6155B45100029D4B2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3EF1D5155B45100029D4B2 /* OpenGL.framework */; };
+		4F44C52D155C951500E7C130 /* CustomButtonDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F44C52A155C951500E7C130 /* CustomButtonDown.png */; };
+		4F44C52E155C951500E7C130 /* CustomButtonHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F44C52B155C951500E7C130 /* CustomButtonHighlight.png */; };
+		4F44C52F155C951500E7C130 /* CustomButtonUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F44C52C155C951500E7C130 /* CustomButtonUp.png */; };
+		4F44C570155DB37900E7C130 /* CoreTextArc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F44C56E155DB37900E7C130 /* CoreTextArc.xib */; };
+		4F44C575155DB38F00E7C130 /* CoreTextArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44C572155DB38F00E7C130 /* CoreTextArcView.m */; };
+		4F44C576155DB38F00E7C130 /* CoreTextArcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44C574155DB38F00E7C130 /* CoreTextArcViewController.m */; };
+		4F855C3D155AFD6D005FAAEB /* ThreePositionSwitchHandleDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F855C39155AFD6D005FAAEB /* ThreePositionSwitchHandleDown.png */; };
+		4F855C3E155AFD6D005FAAEB /* ThreePositionSwitchOverlayMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F855C3A155AFD6D005FAAEB /* ThreePositionSwitchOverlayMask.png */; };
+		4F855C3F155AFD6D005FAAEB /* ThreePositionSwitchWell.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F855C3B155AFD6D005FAAEB /* ThreePositionSwitchWell.png */; };
+		4F855C43155AFD75005FAAEB /* ThreePositionSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F855C41155AFD75005FAAEB /* ThreePositionSwitch.xib */; };
+		4FDD4F62155C839400B7D951 /* ThreePositionSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD4F61155C839400B7D951 /* ThreePositionSwitchCell.m */; };
+		4FDD4F66155C83E600B7D951 /* ThreePositionSwitchCellAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD4F65155C83E600B7D951 /* ThreePositionSwitchCellAccessibility.m */; };
+		4FDD4F6C155C879500B7D951 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD4F6B155C879500B7D951 /* CustomButton.m */; };
+		4FDD4F70155C87F800B7D951 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDD4F6E155C87F800B7D951 /* CustomButton.xib */; };
+		4FE64AF0157D735600473368 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE64AEF157D735600473368 /* ButtonViewController.m */; };
+		4FE64AF4157D76D600473368 /* StandardButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE64AF3157D76D600473368 /* StandardButtonViewController.m */; };
+		4FE64AF7157D76EC00473368 /* CustomButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE64AF6157D76EC00473368 /* CustomButtonViewController.m */; };
+		4FE64AFA157D76FD00473368 /* IdealCustomButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE64AF9157D76FD00473368 /* IdealCustomButtonViewController.m */; };
+		4FF08008157689A900066C3E /* StepperBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF08007157689A900066C3E /* StepperBackground.png */; };
+		4FF0800B15768DD400066C3E /* volume.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 4FF0800A15768DD400066C3E /* volume.aiff */; };
+		4FFD604B1559A8DB009997EE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FFD604A1559A8DB009997EE /* Cocoa.framework */; };
+		4FFD60551559A8DB009997EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FFD60531559A8DB009997EE /* InfoPlist.strings */; };
+		4FFD60571559A8DB009997EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFD60561559A8DB009997EE /* main.m */; };
+		4FFD605E1559A8DB009997EE /* AXEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFD605D1559A8DB009997EE /* AXEAppDelegate.m */; };
+		4FFD60611559A8DC009997EE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FFD605F1559A8DC009997EE /* MainMenu.xib */; };
+		4FFD60691559A941009997EE /* ThreePositionSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFD60681559A941009997EE /* ThreePositionSwitch.m */; };
+		4FFD60781559AE78009997EE /* ThreePositionSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFD60771559AE78009997EE /* ThreePositionSwitchViewController.m */; };
+		4FFD607B1559AEA6009997EE /* AXEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFD607A1559AEA6009997EE /* AXEViewController.m */; };
+		D92E182B157B3EAF0064E39A /* StandardButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = D92E1829157B3EAF0064E39A /* StandardButton.xib */; };
+		D92E183D157B49B90064E39A /* StandardImageButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D92E183C157B49B90064E39A /* StandardImageButtonViewController.m */; };
+		D92E1840157B49DB0064E39A /* StandardImageButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = D92E183E157B49DB0064E39A /* StandardImageButton.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		061B8B5A155D923400014CAF /* CustomButtonAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButtonAccessibility.h; sourceTree = "<group>"; };
+		061B8B5B155D923400014CAF /* CustomButtonAccessibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButtonAccessibility.m; sourceTree = "<group>"; };
+		061B8B62155DB8C200014CAF /* IdealCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdealCustomButton.h; sourceTree = "<group>"; };
+		061B8B63155DB8C200014CAF /* IdealCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdealCustomButton.m; sourceTree = "<group>"; };
+		061B8B73155DBF6600014CAF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Resources/en.lproj/IdealCustomButton.xib; sourceTree = "<group>"; };
+		0658540C1566C7DE00F81070 /* CustomStepperAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomStepperAccessibility.h; sourceTree = "<group>"; };
+		0658540D1566C7DE00F81070 /* CustomStepperAccessibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomStepperAccessibility.m; sourceTree = "<group>"; };
+		065B8F6C157006FD0069BE77 /* CoreTextColumnView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextColumnView.h; sourceTree = "<group>"; };
+		065B8F6D157006FD0069BE77 /* CoreTextColumnView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextColumnView.m; sourceTree = "<group>"; };
+		065B8F6E157006FD0069BE77 /* CoreTextColumnViewAccessibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextColumnViewAccessibility.h; sourceTree = "<group>"; };
+		065B8F6F157006FD0069BE77 /* CoreTextColumnViewAccessibility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextColumnViewAccessibility.m; sourceTree = "<group>"; };
+		065B8F70157006FD0069BE77 /* CoreTextColumnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextColumnViewController.h; sourceTree = "<group>"; };
+		065B8F71157006FD0069BE77 /* CoreTextColumnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextColumnViewController.m; sourceTree = "<group>"; };
+		065B8F73157007160069BE77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Resources/en.lproj/CoreTextColumn.xib; sourceTree = "<group>"; };
+		066D658B1562CB6A00190958 /* ThreePositionSwitchHandle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ThreePositionSwitchHandle.png; path = Resources/ThreePositionSwitchHandle.png; sourceTree = "<group>"; };
+		066D65B11563426F00190958 /* CoreTextArcViewAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextArcViewAccessibility.h; sourceTree = "<group>"; };
+		066D65B21563426F00190958 /* CoreTextArcViewAccessibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextArcViewAccessibility.m; sourceTree = "<group>"; };
+		066E3F9915619794007E4D1B /* IdealCustomButtonAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdealCustomButtonAccessibility.h; sourceTree = "<group>"; };
+		066E3F9A15619794007E4D1B /* IdealCustomButtonAccessibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdealCustomButtonAccessibility.m; sourceTree = "<group>"; };
+		06AF776715670E270005D523 /* FauxUIElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FauxUIElement.h; sourceTree = "<group>"; };
+		06AF776815670E270005D523 /* FauxUIElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FauxUIElement.m; sourceTree = "<group>"; };
+		4ACD1786155C2EA2006B55AB /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Resources/Localizable.strings; sourceTree = "<group>"; };
+		4ACD1793155C35A6006B55AB /* ValueIndicatorUIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueIndicatorUIElement.h; sourceTree = "<group>"; };
+		4ACD1794155C35A6006B55AB /* ValueIndicatorUIElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueIndicatorUIElement.m; sourceTree = "<group>"; };
+		4F3E4369155B2886000C8809 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Configuration.plist; path = AccessibilityUIExamples/Resources/Configuration.plist; sourceTree = "<group>"; };
+		4F3EF1CD155B423A0029D4B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Resources/en.lproj/CustomStepper.xib; sourceTree = "<group>"; };
+		4F3EF1CF155B42600029D4B2 /* CustomStepperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomStepperViewController.h; sourceTree = "<group>"; };
+		4F3EF1D0155B42600029D4B2 /* CustomStepperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomStepperViewController.m; sourceTree = "<group>"; };
+		4F3EF1D2155B44810029D4B2 /* CustomStepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomStepper.h; sourceTree = "<group>"; };
+		4F3EF1D3155B44810029D4B2 /* CustomStepper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomStepper.m; sourceTree = "<group>"; };
+		4F3EF1D5155B45100029D4B2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		4F44C52A155C951500E7C130 /* CustomButtonDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CustomButtonDown.png; path = Resources/CustomButtonDown.png; sourceTree = "<group>"; };
+		4F44C52B155C951500E7C130 /* CustomButtonHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CustomButtonHighlight.png; path = Resources/CustomButtonHighlight.png; sourceTree = "<group>"; };
+		4F44C52C155C951500E7C130 /* CustomButtonUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CustomButtonUp.png; path = Resources/CustomButtonUp.png; sourceTree = "<group>"; };
+		4F44C56F155DB37900E7C130 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Resources/en.lproj/CoreTextArc.xib; sourceTree = "<group>"; };
+		4F44C571155DB38F00E7C130 /* CoreTextArcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextArcView.h; sourceTree = "<group>"; };
+		4F44C572155DB38F00E7C130 /* CoreTextArcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextArcView.m; sourceTree = "<group>"; };
+		4F44C573155DB38F00E7C130 /* CoreTextArcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextArcViewController.h; sourceTree = "<group>"; };
+		4F44C574155DB38F00E7C130 /* CoreTextArcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextArcViewController.m; sourceTree = "<group>"; };
+		4F855C39155AFD6D005FAAEB /* ThreePositionSwitchHandleDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ThreePositionSwitchHandleDown.png; path = Resources/ThreePositionSwitchHandleDown.png; sourceTree = "<group>"; };
+		4F855C3A155AFD6D005FAAEB /* ThreePositionSwitchOverlayMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ThreePositionSwitchOverlayMask.png; path = Resources/ThreePositionSwitchOverlayMask.png; sourceTree = "<group>"; };
+		4F855C3B155AFD6D005FAAEB /* ThreePositionSwitchWell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ThreePositionSwitchWell.png; path = Resources/ThreePositionSwitchWell.png; sourceTree = "<group>"; };
+		4F855C42155AFD75005FAAEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Resources/en.lproj/ThreePositionSwitch.xib; sourceTree = "<group>"; };
+		4FDD4F60155C839400B7D951 /* ThreePositionSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreePositionSwitchCell.h; sourceTree = "<group>"; };
+		4FDD4F61155C839400B7D951 /* ThreePositionSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreePositionSwitchCell.m; sourceTree = "<group>"; };
+		4FDD4F65155C83E600B7D951 /* ThreePositionSwitchCellAccessibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreePositionSwitchCellAccessibility.m; sourceTree = "<group>"; };
+		4FDD4F67155C844B00B7D951 /* ThreePositionSwitchCellAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreePositionSwitchCellAccessibility.h; sourceTree = "<group>"; };
+		4FDD4F6A155C879500B7D951 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		4FDD4F6B155C879500B7D951 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		4FDD4F6F155C87F800B7D951 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Resources/en.lproj/CustomButton.xib; sourceTree = "<group>"; };
+		4FE64AEE157D735600473368 /* ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
+		4FE64AEF157D735600473368 /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
+		4FE64AF2157D76D600473368 /* StandardButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardButtonViewController.h; sourceTree = "<group>"; };
+		4FE64AF3157D76D600473368 /* StandardButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardButtonViewController.m; sourceTree = "<group>"; };
+		4FE64AF5157D76EC00473368 /* CustomButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButtonViewController.h; sourceTree = "<group>"; };
+		4FE64AF6157D76EC00473368 /* CustomButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButtonViewController.m; sourceTree = "<group>"; };
+		4FE64AF8157D76FD00473368 /* IdealCustomButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdealCustomButtonViewController.h; sourceTree = "<group>"; };
+		4FE64AF9157D76FD00473368 /* IdealCustomButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdealCustomButtonViewController.m; sourceTree = "<group>"; };
+		4FF08007157689A900066C3E /* StepperBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StepperBackground.png; path = Resources/StepperBackground.png; sourceTree = "<group>"; };
+		4FF0800A15768DD400066C3E /* volume.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = volume.aiff; path = Resources/volume.aiff; sourceTree = "<group>"; };
+		4FFD60461559A8DB009997EE /* AccessibilityUIExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibilityUIExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FFD604A1559A8DB009997EE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4FFD604D1559A8DB009997EE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4FFD604E1559A8DB009997EE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4FFD604F1559A8DB009997EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4FFD60521559A8DB009997EE /* AccessibilityUIExamples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AccessibilityUIExamples-Info.plist"; sourceTree = "<group>"; };
+		4FFD60541559A8DB009997EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FFD60561559A8DB009997EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FFD60581559A8DB009997EE /* AccessibilityUIExamples-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AccessibilityUIExamples-Prefix.pch"; sourceTree = "<group>"; };
+		4FFD605C1559A8DB009997EE /* AXEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXEAppDelegate.h; sourceTree = "<group>"; };
+		4FFD605D1559A8DB009997EE /* AXEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXEAppDelegate.m; sourceTree = "<group>"; };
+		4FFD60601559A8DC009997EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4FFD60671559A941009997EE /* ThreePositionSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreePositionSwitch.h; sourceTree = "<group>"; };
+		4FFD60681559A941009997EE /* ThreePositionSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreePositionSwitch.m; sourceTree = "<group>"; };
+		4FFD60761559AE78009997EE /* ThreePositionSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreePositionSwitchViewController.h; sourceTree = "<group>"; };
+		4FFD60771559AE78009997EE /* ThreePositionSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreePositionSwitchViewController.m; sourceTree = "<group>"; };
+		4FFD60791559AEA6009997EE /* AXEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXEViewController.h; sourceTree = "<group>"; };
+		4FFD607A1559AEA6009997EE /* AXEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXEViewController.m; sourceTree = "<group>"; };
+		D92E182A157B3EAF0064E39A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Resources/en.lproj/StandardButton.xib; sourceTree = "<group>"; };
+		D92E183B157B49B90064E39A /* StandardImageButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardImageButtonViewController.h; sourceTree = "<group>"; };
+		D92E183C157B49B90064E39A /* StandardImageButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardImageButtonViewController.m; sourceTree = "<group>"; };
+		D92E183F157B49DB0064E39A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Resources/en.lproj/StandardImageButton.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FFD60431559A8DB009997EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F3EF1D6155B45100029D4B2 /* OpenGL.framework in Frameworks */,
+				4FFD604B1559A8DB009997EE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		061B8B5D155DB5F900014CAF /* IdealCustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				061B8B62155DB8C200014CAF /* IdealCustomButton.h */,
+				061B8B63155DB8C200014CAF /* IdealCustomButton.m */,
+				066E3F9915619794007E4D1B /* IdealCustomButtonAccessibility.h */,
+				066E3F9A15619794007E4D1B /* IdealCustomButtonAccessibility.m */,
+				4FE64AF8157D76FD00473368 /* IdealCustomButtonViewController.h */,
+				4FE64AF9157D76FD00473368 /* IdealCustomButtonViewController.m */,
+			);
+			name = IdealCustomButton;
+			sourceTree = "<group>";
+		};
+		061B8B5E155DB82500014CAF /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4F44C529155C950700E7C130 /* Resources */,
+				4FE64AEE157D735600473368 /* ButtonViewController.h */,
+				4FE64AEF157D735600473368 /* ButtonViewController.m */,
+				D92E1839157B49800064E39A /* StandardImageButton */,
+				4FDD4F69155C876D00B7D951 /* CustomButton */,
+				061B8B5D155DB5F900014CAF /* IdealCustomButton */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		4F3E436C155B2C5D000C8809 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4FFD605F1559A8DC009997EE /* MainMenu.xib */,
+				4F3E4369155B2886000C8809 /* Configuration.plist */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		4F3EF1CB155B41E90029D4B2 /* CustomStepper */ = {
+			isa = PBXGroup;
+			children = (
+				4FB265FA1564891F00140871 /* Resources */,
+				4F3EF1CF155B42600029D4B2 /* CustomStepperViewController.h */,
+				4F3EF1D0155B42600029D4B2 /* CustomStepperViewController.m */,
+				4F3EF1D2155B44810029D4B2 /* CustomStepper.h */,
+				4F3EF1D3155B44810029D4B2 /* CustomStepper.m */,
+				0658540C1566C7DE00F81070 /* CustomStepperAccessibility.h */,
+				0658540D1566C7DE00F81070 /* CustomStepperAccessibility.m */,
+				06AF776715670E270005D523 /* FauxUIElement.h */,
+				06AF776815670E270005D523 /* FauxUIElement.m */,
+			);
+			name = CustomStepper;
+			sourceTree = "<group>";
+		};
+		4F44C529155C950700E7C130 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D92E1829157B3EAF0064E39A /* StandardButton.xib */,
+				D92E183E157B49DB0064E39A /* StandardImageButton.xib */,
+				4FDD4F6E155C87F800B7D951 /* CustomButton.xib */,
+				061B8B72155DBF6600014CAF /* IdealCustomButton.xib */,
+				4F44C52A155C951500E7C130 /* CustomButtonDown.png */,
+				4F44C52B155C951500E7C130 /* CustomButtonHighlight.png */,
+				4F44C52C155C951500E7C130 /* CustomButtonUp.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4F44C56C155DB31200E7C130 /* CoreTextArcView */ = {
+			isa = PBXGroup;
+			children = (
+				4F44C577155DB39300E7C130 /* Resources */,
+				4F44C571155DB38F00E7C130 /* CoreTextArcView.h */,
+				4F44C572155DB38F00E7C130 /* CoreTextArcView.m */,
+				4F44C573155DB38F00E7C130 /* CoreTextArcViewController.h */,
+				4F44C574155DB38F00E7C130 /* CoreTextArcViewController.m */,
+				066D65B11563426F00190958 /* CoreTextArcViewAccessibility.h */,
+				066D65B21563426F00190958 /* CoreTextArcViewAccessibility.m */,
+			);
+			name = CoreTextArcView;
+			sourceTree = "<group>";
+		};
+		4F44C577155DB39300E7C130 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F44C56E155DB37900E7C130 /* CoreTextArc.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4F44C57D15D70BEF00E7C130 /* CoreTextColumnView */ = {
+			isa = PBXGroup;
+			children = (
+				4F44C57E15D70C0100E7C130 /* Resources */,
+				065B8F70157006FD0069BE77 /* CoreTextColumnViewController.h */,
+				065B8F71157006FD0069BE77 /* CoreTextColumnViewController.m */,
+				065B8F6C157006FD0069BE77 /* CoreTextColumnView.h */,
+				065B8F6D157006FD0069BE77 /* CoreTextColumnView.m */,
+				065B8F6E157006FD0069BE77 /* CoreTextColumnViewAccessibility.h */,
+				065B8F6F157006FD0069BE77 /* CoreTextColumnViewAccessibility.m */,
+			);
+			name = CoreTextColumnView;
+			sourceTree = "<group>";
+		};
+		4F44C57E15D70C0100E7C130 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				065B8F72157007160069BE77 /* CoreTextColumn.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4FB265FA1564891F00140871 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4FF0800A15768DD400066C3E /* volume.aiff */,
+				4FF08007157689A900066C3E /* StepperBackground.png */,
+				4F3EF1CC155B423A0029D4B2 /* CustomStepper.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4FC3A4D11559F8BE00F65550 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				066D658B1562CB6A00190958 /* ThreePositionSwitchHandle.png */,
+				4F855C39155AFD6D005FAAEB /* ThreePositionSwitchHandleDown.png */,
+				4F855C3A155AFD6D005FAAEB /* ThreePositionSwitchOverlayMask.png */,
+				4F855C3B155AFD6D005FAAEB /* ThreePositionSwitchWell.png */,
+				4F855C41155AFD75005FAAEB /* ThreePositionSwitch.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4FDD4F68155C86AB00B7D951 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4FFD605C1559A8DB009997EE /* AXEAppDelegate.h */,
+				4FFD605D1559A8DB009997EE /* AXEAppDelegate.m */,
+				4FFD60791559AEA6009997EE /* AXEViewController.h */,
+				4FFD607A1559AEA6009997EE /* AXEViewController.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		4FDD4F69155C876D00B7D951 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				4FDD4F6A155C879500B7D951 /* CustomButton.h */,
+				4FDD4F6B155C879500B7D951 /* CustomButton.m */,
+				061B8B5A155D923400014CAF /* CustomButtonAccessibility.h */,
+				061B8B5B155D923400014CAF /* CustomButtonAccessibility.m */,
+				4FE64AF5157D76EC00473368 /* CustomButtonViewController.h */,
+				4FE64AF6157D76EC00473368 /* CustomButtonViewController.m */,
+			);
+			name = CustomButton;
+			sourceTree = "<group>";
+		};
+		4FFD603B1559A8DB009997EE = {
+			isa = PBXGroup;
+			children = (
+				4FFD60501559A8DB009997EE /* AccessibilityUIExamples */,
+				4FFD60491559A8DB009997EE /* Frameworks */,
+				4FFD60471559A8DB009997EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FFD60471559A8DB009997EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FFD60461559A8DB009997EE /* AccessibilityUIExamples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FFD60491559A8DB009997EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FFD604A1559A8DB009997EE /* Cocoa.framework */,
+				4FFD604C1559A8DB009997EE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FFD604C1559A8DB009997EE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F3EF1D5155B45100029D4B2 /* OpenGL.framework */,
+				4FFD604D1559A8DB009997EE /* AppKit.framework */,
+				4FFD604E1559A8DB009997EE /* CoreData.framework */,
+				4FFD604F1559A8DB009997EE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4FFD60501559A8DB009997EE /* AccessibilityUIExamples */ = {
+			isa = PBXGroup;
+			children = (
+				4FDD4F68155C86AB00B7D951 /* App */,
+				061B8B5E155DB82500014CAF /* Buttons */,
+				4F3EF1CB155B41E90029D4B2 /* CustomStepper */,
+				4FFD606C1559AB92009997EE /* ThreePositionSwitch */,
+				4F44C57D15D70BEF00E7C130 /* CoreTextColumnView */,
+				4F44C56C155DB31200E7C130 /* CoreTextArcView */,
+				4FFD60511559A8DB009997EE /* Supporting Files */,
+				4F3E436C155B2C5D000C8809 /* Resources */,
+			);
+			path = AccessibilityUIExamples;
+			sourceTree = "<group>";
+		};
+		4FFD60511559A8DB009997EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FFD60521559A8DB009997EE /* AccessibilityUIExamples-Info.plist */,
+				4FFD60531559A8DB009997EE /* InfoPlist.strings */,
+				4FFD60561559A8DB009997EE /* main.m */,
+				4FFD60581559A8DB009997EE /* AccessibilityUIExamples-Prefix.pch */,
+				4ACD1786155C2EA2006B55AB /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FFD606C1559AB92009997EE /* ThreePositionSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				4FC3A4D11559F8BE00F65550 /* Resources */,
+				4FFD60671559A941009997EE /* ThreePositionSwitch.h */,
+				4FFD60681559A941009997EE /* ThreePositionSwitch.m */,
+				4FDD4F60155C839400B7D951 /* ThreePositionSwitchCell.h */,
+				4FDD4F61155C839400B7D951 /* ThreePositionSwitchCell.m */,
+				4FFD60761559AE78009997EE /* ThreePositionSwitchViewController.h */,
+				4FFD60771559AE78009997EE /* ThreePositionSwitchViewController.m */,
+				4FDD4F67155C844B00B7D951 /* ThreePositionSwitchCellAccessibility.h */,
+				4FDD4F65155C83E600B7D951 /* ThreePositionSwitchCellAccessibility.m */,
+				4ACD1793155C35A6006B55AB /* ValueIndicatorUIElement.h */,
+				4ACD1794155C35A6006B55AB /* ValueIndicatorUIElement.m */,
+			);
+			name = ThreePositionSwitch;
+			sourceTree = "<group>";
+		};
+		D92E1839157B49800064E39A /* StandardImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				D92E183B157B49B90064E39A /* StandardImageButtonViewController.h */,
+				D92E183C157B49B90064E39A /* StandardImageButtonViewController.m */,
+				4FE64AF2157D76D600473368 /* StandardButtonViewController.h */,
+				4FE64AF3157D76D600473368 /* StandardButtonViewController.m */,
+			);
+			name = StandardImageButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FFD60451559A8DB009997EE /* AccessibilityUIExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FFD60641559A8DC009997EE /* Build configuration list for PBXNativeTarget "AccessibilityUIExamples" */;
+			buildPhases = (
+				4FFD60421559A8DB009997EE /* Sources */,
+				4FFD60431559A8DB009997EE /* Frameworks */,
+				4FFD60441559A8DB009997EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AccessibilityUIExamples;
+			productName = AccessibilityUIExamples;
+			productReference = 4FFD60461559A8DB009997EE /* AccessibilityUIExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FFD603D1559A8DB009997EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AXE;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Apple Inc.";
+			};
+			buildConfigurationList = 4FFD60401559A8DB009997EE /* Build configuration list for PBXProject "AccessibilityUIExamples" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4FFD603B1559A8DB009997EE;
+			productRefGroup = 4FFD60471559A8DB009997EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FFD60451559A8DB009997EE /* AccessibilityUIExamples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FFD60441559A8DB009997EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FFD60551559A8DB009997EE /* InfoPlist.strings in Resources */,
+				4FFD60611559A8DC009997EE /* MainMenu.xib in Resources */,
+				4F855C3D155AFD6D005FAAEB /* ThreePositionSwitchHandleDown.png in Resources */,
+				4F855C3E155AFD6D005FAAEB /* ThreePositionSwitchOverlayMask.png in Resources */,
+				4F855C3F155AFD6D005FAAEB /* ThreePositionSwitchWell.png in Resources */,
+				4F855C43155AFD75005FAAEB /* ThreePositionSwitch.xib in Resources */,
+				4F3E436A155B2886000C8809 /* Configuration.plist in Resources */,
+				4F3EF1CE155B423A0029D4B2 /* CustomStepper.xib in Resources */,
+				4ACD1787155C2EA2006B55AB /* Localizable.strings in Resources */,
+				4FDD4F70155C87F800B7D951 /* CustomButton.xib in Resources */,
+				4F44C52D155C951500E7C130 /* CustomButtonDown.png in Resources */,
+				4F44C52E155C951500E7C130 /* CustomButtonHighlight.png in Resources */,
+				4F44C52F155C951500E7C130 /* CustomButtonUp.png in Resources */,
+				061B8B74155DBF6600014CAF /* IdealCustomButton.xib in Resources */,
+				4F44C570155DB37900E7C130 /* CoreTextArc.xib in Resources */,
+				066D658C1562CB6A00190958 /* ThreePositionSwitchHandle.png in Resources */,
+				065B8F74157007160069BE77 /* CoreTextColumn.xib in Resources */,
+				4FF08008157689A900066C3E /* StepperBackground.png in Resources */,
+				4FF0800B15768DD400066C3E /* volume.aiff in Resources */,
+				D92E182B157B3EAF0064E39A /* StandardButton.xib in Resources */,
+				D92E1840157B49DB0064E39A /* StandardImageButton.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FFD60421559A8DB009997EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065B8F75157007F00069BE77 /* CoreTextColumnViewController.m in Sources */,
+				065B8F76157007F00069BE77 /* CoreTextColumnView.m in Sources */,
+				065B8F77157007F00069BE77 /* CoreTextColumnViewAccessibility.m in Sources */,
+				06AF776915670E480005D523 /* FauxUIElement.m in Sources */,
+				066E3F9D1561AFB4007E4D1B /* IdealCustomButtonAccessibility.m in Sources */,
+				4FFD60571559A8DB009997EE /* main.m in Sources */,
+				4FFD605E1559A8DB009997EE /* AXEAppDelegate.m in Sources */,
+				4FFD60691559A941009997EE /* ThreePositionSwitch.m in Sources */,
+				4FFD60781559AE78009997EE /* ThreePositionSwitchViewController.m in Sources */,
+				4FFD607B1559AEA6009997EE /* AXEViewController.m in Sources */,
+				4F3EF1D1155B42600029D4B2 /* CustomStepperViewController.m in Sources */,
+				4F3EF1D4155B44810029D4B2 /* CustomStepper.m in Sources */,
+				4ACD1795155C35A6006B55AB /* ValueIndicatorUIElement.m in Sources */,
+				4FDD4F62155C839400B7D951 /* ThreePositionSwitchCell.m in Sources */,
+				4FDD4F66155C83E600B7D951 /* ThreePositionSwitchCellAccessibility.m in Sources */,
+				4FDD4F6C155C879500B7D951 /* CustomButton.m in Sources */,
+				061B8B5C155D923400014CAF /* CustomButtonAccessibility.m in Sources */,
+				061B8B64155DB8C200014CAF /* IdealCustomButton.m in Sources */,
+				4F44C575155DB38F00E7C130 /* CoreTextArcView.m in Sources */,
+				4F44C576155DB38F00E7C130 /* CoreTextArcViewController.m in Sources */,
+				066D65B31563426F00190958 /* CoreTextArcViewAccessibility.m in Sources */,
+				0658540E1566C7DF00F81070 /* CustomStepperAccessibility.m in Sources */,
+				D92E183D157B49B90064E39A /* StandardImageButtonViewController.m in Sources */,
+				4FE64AF0157D735600473368 /* ButtonViewController.m in Sources */,
+				4FE64AF4157D76D600473368 /* StandardButtonViewController.m in Sources */,
+				4FE64AF7157D76EC00473368 /* CustomButtonViewController.m in Sources */,
+				4FE64AFA157D76FD00473368 /* IdealCustomButtonViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		061B8B72155DBF6600014CAF /* IdealCustomButton.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				061B8B73155DBF6600014CAF /* en */,
+			);
+			name = IdealCustomButton.xib;
+			sourceTree = "<group>";
+		};
+		065B8F72157007160069BE77 /* CoreTextColumn.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				065B8F73157007160069BE77 /* en */,
+			);
+			name = CoreTextColumn.xib;
+			sourceTree = "<group>";
+		};
+		4F3EF1CC155B423A0029D4B2 /* CustomStepper.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F3EF1CD155B423A0029D4B2 /* en */,
+			);
+			name = CustomStepper.xib;
+			sourceTree = "<group>";
+		};
+		4F44C56E155DB37900E7C130 /* CoreTextArc.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F44C56F155DB37900E7C130 /* en */,
+			);
+			name = CoreTextArc.xib;
+			sourceTree = "<group>";
+		};
+		4F855C41155AFD75005FAAEB /* ThreePositionSwitch.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F855C42155AFD75005FAAEB /* en */,
+			);
+			name = ThreePositionSwitch.xib;
+			sourceTree = "<group>";
+		};
+		4FDD4F6E155C87F800B7D951 /* CustomButton.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FDD4F6F155C87F800B7D951 /* en */,
+			);
+			name = CustomButton.xib;
+			sourceTree = "<group>";
+		};
+		4FFD60531559A8DB009997EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FFD60541559A8DB009997EE /* en */,
+			);
+			name = InfoPlist.strings;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4FFD605F1559A8DC009997EE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FFD60601559A8DC009997EE /* en */,
+			);
+			name = MainMenu.xib;
+			path = AccessibilityUIExamples/Resources;
+			sourceTree = "<group>";
+		};
+		D92E1829157B3EAF0064E39A /* StandardButton.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D92E182A157B3EAF0064E39A /* en */,
+			);
+			name = StandardButton.xib;
+			sourceTree = "<group>";
+		};
+		D92E183E157B49DB0064E39A /* StandardImageButton.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D92E183F157B49DB0064E39A /* en */,
+			);
+			name = StandardImageButton.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FFD60621559A8DC009997EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4FFD60631559A8DC009997EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4FFD60651559A8DC009997EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_OBJC_RECEIVER_WEAK = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AccessibilityUIExamples/AccessibilityUIExamples-Prefix.pch";
+				INFOPLIST_FILE = "AccessibilityUIExamples/AccessibilityUIExamples-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4FFD60661559A8DC009997EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_OBJC_RECEIVER_WEAK = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AccessibilityUIExamples/AccessibilityUIExamples-Prefix.pch";
+				INFOPLIST_FILE = "AccessibilityUIExamples/AccessibilityUIExamples-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FFD60401559A8DB009997EE /* Build configuration list for PBXProject "AccessibilityUIExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FFD60621559A8DC009997EE /* Debug */,
+				4FFD60631559A8DC009997EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FFD60641559A8DC009997EE /* Build configuration list for PBXNativeTarget "AccessibilityUIExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FFD60651559A8DC009997EE /* Debug */,
+				4FFD60661559A8DC009997EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FFD603D1559A8DB009997EE /* Project object */;
+}

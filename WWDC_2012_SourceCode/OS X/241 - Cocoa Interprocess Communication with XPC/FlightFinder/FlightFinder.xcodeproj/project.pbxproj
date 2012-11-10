@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA1CB08714F44ACD001B8C99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA1CB08514F44ACD001B8C99 /* InfoPlist.strings */; };
+		EA1CB08914F44ACD001B8C99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CB08814F44ACD001B8C99 /* main.m */; };
+		EA1CB09014F44ACD001B8C99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CB08F14F44ACD001B8C99 /* AppDelegate.m */; };
+		EA1CB09314F44ACD001B8C99 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1CB09114F44ACD001B8C99 /* MainMenu.xib */; };
+		EA1CB0A514F44B33001B8C99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA1CB0A314F44B33001B8C99 /* InfoPlist.strings */; };
+		EA1CB0A814F44B33001B8C99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CB0A714F44B33001B8C99 /* main.m */; };
+		EA1CB0AF14F44B6D001B8C99 /* com.apple.TicketAgentService.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA1CB09D14F44B33001B8C99 /* com.apple.TicketAgentService.xpc */; };
+		EA1CB0B314F44BD0001B8C99 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CB0B214F44BD0001B8C99 /* Ticket.m */; };
+		EA1CB0B414F44BD0001B8C99 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CB0B214F44BD0001B8C99 /* Ticket.m */; };
+		EA1CB0DD14F44F8C001B8C99 /* TicketAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CB0DC14F44F8C001B8C99 /* TicketAgent.m */; };
+		EA2FDF5815265C2D00A666CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1CB09E14F44B33001B8C99 /* Foundation.framework */; };
+		EA2FDF5915265C3600A666CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA2FDF5615265C1800A666CE /* Cocoa.framework */; };
+		EAB0ACE8157AC84C00AB24DB /* TicketAgentService.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = EAB0ACE7157AC84C00AB24DB /* TicketAgentService.entitlements */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA1CB0AC14F44B5A001B8C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA1CB06F14F44ACD001B8C99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA1CB09C14F44B33001B8C99;
+			remoteInfo = TicketAgentService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA1CB0AE14F44B5F001B8C99 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/XPCServices;
+			dstSubfolderSpec = 1;
+			files = (
+				EA1CB0AF14F44B6D001B8C99 /* com.apple.TicketAgentService.xpc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		288C15DB1581A3B500490815 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		EA1CB07814F44ACD001B8C99 /* Flight Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flight Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1CB07F14F44ACD001B8C99 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		EA1CB08014F44ACD001B8C99 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EA1CB08114F44ACD001B8C99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA1CB08414F44ACD001B8C99 /* FlightFinder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlightFinder-Info.plist"; sourceTree = "<group>"; };
+		EA1CB08614F44ACD001B8C99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA1CB08814F44ACD001B8C99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA1CB08A14F44ACD001B8C99 /* FlightFinder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlightFinder-Prefix.pch"; sourceTree = "<group>"; };
+		EA1CB08E14F44ACD001B8C99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA1CB08F14F44ACD001B8C99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA1CB09214F44ACD001B8C99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EA1CB09D14F44B33001B8C99 /* com.apple.TicketAgentService.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.apple.TicketAgentService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1CB09E14F44B33001B8C99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA1CB0A214F44B33001B8C99 /* TicketAgentService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TicketAgentService-Info.plist"; sourceTree = "<group>"; };
+		EA1CB0A414F44B33001B8C99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA1CB0A614F44B33001B8C99 /* TicketAgentService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TicketAgentService-Prefix.pch"; sourceTree = "<group>"; };
+		EA1CB0A714F44B33001B8C99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA1CB0B114F44BD0001B8C99 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ticket.h; path = FlightFinder/Ticket.h; sourceTree = "<group>"; };
+		EA1CB0B214F44BD0001B8C99 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ticket.m; path = FlightFinder/Ticket.m; sourceTree = "<group>"; };
+		EA1CB0B514F44D45001B8C99 /* Interfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Interfaces.h; path = FlightFinder/Interfaces.h; sourceTree = "<group>"; };
+		EA1CB0DB14F44F8C001B8C99 /* TicketAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketAgent.h; sourceTree = "<group>"; };
+		EA1CB0DC14F44F8C001B8C99 /* TicketAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketAgent.m; sourceTree = "<group>"; };
+		EA2FDF5615265C1800A666CE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EAB0ACE6157AC81200AB24DB /* Flight Finder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flight Finder.entitlements"; sourceTree = "<group>"; };
+		EAB0ACE7157AC84C00AB24DB /* TicketAgentService.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TicketAgentService.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA1CB07514F44ACD001B8C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2FDF5915265C3600A666CE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1CB09A14F44B33001B8C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2FDF5815265C2D00A666CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA1CB06D14F44ACD001B8C99 = {
+			isa = PBXGroup;
+			children = (
+				288C15DB1581A3B500490815 /* ReadMe.txt */,
+				EA1CB0B014F44BAE001B8C99 /* Shared Sources */,
+				EA1CB08214F44ACD001B8C99 /* FlightFinder */,
+				EA1CB0A014F44B33001B8C99 /* TicketAgentService */,
+				EA1CB07B14F44ACD001B8C99 /* Frameworks */,
+				EA1CB07914F44ACD001B8C99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA1CB07914F44ACD001B8C99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CB07814F44ACD001B8C99 /* Flight Finder.app */,
+				EA1CB09D14F44B33001B8C99 /* com.apple.TicketAgentService.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA1CB07B14F44ACD001B8C99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA2FDF5615265C1800A666CE /* Cocoa.framework */,
+				EA1CB09E14F44B33001B8C99 /* Foundation.framework */,
+				EA1CB07E14F44ACD001B8C99 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA1CB07E14F44ACD001B8C99 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CB07F14F44ACD001B8C99 /* AppKit.framework */,
+				EA1CB08014F44ACD001B8C99 /* CoreData.framework */,
+				EA1CB08114F44ACD001B8C99 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		EA1CB08214F44ACD001B8C99 /* FlightFinder */ = {
+			isa = PBXGroup;
+			children = (
+				EAB0ACE6157AC81200AB24DB /* Flight Finder.entitlements */,
+				EA1CB08E14F44ACD001B8C99 /* AppDelegate.h */,
+				EA1CB08F14F44ACD001B8C99 /* AppDelegate.m */,
+				EA1CB09114F44ACD001B8C99 /* MainMenu.xib */,
+				EA1CB08314F44ACD001B8C99 /* Supporting Files */,
+			);
+			path = FlightFinder;
+			sourceTree = "<group>";
+		};
+		EA1CB08314F44ACD001B8C99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CB08414F44ACD001B8C99 /* FlightFinder-Info.plist */,
+				EA1CB08514F44ACD001B8C99 /* InfoPlist.strings */,
+				EA1CB08814F44ACD001B8C99 /* main.m */,
+				EA1CB08A14F44ACD001B8C99 /* FlightFinder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA1CB0A014F44B33001B8C99 /* TicketAgentService */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CB0A714F44B33001B8C99 /* main.m */,
+				EA1CB0DB14F44F8C001B8C99 /* TicketAgent.h */,
+				EA1CB0DC14F44F8C001B8C99 /* TicketAgent.m */,
+				EA1CB0A114F44B33001B8C99 /* Supporting Files */,
+			);
+			path = TicketAgentService;
+			sourceTree = "<group>";
+		};
+		EA1CB0A114F44B33001B8C99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CB0A214F44B33001B8C99 /* TicketAgentService-Info.plist */,
+				EA1CB0A314F44B33001B8C99 /* InfoPlist.strings */,
+				EA1CB0A614F44B33001B8C99 /* TicketAgentService-Prefix.pch */,
+				EAB0ACE7157AC84C00AB24DB /* TicketAgentService.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA1CB0B014F44BAE001B8C99 /* Shared Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CB0B114F44BD0001B8C99 /* Ticket.h */,
+				EA1CB0B214F44BD0001B8C99 /* Ticket.m */,
+				EA1CB0B514F44D45001B8C99 /* Interfaces.h */,
+			);
+			name = "Shared Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA1CB07714F44ACD001B8C99 /* FlightFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA1CB09614F44ACD001B8C99 /* Build configuration list for PBXNativeTarget "FlightFinder" */;
+			buildPhases = (
+				EA1CB07414F44ACD001B8C99 /* Sources */,
+				EA1CB07514F44ACD001B8C99 /* Frameworks */,
+				EA1CB07614F44ACD001B8C99 /* Resources */,
+				EA1CB0AE14F44B5F001B8C99 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA1CB0AD14F44B5A001B8C99 /* PBXTargetDependency */,
+			);
+			name = FlightFinder;
+			productName = FlightFinder;
+			productReference = EA1CB07814F44ACD001B8C99 /* Flight Finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA1CB09C14F44B33001B8C99 /* TicketAgentService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA1CB0A914F44B33001B8C99 /* Build configuration list for PBXNativeTarget "TicketAgentService" */;
+			buildPhases = (
+				EA1CB09914F44B33001B8C99 /* Sources */,
+				EA1CB09A14F44B33001B8C99 /* Frameworks */,
+				EA1CB09B14F44B33001B8C99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TicketAgentService;
+			productName = TicketAgentService;
+			productReference = EA1CB09D14F44B33001B8C99 /* com.apple.TicketAgentService.xpc */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA1CB06F14F44ACD001B8C99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FLF;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Apple, Inc.";
+			};
+			buildConfigurationList = EA1CB07214F44ACD001B8C99 /* Build configuration list for PBXProject "FlightFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA1CB06D14F44ACD001B8C99;
+			productRefGroup = EA1CB07914F44ACD001B8C99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA1CB07714F44ACD001B8C99 /* FlightFinder */,
+				EA1CB09C14F44B33001B8C99 /* TicketAgentService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA1CB07614F44ACD001B8C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1CB08714F44ACD001B8C99 /* InfoPlist.strings in Resources */,
+				EA1CB09314F44ACD001B8C99 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1CB09B14F44B33001B8C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1CB0A514F44B33001B8C99 /* InfoPlist.strings in Resources */,
+				EAB0ACE8157AC84C00AB24DB /* TicketAgentService.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA1CB07414F44ACD001B8C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1CB08914F44ACD001B8C99 /* main.m in Sources */,
+				EA1CB09014F44ACD001B8C99 /* AppDelegate.m in Sources */,
+				EA1CB0B314F44BD0001B8C99 /* Ticket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1CB09914F44B33001B8C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1CB0A814F44B33001B8C99 /* main.m in Sources */,
+				EA1CB0B414F44BD0001B8C99 /* Ticket.m in Sources */,
+				EA1CB0DD14F44F8C001B8C99 /* TicketAgent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA1CB0AD14F44B5A001B8C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA1CB09C14F44B33001B8C99 /* TicketAgentService */;
+			targetProxy = EA1CB0AC14F44B5A001B8C99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA1CB08514F44ACD001B8C99 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA1CB08614F44ACD001B8C99 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA1CB09114F44ACD001B8C99 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA1CB09214F44ACD001B8C99 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		EA1CB0A314F44B33001B8C99 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA1CB0A414F44B33001B8C99 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA1CB09414F44ACD001B8C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EA1CB09514F44ACD001B8C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EA1CB09714F44ACD001B8C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "FlightFinder/Flight Finder.entitlements";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlightFinder/FlightFinder-Prefix.pch";
+				INFOPLIST_FILE = "FlightFinder/FlightFinder-Info.plist";
+				PRODUCT_NAME = "Flight Finder";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA1CB09814F44ACD001B8C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "FlightFinder/Flight Finder.entitlements";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlightFinder/FlightFinder-Prefix.pch";
+				INFOPLIST_FILE = "FlightFinder/FlightFinder-Info.plist";
+				PRODUCT_NAME = "Flight Finder";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EA1CB0AA14F44B33001B8C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TicketAgentService/TicketAgentService.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TicketAgentService/TicketAgentService-Prefix.pch";
+				INFOPLIST_FILE = "TicketAgentService/TicketAgentService-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = "com.apple.$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Debug;
+		};
+		EA1CB0AB14F44B33001B8C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TicketAgentService/TicketAgentService.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TicketAgentService/TicketAgentService-Prefix.pch";
+				INFOPLIST_FILE = "TicketAgentService/TicketAgentService-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = "com.apple.$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA1CB07214F44ACD001B8C99 /* Build configuration list for PBXProject "FlightFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1CB09414F44ACD001B8C99 /* Debug */,
+				EA1CB09514F44ACD001B8C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA1CB09614F44ACD001B8C99 /* Build configuration list for PBXNativeTarget "FlightFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1CB09714F44ACD001B8C99 /* Debug */,
+				EA1CB09814F44ACD001B8C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA1CB0A914F44B33001B8C99 /* Build configuration list for PBXNativeTarget "TicketAgentService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1CB0AA14F44B33001B8C99 /* Debug */,
+				EA1CB0AB14F44B33001B8C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA1CB06F14F44ACD001B8C99 /* Project object */;
+}

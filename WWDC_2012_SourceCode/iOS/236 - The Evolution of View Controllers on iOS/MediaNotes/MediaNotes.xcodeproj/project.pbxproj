@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32B3071E15712E2600572D94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3268A92D1569896A0014C4E2 /* UIKit.framework */; };
+		32B3071F15712E2600572D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3268A92F1569896A0014C4E2 /* Foundation.framework */; };
+		32B3072015712E2600572D94 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3268A9311569896A0014C4E2 /* CoreGraphics.framework */; };
+		32B3072615712E2600572D94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32B3072415712E2600572D94 /* InfoPlist.strings */; };
+		32B3072815712E2600572D94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3072715712E2600572D94 /* main.m */; };
+		32B3072C15712E2600572D94 /* PNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3072B15712E2600572D94 /* PNAppDelegate.m */; };
+		32B3072F15712E2600572D94 /* PNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3072E15712E2600572D94 /* PNViewController.m */; };
+		32B3073215712E2600572D94 /* PNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B3073015712E2600572D94 /* PNViewController.xib */; };
+		32B307391571360900572D94 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B307381571360900572D94 /* AssetsLibrary.framework */; };
+		32B3073A1571436500572D94 /* YYCommentContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3268A94B15698B2D0014C4E2 /* YYCommentContainerViewController.m */; };
+		32B3073B1571436500572D94 /* YYCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3268A94D15698B2D0014C4E2 /* YYCommentViewController.m */; };
+		32B3073C1571437B00572D94 /* YYCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3268A94E15698B2D0014C4E2 /* YYCommentViewController.xib */; };
+		32B3073D1571437B00572D94 /* AssistNext.png in Resources */ = {isa = PBXBuildFile; fileRef = 323C341A1569CD1C00A6E381 /* AssistNext.png */; };
+		32B3073E1571437B00572D94 /* AssistNext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323C341B1569CD1C00A6E381 /* AssistNext@2x.png */; };
+		32B3073F1571437B00572D94 /* AssistPrevious.png in Resources */ = {isa = PBXBuildFile; fileRef = 323C341C1569CD1C00A6E381 /* AssistPrevious.png */; };
+		32B307401571437B00572D94 /* AssistPrevious@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323C341D1569CD1C00A6E381 /* AssistPrevious@2x.png */; };
+		32B307421571499400572D94 /* NoPhotos.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B307411571499400572D94 /* NoPhotos.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		283C4BB11588564200738999 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		323C3418156998DD00A6E381 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		323C341A1569CD1C00A6E381 /* AssistNext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AssistNext.png; path = ../MediaNotes/AssistNext.png; sourceTree = "<group>"; };
+		323C341B1569CD1C00A6E381 /* AssistNext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AssistNext@2x.png"; path = "../MediaNotes/AssistNext@2x.png"; sourceTree = "<group>"; };
+		323C341C1569CD1C00A6E381 /* AssistPrevious.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AssistPrevious.png; path = ../MediaNotes/AssistPrevious.png; sourceTree = "<group>"; };
+		323C341D1569CD1C00A6E381 /* AssistPrevious@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AssistPrevious@2x.png"; path = "../MediaNotes/AssistPrevious@2x.png"; sourceTree = "<group>"; };
+		3268A92D1569896A0014C4E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3268A92F1569896A0014C4E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3268A9311569896A0014C4E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3268A94A15698B2D0014C4E2 /* YYCommentContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = YYCommentContainerViewController.h; path = MediaNotes/YYCommentContainerViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3268A94B15698B2D0014C4E2 /* YYCommentContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = YYCommentContainerViewController.m; path = MediaNotes/YYCommentContainerViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3268A94C15698B2D0014C4E2 /* YYCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = YYCommentViewController.h; path = MediaNotes/YYCommentViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3268A94D15698B2D0014C4E2 /* YYCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = YYCommentViewController.m; path = MediaNotes/YYCommentViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3268A94E15698B2D0014C4E2 /* YYCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YYCommentViewController.xib; path = MediaNotes/YYCommentViewController.xib; sourceTree = "<group>"; };
+		32B3071C15712E2600572D94 /* PhotoNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B3072315712E2600572D94 /* PhotoNotes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoNotes-Info.plist"; sourceTree = "<group>"; };
+		32B3072515712E2600572D94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32B3072715712E2600572D94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32B3072915712E2600572D94 /* PhotoNotes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoNotes-Prefix.pch"; sourceTree = "<group>"; };
+		32B3072A15712E2600572D94 /* PNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNAppDelegate.h; sourceTree = "<group>"; };
+		32B3072B15712E2600572D94 /* PNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNAppDelegate.m; sourceTree = "<group>"; };
+		32B3072D15712E2600572D94 /* PNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNViewController.h; sourceTree = "<group>"; };
+		32B3072E15712E2600572D94 /* PNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNViewController.m; sourceTree = "<group>"; };
+		32B3073115712E2600572D94 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PNViewController.xib; sourceTree = "<group>"; };
+		32B307381571360900572D94 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		32B307411571499400572D94 /* NoPhotos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoPhotos.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32B3071915712E2600572D94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B3071E15712E2600572D94 /* UIKit.framework in Frameworks */,
+				32B3071F15712E2600572D94 /* Foundation.framework in Frameworks */,
+				32B3072015712E2600572D94 /* CoreGraphics.framework in Frameworks */,
+				32B307391571360900572D94 /* AssetsLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3268A91E1569896A0014C4E2 = {
+			isa = PBXGroup;
+			children = (
+				283C4BB11588564200738999 /* ReadMe.txt */,
+				32B30737157132D800572D94 /* Shared Files */,
+				32B3072115712E2600572D94 /* PhotoNotes */,
+				3268A92C1569896A0014C4E2 /* Frameworks */,
+				3268A92A1569896A0014C4E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3268A92A1569896A0014C4E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32B3071C15712E2600572D94 /* PhotoNotes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3268A92C1569896A0014C4E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32B307381571360900572D94 /* AssetsLibrary.framework */,
+				323C3418156998DD00A6E381 /* MediaPlayer.framework */,
+				3268A92D1569896A0014C4E2 /* UIKit.framework */,
+				3268A92F1569896A0014C4E2 /* Foundation.framework */,
+				3268A9311569896A0014C4E2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32B3072115712E2600572D94 /* PhotoNotes */ = {
+			isa = PBXGroup;
+			children = (
+				32B3072A15712E2600572D94 /* PNAppDelegate.h */,
+				32B3072B15712E2600572D94 /* PNAppDelegate.m */,
+				32B3072D15712E2600572D94 /* PNViewController.h */,
+				32B3072E15712E2600572D94 /* PNViewController.m */,
+				32B3073015712E2600572D94 /* PNViewController.xib */,
+				32B3072215712E2600572D94 /* Supporting Files */,
+			);
+			path = PhotoNotes;
+			sourceTree = "<group>";
+		};
+		32B3072215712E2600572D94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				323C341A1569CD1C00A6E381 /* AssistNext.png */,
+				323C341B1569CD1C00A6E381 /* AssistNext@2x.png */,
+				323C341C1569CD1C00A6E381 /* AssistPrevious.png */,
+				323C341D1569CD1C00A6E381 /* AssistPrevious@2x.png */,
+				32B307411571499400572D94 /* NoPhotos.png */,
+				32B3072315712E2600572D94 /* PhotoNotes-Info.plist */,
+				32B3072415712E2600572D94 /* InfoPlist.strings */,
+				32B3072715712E2600572D94 /* main.m */,
+				32B3072915712E2600572D94 /* PhotoNotes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32B30737157132D800572D94 /* Shared Files */ = {
+			isa = PBXGroup;
+			children = (
+				3268A94A15698B2D0014C4E2 /* YYCommentContainerViewController.h */,
+				3268A94B15698B2D0014C4E2 /* YYCommentContainerViewController.m */,
+				3268A94C15698B2D0014C4E2 /* YYCommentViewController.h */,
+				3268A94D15698B2D0014C4E2 /* YYCommentViewController.m */,
+				3268A94E15698B2D0014C4E2 /* YYCommentViewController.xib */,
+			);
+			name = "Shared Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32B3071B15712E2600572D94 /* PhotoNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32B3073515712E2600572D94 /* Build configuration list for PBXNativeTarget "PhotoNotes" */;
+			buildPhases = (
+				32B3071815712E2600572D94 /* Sources */,
+				32B3071915712E2600572D94 /* Frameworks */,
+				32B3071A15712E2600572D94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoNotes;
+			productName = PhotoNotes;
+			productReference = 32B3071C15712E2600572D94 /* PhotoNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3268A9201569896A0014C4E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MN;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Yoyodyne;
+			};
+			buildConfigurationList = 3268A9231569896A0014C4E2 /* Build configuration list for PBXProject "MediaNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3268A91E1569896A0014C4E2;
+			productRefGroup = 3268A92A1569896A0014C4E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32B3071B15712E2600572D94 /* PhotoNotes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32B3071A15712E2600572D94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B3073C1571437B00572D94 /* YYCommentViewController.xib in Resources */,
+				32B3073D1571437B00572D94 /* AssistNext.png in Resources */,
+				32B3073E1571437B00572D94 /* AssistNext@2x.png in Resources */,
+				32B3073F1571437B00572D94 /* AssistPrevious.png in Resources */,
+				32B307401571437B00572D94 /* AssistPrevious@2x.png in Resources */,
+				32B3072615712E2600572D94 /* InfoPlist.strings in Resources */,
+				32B3073215712E2600572D94 /* PNViewController.xib in Resources */,
+				32B307421571499400572D94 /* NoPhotos.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32B3071815712E2600572D94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B3073A1571436500572D94 /* YYCommentContainerViewController.m in Sources */,
+				32B3073B1571436500572D94 /* YYCommentViewController.m in Sources */,
+				32B3072815712E2600572D94 /* main.m in Sources */,
+				32B3072C15712E2600572D94 /* PNAppDelegate.m in Sources */,
+				32B3072F15712E2600572D94 /* PNViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		32B3072415712E2600572D94 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32B3072515712E2600572D94 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		32B3073015712E2600572D94 /* PNViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32B3073115712E2600572D94 /* en */,
+			);
+			name = PNViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3268A9451569896B0014C4E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3268A9461569896B0014C4E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32B3073315712E2600572D94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoNotes/PhotoNotes-Prefix.pch";
+				INFOPLIST_FILE = "PhotoNotes/PhotoNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		32B3073415712E2600572D94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoNotes/PhotoNotes-Prefix.pch";
+				INFOPLIST_FILE = "PhotoNotes/PhotoNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3268A9231569896A0014C4E2 /* Build configuration list for PBXProject "MediaNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3268A9451569896B0014C4E2 /* Debug */,
+				3268A9461569896B0014C4E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32B3073515712E2600572D94 /* Build configuration list for PBXNativeTarget "PhotoNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B3073315712E2600572D94 /* Debug */,
+				32B3073415712E2600572D94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3268A9201569896A0014C4E2 /* Project object */;
+}

@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		475A3916139404FB004B9B64 /* Entitlements.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 475A3915139404FB004B9B64 /* Entitlements.entitlements */; };
+		47685687138CA92D009BA0C5 /* NoteDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 47685686138CA92D009BA0C5 /* NoteDocument.m */; };
+		4768568B138D8221009BA0C5 /* DocumentStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4768568A138D8221009BA0C5 /* DocumentStatusView.m */; };
+		4768568D138D8789009BA0C5 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 4768568C138D8789009BA0C5 /* Red.png */; };
+		47685690138DAB99009BA0C5 /* Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 4768568E138DAB99009BA0C5 /* Green.png */; };
+		47685691138DAB99009BA0C5 /* Yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4768568F138DAB99009BA0C5 /* Yellow.png */; };
+		47E102EB1577D7C0000A30FA /* pencil-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47E102EA1577D7C0000A30FA /* pencil-icon.jpg */; };
+		47E10376157D7286000A30FA /* CloudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E10375157D7286000A30FA /* CloudManager.m */; };
+		47EFE6251577BC36009E3C0B /* NoteTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EFE6241577BC36009E3C0B /* NoteTableCell.m */; };
+		47FA68681386CA1200700441 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FA68671386CA1200700441 /* UIKit.framework */; };
+		47FA686A1386CA1200700441 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FA68691386CA1200700441 /* Foundation.framework */; };
+		47FA686C1386CA1200700441 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FA686B1386CA1200700441 /* CoreGraphics.framework */; };
+		47FA68721386CA1200700441 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47FA68701386CA1200700441 /* InfoPlist.strings */; };
+		47FA68741386CA1200700441 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA68731386CA1200700441 /* main.m */; };
+		47FA68781386CA1200700441 /* CloudNotesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA68771386CA1200700441 /* CloudNotesAppDelegate.m */; };
+		47FA687B1386CA1200700441 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA687A1386CA1200700441 /* RootViewController.m */; };
+		47FA687D1386CA1200700441 /* DetailViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 47FA687C1386CA1200700441 /* DetailViewController.h */; };
+		47FA687F1386CA1200700441 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA687E1386CA1200700441 /* DetailViewController.m */; };
+		47FA68821386CA1200700441 /* RootViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47FA68801386CA1200700441 /* RootViewController_iPhone.xib */; };
+		47FA68851386CA1200700441 /* RootViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47FA68831386CA1200700441 /* RootViewController_iPad.xib */; };
+		47FA68881386CA1200700441 /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47FA68861386CA1200700441 /* DetailViewController_iPhone.xib */; };
+		47FA688B1386CA1200700441 /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47FA68891386CA1200700441 /* DetailViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		286074C31587C85F001C2F78 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		475A3915139404FB004B9B64 /* Entitlements.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Entitlements.entitlements; sourceTree = "<group>"; };
+		47685685138CA92D009BA0C5 /* NoteDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDocument.h; sourceTree = "<group>"; };
+		47685686138CA92D009BA0C5 /* NoteDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDocument.m; sourceTree = "<group>"; };
+		47685689138D8221009BA0C5 /* DocumentStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentStatusView.h; sourceTree = "<group>"; };
+		4768568A138D8221009BA0C5 /* DocumentStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentStatusView.m; sourceTree = "<group>"; };
+		4768568C138D8789009BA0C5 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
+		4768568E138DAB99009BA0C5 /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
+		4768568F138DAB99009BA0C5 /* Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow.png; sourceTree = "<group>"; };
+		47E102EA1577D7C0000A30FA /* pencil-icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pencil-icon.jpg"; sourceTree = "<group>"; };
+		47E10374157D7286000A30FA /* CloudManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudManager.h; sourceTree = "<group>"; };
+		47E10375157D7286000A30FA /* CloudManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudManager.m; sourceTree = "<group>"; };
+		47EFE6231577BC36009E3C0B /* NoteTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteTableCell.h; sourceTree = "<group>"; };
+		47EFE6241577BC36009E3C0B /* NoteTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteTableCell.m; sourceTree = "<group>"; };
+		47FA68631386CA1200700441 /* CloudNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47FA68671386CA1200700441 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		47FA68691386CA1200700441 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		47FA686B1386CA1200700441 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		47FA686F1386CA1200700441 /* CloudNotes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudNotes-Info.plist"; sourceTree = "<group>"; };
+		47FA68711386CA1200700441 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		47FA68731386CA1200700441 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47FA68751386CA1200700441 /* CloudNotes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudNotes-Prefix.pch"; sourceTree = "<group>"; };
+		47FA68761386CA1200700441 /* CloudNotesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudNotesAppDelegate.h; sourceTree = "<group>"; };
+		47FA68771386CA1200700441 /* CloudNotesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudNotesAppDelegate.m; sourceTree = "<group>"; };
+		47FA68791386CA1200700441 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		47FA687A1386CA1200700441 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		47FA687C1386CA1200700441 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		47FA687E1386CA1200700441 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		47FA68811386CA1200700441 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController_iPhone.xib; sourceTree = "<group>"; };
+		47FA68841386CA1200700441 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController_iPad.xib; sourceTree = "<group>"; };
+		47FA68871386CA1200700441 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		47FA688A1386CA1200700441 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47FA68601386CA1200700441 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FA68681386CA1200700441 /* UIKit.framework in Frameworks */,
+				47FA686A1386CA1200700441 /* Foundation.framework in Frameworks */,
+				47FA686C1386CA1200700441 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		475A39171396BD5A004B9B64 /* Other Classes */ = {
+			isa = PBXGroup;
+			children = (
+				47FA68791386CA1200700441 /* RootViewController.h */,
+				47FA687A1386CA1200700441 /* RootViewController.m */,
+				47685689138D8221009BA0C5 /* DocumentStatusView.h */,
+				4768568A138D8221009BA0C5 /* DocumentStatusView.m */,
+				47EFE6231577BC36009E3C0B /* NoteTableCell.h */,
+				47EFE6241577BC36009E3C0B /* NoteTableCell.m */,
+				47FA68801386CA1200700441 /* RootViewController_iPhone.xib */,
+				47FA68831386CA1200700441 /* RootViewController_iPad.xib */,
+				47FA68861386CA1200700441 /* DetailViewController_iPhone.xib */,
+				47FA68891386CA1200700441 /* DetailViewController_iPad.xib */,
+			);
+			name = "Other Classes";
+			sourceTree = "<group>";
+		};
+		47FA68581386CA1200700441 = {
+			isa = PBXGroup;
+			children = (
+				286074C31587C85F001C2F78 /* ReadMe.txt */,
+				47FA686D1386CA1200700441 /* CloudNotes */,
+				47FA68661386CA1200700441 /* Frameworks */,
+				47FA68641386CA1200700441 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47FA68641386CA1200700441 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47FA68631386CA1200700441 /* CloudNotes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47FA68661386CA1200700441 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47FA68671386CA1200700441 /* UIKit.framework */,
+				47FA68691386CA1200700441 /* Foundation.framework */,
+				47FA686B1386CA1200700441 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47FA686D1386CA1200700441 /* CloudNotes */ = {
+			isa = PBXGroup;
+			children = (
+				47FA68761386CA1200700441 /* CloudNotesAppDelegate.h */,
+				47FA68771386CA1200700441 /* CloudNotesAppDelegate.m */,
+				47FA687C1386CA1200700441 /* DetailViewController.h */,
+				47FA687E1386CA1200700441 /* DetailViewController.m */,
+				47685685138CA92D009BA0C5 /* NoteDocument.h */,
+				47685686138CA92D009BA0C5 /* NoteDocument.m */,
+				47E10374157D7286000A30FA /* CloudManager.h */,
+				47E10375157D7286000A30FA /* CloudManager.m */,
+				475A39171396BD5A004B9B64 /* Other Classes */,
+				47FA686E1386CA1200700441 /* Supporting Files */,
+			);
+			path = CloudNotes;
+			sourceTree = "<group>";
+		};
+		47FA686E1386CA1200700441 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4768568C138D8789009BA0C5 /* Red.png */,
+				4768568E138DAB99009BA0C5 /* Green.png */,
+				4768568F138DAB99009BA0C5 /* Yellow.png */,
+				47E102EA1577D7C0000A30FA /* pencil-icon.jpg */,
+				47FA686F1386CA1200700441 /* CloudNotes-Info.plist */,
+				47FA68701386CA1200700441 /* InfoPlist.strings */,
+				47FA68731386CA1200700441 /* main.m */,
+				47FA68751386CA1200700441 /* CloudNotes-Prefix.pch */,
+				475A3915139404FB004B9B64 /* Entitlements.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47FA68621386CA1200700441 /* CloudNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47FA688E1386CA1200700441 /* Build configuration list for PBXNativeTarget "CloudNotes" */;
+			buildPhases = (
+				47FA685F1386CA1200700441 /* Sources */,
+				47FA68601386CA1200700441 /* Frameworks */,
+				47FA68611386CA1200700441 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudNotes;
+			productName = CloudNotes;
+			productReference = 47FA68631386CA1200700441 /* CloudNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47FA685A1386CA1200700441 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 47FA685D1386CA1200700441 /* Build configuration list for PBXProject "CloudNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 47FA68581386CA1200700441;
+			productRefGroup = 47FA68641386CA1200700441 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47FA68621386CA1200700441 /* CloudNotes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47FA68611386CA1200700441 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FA68721386CA1200700441 /* InfoPlist.strings in Resources */,
+				47FA687D1386CA1200700441 /* DetailViewController.h in Resources */,
+				47FA68821386CA1200700441 /* RootViewController_iPhone.xib in Resources */,
+				47FA68851386CA1200700441 /* RootViewController_iPad.xib in Resources */,
+				47FA68881386CA1200700441 /* DetailViewController_iPhone.xib in Resources */,
+				47FA688B1386CA1200700441 /* DetailViewController_iPad.xib in Resources */,
+				4768568D138D8789009BA0C5 /* Red.png in Resources */,
+				47685690138DAB99009BA0C5 /* Green.png in Resources */,
+				47685691138DAB99009BA0C5 /* Yellow.png in Resources */,
+				475A3916139404FB004B9B64 /* Entitlements.entitlements in Resources */,
+				47E102EB1577D7C0000A30FA /* pencil-icon.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47FA685F1386CA1200700441 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FA68741386CA1200700441 /* main.m in Sources */,
+				47FA68781386CA1200700441 /* CloudNotesAppDelegate.m in Sources */,
+				47FA687B1386CA1200700441 /* RootViewController.m in Sources */,
+				47FA687F1386CA1200700441 /* DetailViewController.m in Sources */,
+				47685687138CA92D009BA0C5 /* NoteDocument.m in Sources */,
+				4768568B138D8221009BA0C5 /* DocumentStatusView.m in Sources */,
+				47EFE6251577BC36009E3C0B /* NoteTableCell.m in Sources */,
+				47E10376157D7286000A30FA /* CloudManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		47FA68701386CA1200700441 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47FA68711386CA1200700441 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		47FA68801386CA1200700441 /* RootViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47FA68811386CA1200700441 /* en */,
+			);
+			name = RootViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		47FA68831386CA1200700441 /* RootViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47FA68841386CA1200700441 /* en */,
+			);
+			name = RootViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		47FA68861386CA1200700441 /* DetailViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47FA68871386CA1200700441 /* en */,
+			);
+			name = DetailViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		47FA68891386CA1200700441 /* DetailViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47FA688A1386CA1200700441 /* en */,
+			);
+			name = DetailViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47FA688C1386CA1200700441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /Applications;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47FA688D1386CA1200700441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /Applications;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47FA688F1386CA1200700441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudNotes/CloudNotes-Prefix.pch";
+				INFOPLIST_FILE = "CloudNotes/CloudNotes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		47FA68901386CA1200700441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudNotes/CloudNotes-Prefix.pch";
+				INFOPLIST_FILE = "CloudNotes/CloudNotes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47FA685D1386CA1200700441 /* Build configuration list for PBXProject "CloudNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47FA688C1386CA1200700441 /* Debug */,
+				47FA688D1386CA1200700441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47FA688E1386CA1200700441 /* Build configuration list for PBXNativeTarget "CloudNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47FA688F1386CA1200700441 /* Debug */,
+				47FA68901386CA1200700441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47FA685A1386CA1200700441 /* Project object */;
+}

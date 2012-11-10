@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--
+ File: index.html
+ 
+ Abstract: Example page showing a common flashing content issue and fix.
+ 
+ Version: 1.0
+ 
+ Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
+ Apple Inc. ("Apple") in consideration of your agreement to the
+ following terms, and your use, installation, modification or
+ redistribution of this Apple software constitutes acceptance of these
+ terms.  If you do not agree with these terms, please do not use,
+ install, modify or redistribute this Apple software.
+ 
+ In consideration of your agreement to abide by the following terms, and
+ subject to these terms, Apple grants you a personal, non-exclusive
+ license, under Apple's copyrights in this original Apple software (the
+ "Apple Software"), to use, reproduce, modify and redistribute the Apple
+ Software, with or without modifications, in source and/or binary forms;
+ provided that if you redistribute the Apple Software in its entirety and
+ without modifications, you must retain this notice and the following
+ text and disclaimers in all such redistributions of the Apple Software. 
+ Neither the name, trademarks, service marks or logos of Apple Inc. 
+ may be used to endorse or promote products derived from the Apple
+ Software without specific prior written permission from Apple.  Except
+ as expressly stated in this notice, no other rights or licenses, express
+ or implied, are granted by Apple herein, including but not limited to
+ any patent rights that may be infringed by your derivative works or by
+ other works in which the Apple Software may be incorporated.
+ 
+ The Apple Software is provided by Apple on an "AS IS" basis.  APPLE
+ MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
+ THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND
+ OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS.
+ 
+ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL
+ OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION,
+ MODIFICATION AND/OR DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED
+ AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
+ STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ 
+ Copyright (C) 2012 Apple Inc. All Rights Reserved.
+-->
+<html>
+<head>
+    <title>Flashing Content</title>
+    <meta name="viewport" content="width=980">
+    <style>
+    /* Main page styles */
+    body, h1 {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+    }
+
+    .container {
+        width: 965px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Shared Carousel Styles */
+    .carousel {
+        width: 945px;
+        overflow: scroll;
+        white-space: nowrap;
+        padding: 15px 10px;
+        background: #ccc;
+        border: solid #aaa 1px;
+        margin-top: 40px;
+    }
+
+    .carousel .item {
+        padding: 10px 5px 10px 5px;
+        margin: 0 10px 0 0;
+        background: #aaa;
+        width: 295px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 3px;
+    }
+
+    .carousel .item:last-child {
+        margin-right: 0;
+    }
+
+    .carousel .item > img {
+        width: 270px;
+        height: 152px;
+        border: 5px solid white;
+        border-radius: 5px;
+    }
+
+    /* Individual slider styles */
+    #overflow-scroll-carousel {
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #paginated-carousel {
+        -webkit-overflow-scrolling: auto;
+    }
+
+    /* This is toggled by the UIWebView embedder. It puts the individual items into layers. */
+    body.split .carousel .item {
+        -webkit-transform: translateZ(0);
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Carousel with touch scrolling, overflow-scrolling:touch -->   
+        <div id="overflow-scroll-carousel" class="carousel">
+            <div class="item"><img src="images/poster-1.png"></div>
+            <div class="item"><img src="images/poster-2.png"></div>
+            <div class="item"><img src="images/poster-3.png"></div>
+            <div class="item"><img src="images/poster-4.png"></div>
+            <div class="item"><img src="images/poster-5.png"></div>
+            <div class="item"><img src="images/poster-6.png"></div>
+            <div class="item"><img src="images/poster-1.png"></div>
+            <div class="item"><img src="images/poster-2.png"></div>
+            <div class="item"><img src="images/poster-3.png"></div>
+            <div class="item"><img src="images/poster-4.png"></div>
+            <div class="item"><img src="images/poster-5.png"></div>
+            <div class="item"><img src="images/poster-6.png"></div>
+        </div>
+        <!-- Carousel with touch event listeners, paginated -->   
+        <div id="paginated-carousel" class="carousel">
+            <div id="paginated-carousel-wrapper">
+                <div class="item"><img src="images/poster-1.png"></div>
+                <div class="item"><img src="images/poster-2.png"></div>
+                <div class="item"><img src="images/poster-3.png"></div>
+                <div class="item"><img src="images/poster-4.png"></div>
+                <div class="item"><img src="images/poster-5.png"></div>
+                <div class="item"><img src="images/poster-6.png"></div>
+                <div class="item"><img src="images/poster-1.png"></div>
+                <div class="item"><img src="images/poster-2.png"></div>
+                <div class="item"><img src="images/poster-3.png"></div>
+                <div class="item"><img src="images/poster-4.png"></div>
+                <div class="item"><img src="images/poster-5.png"></div>
+                <div class="item"><img src="images/poster-6.png"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // This slider implementation is oversimplified:
+    //   - Ideally this would want to track touch identifiers and track only a single finger.
+    //   - pageWidth is hard coded, and should be automatically determined from content.
+    (function() {
+        var carousel = document.getElementById('paginated-carousel');
+        var wrapper = document.getElementById('paginated-carousel-wrapper');
+        wrapper.translationX = 0;
+        wrapper.currentPage = 0;
+
+        // Track position.
+        var startX = NaN;  // Starting touch X position.
+        var totalX = NaN;  // Total distance the touch has moved in the X axis.
+        var lastX = NaN;   // Last touch move X position, so we can compare to determine dragging direction.
+        var direction = 0; // Drag distance, negative = left, positive = right.
+        var animating = false; // Currently in an animation.
+
+        // Limits.
+        const minPage = 0; // Leftmost page.
+        const maxPage = 4; // Rightmost page.
+        const pageWidth = 960 - 2; // Width of a page (this is probably wrong. It should be wrapper.offsetWidth).
+        const maxX = wrapper.scrollWidth - wrapper.offsetWidth; // Total width of content. We have hard scroll bounds.
+        const threshold = pageWidth * 0.15; // You must move the slider 15% to advance.
+
+        // Helpers.
+        function constrain(value, min, max) {
+            if (value < min)
+                return min;
+            if (value > max)
+                return max;
+            return value;
+        }
+        function animateToPageWidth() {
+            var animationDuration = 0.7;
+            var totalMovement = wrapper.translationX - totalX;
+            if (Math.abs(totalMovement) < threshold)
+                animationDuration = 0.3;
+            else {
+                if (direction > 0 && totalMovement > 0)
+                    wrapper.currentPage = constrain(wrapper.currentPage - 1, minPage, maxPage);
+                else if (direction < 0 && totalMovement < 0)
+                    wrapper.currentPage = constrain(wrapper.currentPage + 1, minPage, maxPage);
+            }
+
+            // Snap to page width.
+            totalX = wrapper.currentPage * pageWidth; 
+
+            // Perform an animation only if the transform changed.
+            // Let WebKit canonicalize the -webkit-transform notation used in comparison,
+            // this is nice in cases where translateX(-0) is canonicalized to translateX(0).
+            var oldTransform = wrapper.style.webkitTransform;
+            wrapper.style.webkitTransform = 'translateX(-' + totalX + 'px)';
+            var newTransform = wrapper.style.webkitTransform;
+            if (oldTransform !== newTransform) {
+                wrapper.style.webkitTransitionStyle = '-webkit-transform';
+                wrapper.style.webkitTransitionDuration = animationDuration + 's';
+                wrapper.style.webkitTransform = newTransform;
+                animating = true; // Will be reset in webkitTransitionEnd.
+            }
+        }
+
+        wrapper.addEventListener('webkitTransitionEnd', function() {
+            animating = false;
+        }, false);
+
+        // Touch handlers.
+        carousel.ontouchstart = function(e) {
+            // We will handle all scrolling in this div.
+            e.preventDefault();
+            // Currently in animation, don't mess with touches.
+            if (animating)
+                return;
+            // Record start.
+            startX = lastX = e.touches[0].pageX;
+            wrapper.style.webkitTransition = '';
+        }
+        carousel.ontouchmove = function(e) {
+            // We did not track the start, ignore the move.
+            if (isNaN(startX))
+                return;
+            var currentX = e.touches[0].pageX;
+            // Record direction.
+            if (currentX !== lastX)
+                direction = currentX - lastX;
+            lastX = currentX;
+            // Move content for the current gesture.
+            var diffX = startX - currentX;
+            totalX = constrain(wrapper.translationX + diffX, 0, maxX);
+            wrapper.style.webkitTransform = 'translateX(-' + totalX + 'px)';
+        }
+        carousel.ontouchend = carousel.ontouchend = function(e) {
+            // We did not track the start, ignore the end.
+            if (isNaN(startX))
+                return;
+            // Animate to fixed page size. This modifies totalX.
+            animateToPageWidth();
+            // Save total translation.
+            wrapper.translationX = totalX;
+            // Reset start.
+            startX = NaN;
+        }
+    })();
+    </script>
+
+</body>
+</html>

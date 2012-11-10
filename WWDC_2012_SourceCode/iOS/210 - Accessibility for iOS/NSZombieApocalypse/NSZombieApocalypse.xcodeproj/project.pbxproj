@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28A3690F1589C3EA00C0B779 /* smaller-zombie1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28A3690E1589C3EA00C0B779 /* smaller-zombie1.png */; };
+		AA510CCA157F2EFC007DDCEC /* NewZombie.aiff in Resources */ = {isa = PBXBuildFile; fileRef = AA510CC8157F2EFC007DDCEC /* NewZombie.aiff */; };
+		AA510CCB157F2EFC007DDCEC /* RemoveZombie.aiff in Resources */ = {isa = PBXBuildFile; fileRef = AA510CC9157F2EFC007DDCEC /* RemoveZombie.aiff */; };
+		AA675FA51577CC540069C920 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA675FA71577CC540069C920 /* Strings.strings */; };
+		AA675FAB1577D3020069C920 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA675FAA1577D3020069C920 /* AudioToolbox.framework */; };
+		AA710BF015732BF200134B95 /* ZBEButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA710BEF15732BF200134B95 /* ZBEButtonView.m */; };
+		AA710BF315732C3400134B95 /* buttonView.png in Resources */ = {isa = PBXBuildFile; fileRef = AA710BF215732C3400134B95 /* buttonView.png */; };
+		AA710BF515735C1E00134B95 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA710BF415735C1E00134B95 /* QuartzCore.framework */; };
+		AA9DDC0A156DC9A0006E9B8A /* ZBEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDC4BE1564807C003EAC81 /* ZBEAppDelegate.m */; };
+		AA9DDC0B156DC9A0006E9B8A /* ZBEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDC4C31564807D003EAC81 /* ZBEViewController.m */; };
+		AA9DDC0C156DC9A0006E9B8A /* ZBEButtonCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAD63341569B71500472E97 /* ZBEButtonCollectionView.m */; };
+		AA9DDC0D156DC9A0006E9B8A /* ZBEWalkingDead.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAD63421569C7DE00472E97 /* ZBEWalkingDead.m */; };
+		AA9DDC0E156DC9A0006E9B8A /* ZBEMiniPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAD633A1569B86B00472E97 /* ZBEMiniPadView.m */; };
+		AA9DDC10156DC9A0006E9B8A /* ZBEStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAD63311569B60E00472E97 /* ZBEStatusView.m */; };
+		AA9DDC11156DC9A0006E9B8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDC4BA1564807C003EAC81 /* main.m */; };
+		AA9DDC12156DC9A0006E9B8A /* ZBEZombieMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAD633F1569BF8500472E97 /* ZBEZombieMeter.m */; };
+		AAAD633D1569B8C700472E97 /* iPadImage.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAD633C1569B8C700472E97 /* iPadImage.png */; };
+		AABDC4AF1564807C003EAC81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABDC4AE1564807C003EAC81 /* UIKit.framework */; };
+		AABDC4B11564807C003EAC81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABDC4B01564807C003EAC81 /* Foundation.framework */; };
+		AABDC4B31564807C003EAC81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABDC4B21564807C003EAC81 /* CoreGraphics.framework */; };
+		AABDC4C11564807D003EAC81 /* NSZombieApocalypse.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = AABDC4C01564807D003EAC81 /* NSZombieApocalypse.entitlements */; };
+		AABDC4CE156481C4003EAC81 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = AABDC4CD156481C4003EAC81 /* background.png */; };
+		AAC0EF2C15773D14000B9267 /* ZBESymbolMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC0EF2B15773D13000B9267 /* ZBESymbolMarkView.m */; };
+		AAC0EF2F157748A3000B9267 /* ZBEHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC0EF2E157748A3000B9267 /* ZBEHelpView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28A368E41588F76100C0B779 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		28A3690E1589C3EA00C0B779 /* smaller-zombie1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smaller-zombie1.png"; sourceTree = "<group>"; };
+		AA510CC8157F2EFC007DDCEC /* NewZombie.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = NewZombie.aiff; sourceTree = SOURCE_ROOT; };
+		AA510CC9157F2EFC007DDCEC /* RemoveZombie.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = RemoveZombie.aiff; sourceTree = SOURCE_ROOT; };
+		AA675FA61577CC540069C920 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Strings.strings; sourceTree = "<group>"; };
+		AA675FAA1577D3020069C920 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AA710BEE15732BF200134B95 /* ZBEButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBEButtonView.h; sourceTree = "<group>"; };
+		AA710BEF15732BF200134B95 /* ZBEButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBEButtonView.m; sourceTree = "<group>"; };
+		AA710BF215732C3400134B95 /* buttonView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonView.png; sourceTree = "<group>"; };
+		AA710BF415735C1E00134B95 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AAAD63301569B60E00472E97 /* ZBEStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBEStatusView.h; sourceTree = "<group>"; };
+		AAAD63311569B60E00472E97 /* ZBEStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBEStatusView.m; sourceTree = "<group>"; };
+		AAAD63331569B71500472E97 /* ZBEButtonCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBEButtonCollectionView.h; sourceTree = "<group>"; };
+		AAAD63341569B71500472E97 /* ZBEButtonCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBEButtonCollectionView.m; sourceTree = "<group>"; };
+		AAAD63391569B86B00472E97 /* ZBEMiniPadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBEMiniPadView.h; sourceTree = "<group>"; };
+		AAAD633A1569B86B00472E97 /* ZBEMiniPadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBEMiniPadView.m; sourceTree = "<group>"; };
+		AAAD633C1569B8C700472E97 /* iPadImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadImage.png; sourceTree = "<group>"; };
+		AAAD633E1569BF8500472E97 /* ZBEZombieMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBEZombieMeter.h; sourceTree = "<group>"; };
+		AAAD633F1569BF8500472E97 /* ZBEZombieMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBEZombieMeter.m; sourceTree = "<group>"; };
+		AAAD63411569C7DE00472E97 /* ZBEWalkingDead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBEWalkingDead.h; sourceTree = "<group>"; };
+		AAAD63421569C7DE00472E97 /* ZBEWalkingDead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBEWalkingDead.m; sourceTree = "<group>"; };
+		AABDC4AA1564807C003EAC81 /* NSZombieApocalypse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSZombieApocalypse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABDC4AE1564807C003EAC81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AABDC4B01564807C003EAC81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AABDC4B21564807C003EAC81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AABDC4B61564807C003EAC81 /* NSZombieApocalypse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSZombieApocalypse-Info.plist"; sourceTree = "<group>"; };
+		AABDC4BA1564807C003EAC81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AABDC4BC1564807C003EAC81 /* NSZombieApocalypse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSZombieApocalypse-Prefix.pch"; sourceTree = "<group>"; };
+		AABDC4BD1564807C003EAC81 /* ZBEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBEAppDelegate.h; sourceTree = "<group>"; };
+		AABDC4BE1564807C003EAC81 /* ZBEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBEAppDelegate.m; sourceTree = "<group>"; };
+		AABDC4C01564807D003EAC81 /* NSZombieApocalypse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NSZombieApocalypse.entitlements; sourceTree = "<group>"; };
+		AABDC4C21564807D003EAC81 /* ZBEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBEViewController.h; sourceTree = "<group>"; };
+		AABDC4C31564807D003EAC81 /* ZBEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBEViewController.m; sourceTree = "<group>"; };
+		AABDC4CD156481C4003EAC81 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		AAC0EF2A15773D12000B9267 /* ZBESymbolMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBESymbolMarkView.h; sourceTree = "<group>"; };
+		AAC0EF2B15773D13000B9267 /* ZBESymbolMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBESymbolMarkView.m; sourceTree = "<group>"; };
+		AAC0EF2D157748A3000B9267 /* ZBEHelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBEHelpView.h; sourceTree = "<group>"; };
+		AAC0EF2E157748A3000B9267 /* ZBEHelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBEHelpView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AABDC4A71564807C003EAC81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA675FAB1577D3020069C920 /* AudioToolbox.framework in Frameworks */,
+				AA710BF515735C1E00134B95 /* QuartzCore.framework in Frameworks */,
+				AABDC4AF1564807C003EAC81 /* UIKit.framework in Frameworks */,
+				AABDC4B11564807C003EAC81 /* Foundation.framework in Frameworks */,
+				AABDC4B31564807C003EAC81 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AABDC49F1564807C003EAC81 = {
+			isa = PBXGroup;
+			children = (
+				28A368E41588F76100C0B779 /* ReadMe.txt */,
+				AABDC4B41564807C003EAC81 /* Source */,
+				AABDC4AD1564807C003EAC81 /* Frameworks */,
+				AABDC4AB1564807C003EAC81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AABDC4AB1564807C003EAC81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AABDC4AA1564807C003EAC81 /* NSZombieApocalypse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AABDC4AD1564807C003EAC81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA675FAA1577D3020069C920 /* AudioToolbox.framework */,
+				AA710BF415735C1E00134B95 /* QuartzCore.framework */,
+				AABDC4AE1564807C003EAC81 /* UIKit.framework */,
+				AABDC4B01564807C003EAC81 /* Foundation.framework */,
+				AABDC4B21564807C003EAC81 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AABDC4B41564807C003EAC81 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AABDC4BD1564807C003EAC81 /* ZBEAppDelegate.h */,
+				AABDC4BE1564807C003EAC81 /* ZBEAppDelegate.m */,
+				AAAD63331569B71500472E97 /* ZBEButtonCollectionView.h */,
+				AAAD63341569B71500472E97 /* ZBEButtonCollectionView.m */,
+				AA710BEE15732BF200134B95 /* ZBEButtonView.h */,
+				AA710BEF15732BF200134B95 /* ZBEButtonView.m */,
+				AAC0EF2D157748A3000B9267 /* ZBEHelpView.h */,
+				AAC0EF2E157748A3000B9267 /* ZBEHelpView.m */,
+				AAAD63391569B86B00472E97 /* ZBEMiniPadView.h */,
+				AAAD633A1569B86B00472E97 /* ZBEMiniPadView.m */,
+				AAAD63301569B60E00472E97 /* ZBEStatusView.h */,
+				AAAD63311569B60E00472E97 /* ZBEStatusView.m */,
+				AAC0EF2A15773D12000B9267 /* ZBESymbolMarkView.h */,
+				AAC0EF2B15773D13000B9267 /* ZBESymbolMarkView.m */,
+				AABDC4C21564807D003EAC81 /* ZBEViewController.h */,
+				AABDC4C31564807D003EAC81 /* ZBEViewController.m */,
+				AAAD63411569C7DE00472E97 /* ZBEWalkingDead.h */,
+				AAAD63421569C7DE00472E97 /* ZBEWalkingDead.m */,
+				AAAD633E1569BF8500472E97 /* ZBEZombieMeter.h */,
+				AAAD633F1569BF8500472E97 /* ZBEZombieMeter.m */,
+				AABDC4B51564807C003EAC81 /* Supporting Files */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		AABDC4B51564807C003EAC81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28A3690E1589C3EA00C0B779 /* smaller-zombie1.png */,
+				AA510CC8157F2EFC007DDCEC /* NewZombie.aiff */,
+				AA510CC9157F2EFC007DDCEC /* RemoveZombie.aiff */,
+				AA710BF215732C3400134B95 /* buttonView.png */,
+				AABDC4CD156481C4003EAC81 /* background.png */,
+				AAAD633C1569B8C700472E97 /* iPadImage.png */,
+				AA675FA71577CC540069C920 /* Strings.strings */,
+				AABDC4BA1564807C003EAC81 /* main.m */,
+				AABDC4B61564807C003EAC81 /* NSZombieApocalypse-Info.plist */,
+				AABDC4BC1564807C003EAC81 /* NSZombieApocalypse-Prefix.pch */,
+				AABDC4C01564807D003EAC81 /* NSZombieApocalypse.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AABDC4A91564807C003EAC81 /* NSZombieApocalypse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AABDC4CA1564807D003EAC81 /* Build configuration list for PBXNativeTarget "NSZombieApocalypse" */;
+			buildPhases = (
+				AABDC4A61564807C003EAC81 /* Sources */,
+				AABDC4A71564807C003EAC81 /* Frameworks */,
+				AABDC4A81564807C003EAC81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSZombieApocalypse;
+			productName = NSZombieApocalypse;
+			productReference = AABDC4AA1564807C003EAC81 /* NSZombieApocalypse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AABDC4A11564807C003EAC81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZBE;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Apple, Inc";
+			};
+			buildConfigurationList = AABDC4A41564807C003EAC81 /* Build configuration list for PBXProject "NSZombieApocalypse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AABDC49F1564807C003EAC81;
+			productRefGroup = AABDC4AB1564807C003EAC81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AABDC4A91564807C003EAC81 /* NSZombieApocalypse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AABDC4A81564807C003EAC81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABDC4C11564807D003EAC81 /* NSZombieApocalypse.entitlements in Resources */,
+				AABDC4CE156481C4003EAC81 /* background.png in Resources */,
+				AAAD633D1569B8C700472E97 /* iPadImage.png in Resources */,
+				AA710BF315732C3400134B95 /* buttonView.png in Resources */,
+				AA675FA51577CC540069C920 /* Strings.strings in Resources */,
+				AA510CCA157F2EFC007DDCEC /* NewZombie.aiff in Resources */,
+				AA510CCB157F2EFC007DDCEC /* RemoveZombie.aiff in Resources */,
+				28A3690F1589C3EA00C0B779 /* smaller-zombie1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AABDC4A61564807C003EAC81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA9DDC0A156DC9A0006E9B8A /* ZBEAppDelegate.m in Sources */,
+				AA9DDC0B156DC9A0006E9B8A /* ZBEViewController.m in Sources */,
+				AA9DDC0C156DC9A0006E9B8A /* ZBEButtonCollectionView.m in Sources */,
+				AA9DDC0D156DC9A0006E9B8A /* ZBEWalkingDead.m in Sources */,
+				AA9DDC0E156DC9A0006E9B8A /* ZBEMiniPadView.m in Sources */,
+				AA9DDC10156DC9A0006E9B8A /* ZBEStatusView.m in Sources */,
+				AA9DDC11156DC9A0006E9B8A /* main.m in Sources */,
+				AA9DDC12156DC9A0006E9B8A /* ZBEZombieMeter.m in Sources */,
+				AA710BF015732BF200134B95 /* ZBEButtonView.m in Sources */,
+				AAC0EF2C15773D14000B9267 /* ZBESymbolMarkView.m in Sources */,
+				AAC0EF2F157748A3000B9267 /* ZBEHelpView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA675FA71577CC540069C920 /* Strings.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA675FA61577CC540069C920 /* en */,
+			);
+			name = Strings.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AABDC4C81564807D003EAC81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		AABDC4C91564807D003EAC81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AABDC4CB1564807D003EAC81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Source/NSZombieApocalypse.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/NSZombieApocalypse-Prefix.pch";
+				INFOPLIST_FILE = "Source/NSZombieApocalypse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AABDC4CC1564807D003EAC81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Source/NSZombieApocalypse.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/NSZombieApocalypse-Prefix.pch";
+				INFOPLIST_FILE = "Source/NSZombieApocalypse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AABDC4A41564807C003EAC81 /* Build configuration list for PBXProject "NSZombieApocalypse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABDC4C81564807D003EAC81 /* Debug */,
+				AABDC4C91564807D003EAC81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AABDC4CA1564807D003EAC81 /* Build configuration list for PBXNativeTarget "NSZombieApocalypse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABDC4CB1564807D003EAC81 /* Debug */,
+				AABDC4CC1564807D003EAC81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AABDC4A11564807C003EAC81 /* Project object */;
+}

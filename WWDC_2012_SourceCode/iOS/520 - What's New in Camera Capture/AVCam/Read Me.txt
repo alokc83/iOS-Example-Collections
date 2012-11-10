@@ -1,0 +1,58 @@
+Read Me About AVCam
+========================
+2.0
+
+AVCam demonstrates usage of AV Foundation capture API for recording movies, taking still images, and switching cameras.
+
+AVCam runs on iOS 6.0 and later.
+
+Packing List
+------------
+The sample contains the following items:
+
+o Read Me.txt -- This file
+o AVCam.xcodeproj -- An Xcode project for the sample
+o Classes.[h,m] -- The core AVCam code
+o main.m -- Creates the app object and the application delegate and sets up the event cycle
+o Resources -- Contains the application nib files and image files for the user interface
+
+Building the Sample
+-------------------
+AVCam was built with Xcode 4.5 on Mac OS X 10.7.4 with the iOS 6.0 SDK. To build the app, simply open the project and choose Build from the Build menu. This project cannot be built for the iOS simulator.
+
+Using the Sample
+----------------
+Use the buttons to perform video and still image capture:
+
+   Record -- start/stop video recording
+   Camera -- switch between front and back cameras
+   Photo -- capture a still image
+
+A single-tap will cause an auto focus at a specific point, then lock focus. A double-tap will change back to continuous auto focus.
+
+Photos and movies will be saved to the device's camera roll. Note that on a device with no camera, but a mic, the app will record audio-only movies, which cannot be stored in the camera roll. They will instead be saved within the app bundle and made accessible through iTunes file sharing.
+
+How It Works
+------------
+
+AVCam makes use of the following AV Foundation AVCapture classes to provide audio, video and still image capture and control:
+
+AVCaptureConnection
+AVCaptureDevice
+AVCaptureFileOutput
+AVCaptureInput
+AVCaptureMovieFileOutput
+AVCaptureOutput
+AVCaptureSession
+AVCaptureStillImageOutput
+AVCaptureVideoPreviewLayer
+
+See the AV Foundation documentation for more information.
+
+Credits and Version History
+---------------------------
+If you find any problems with this sample, please file a bug against it at <http://developer.apple.com/bugreporter/>.
+
+1.0: Initial version.
+1.2: Updated and improved.
+2.0: Support for video stabilization.

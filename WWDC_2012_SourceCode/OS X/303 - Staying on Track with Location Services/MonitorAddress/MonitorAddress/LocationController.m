@@ -1,0 +1,214 @@
+
+/*
+     File: LocationController.m
+ Abstract:  The location controller manages the geocoding results to serve as the data source for the NSComboBox. The location controller also monitors the address chosen by the user and shows an NSAlert when the user arrives home. 
+  Version: 1.0
+ 
+ Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
+ Inc. ("Apple") in consideration of your agreement to the following
+ terms, and your use, installation, modification or redistribution of
+ this Apple software constitutes acceptance of these terms.  If you do
+ not agree with these terms, please do not use, install, modify or
+ redistribute this Apple software.
+ 
+ In consideration of your agreement to abide by the following terms, and
+ subject to these terms, Apple grants you a personal, non-exclusive
+ license, under Apple's copyrights in this original Apple software (the
+ "Apple Software"), to use, reproduce, modify and redistribute the Apple
+ Software, with or without modifications, in source and/or binary forms;
+ provided that if you redistribute the Apple Software in its entirety and
+ without modifications, you must retain this notice and the following
+ text and disclaimers in all such redistributions of the Apple Software.
+ Neither the name, trademarks, service marks or logos of Apple Inc. may
+ be used to endorse or promote products derived from the Apple Software
+ without specific prior written permission from Apple.  Except as
+ expressly stated in this notice, no other rights or licenses, express or
+ implied, are granted by Apple herein, including but not limited to any
+ patent rights that may be infringed by your derivative works or by other
+ works in which the Apple Software may be incorporated.
+ 
+ The Apple Software is provided by Apple on an "AS IS" basis.  APPLE
+ MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
+ THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND
+ OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS.
+ 
+ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL
+ OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION,
+ MODIFICATION AND/OR DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED
+ AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
+ STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ 
+ Copyright (C) 2012 Apple Inc. All Rights Reserved.
+ 
+ 
+ WWDC 2012 License
+ 
+ NOTE: This Apple Software was supplied by Apple as part of a WWDC 2012
+ Session. Please refer to the applicable WWDC 2012 Session for further
+ information.
+ 
+ IMPORTANT: This Apple software is supplied to you by Apple
+ Inc. ("Apple") in consideration of your agreement to the following
+ terms, and your use, installation, modification or redistribution of
+ this Apple software constitutes acceptance of these terms.  If you do
+ not agree with these terms, please do not use, install, modify or
+ redistribute this Apple software.
+ 
+ In consideration of your agreement to abide by the following terms, and
+ subject to these terms, Apple grants you a non-exclusive license, under
+ Apple's copyrights in this original Apple software (the "Apple
+ Software"), to use, reproduce, modify and redistribute the Apple
+ Software, with or without modifications, in source and/or binary forms;
+ provided that if you redistribute the Apple Software in its entirety and
+ without modifications, you must retain this notice and the following
+ text and disclaimers in all such redistributions of the Apple Software.
+ Neither the name, trademarks, service marks or logos of Apple Inc. may
+ be used to endorse or promote products derived from the Apple Software
+ without specific prior written permission from Apple.  Except as
+ expressly stated in this notice, no other rights or licenses, express or
+ implied, are granted by Apple herein, including but not limited to any
+ patent rights that may be infringed by your derivative works or by other
+ works in which the Apple Software may be incorporated.
+ 
+ The Apple Software is provided by Apple on an "AS IS" basis.  APPLE
+ MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
+ THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND
+ OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS.
+ 
+ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL
+ OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION,
+ MODIFICATION AND/OR DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED
+ AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
+ STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ 
+*/
+
+#import "LocationController.h"
+#import <AddressBook/AddressBook.h>
+#import "NSComboBox+MyExpansionAPI.h"
+
+@interface LocationController ()
+@property (strong) NSArray * placemarks;
+@property (strong) CLLocationManager *manager;
+@property (strong) NSString *address;
+@end
+
+@implementation LocationController
+
+@synthesize manager;
+
+- (id) init
+{
+    self = [super init];
+	if (self) {
+		self.placemarks = [NSArray new];
+		self.manager = [CLLocationManager new];
+		[self.manager setDelegate:self];
+	}
+	
+	return self;
+}
+
+- (NSInteger)numberOfItemsInComboBox:(NSComboBox *)aComboBox
+{
+    return 1;
+}
+
+- (id)comboBox:(NSComboBox *)aComboBox objectValueForItemAtIndex:(NSInteger)index
+{
+	if (index < (NSInteger)[self.placemarks count]) {
+		NSDictionary * addressDictionary = [[self.placemarks objectAtIndex:index] addressDictionary];
+		return [self addressStringFromAddressDictionary:addressDictionary];
+	}
+	return nil;
+}
+
+- (void)controlTextDidEndEditing:(NSNotification *)notification
+{
+    NSComboBox *comboBox = [notification object];
+    
+    NSString *address = [comboBox stringValue];
+    if ([address length] > 0) {
+        [self getLocationForString:address];
+    }
+}
+
+- (void) displayLocations
+{
+	[self.progressIndicator stopAnimation:self];
+	[self.comboBox noteNumberOfItemsChanged];
+	[self.comboBox reloadData];
+	[self.comboBox setExpanded:YES];
+}
+
+- (NSString *)addressStringFromAddressDictionary:(NSDictionary *)addressDictionary
+{
+    ABAddressBook *addressBook = [ABAddressBook sharedAddressBook];
+    NSString *localizedAddressString = [[addressBook formattedAddressFromDictionary:addressDictionary] string];
+    return [[localizedAddressString componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]] componentsJoinedByString:@" "];
+}
+
+#pragma mark geocoding
+
+- (void)getLocationForString:(NSString *)address
+{
+	[self.progressIndicator startAnimation:self];
+	__block CLGeocoder * geocoder = [CLGeocoder new];
+	dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+	dispatch_async(queue, ^{
+		if ([geocoder isGeocoding]) {
+			[geocoder cancelGeocode]; // only one geocode request at a time
+		}
+		
+		[geocoder geocodeAddressString:address completionHandler: ^(NSArray *placemarks, NSError *error){
+			if (placemarks) {
+				self.placemarks = placemarks;
+            }
+            else {
+                NSLog(@"geocoder API returns ERROR - %@", error);
+            }
+			[self displayLocations];
+		}];
+	});
+}
+
+#pragma mark region monitoring
+
+- (void) monitorHome
+{
+	CLPlacemark *placemark = [self.placemarks objectAtIndex:[self.comboBox indexOfSelectedItem]];	
+	[self.manager startMonitoringForRegion:[placemark region]];
+	self.address = [[placemark addressDictionary] valueForKey:@"Street"];
+	[self.textField setStringValue:[NSString stringWithFormat:@"Monitoring region %@", [[placemark region] identifier]]];
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+		 didEnterRegion:(CLRegion *)region
+{
+	NSAlert *alert = [NSAlert new];
+	[alert setMessageText:[NSString stringWithFormat:@"You have arrived at %@", self.address]];
+	[alert runModal];
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+		didExitRegion:(CLRegion *)region
+{
+	NSAlert *alert = [NSAlert new];
+	[alert setMessageText:[NSString stringWithFormat:@"You have departed %@", self.address]];
+	[alert runModal];
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+		didStartMonitoringForRegion:(CLRegion *)region
+{
+	NSLog(@"Successfully started monitoring for region : %@", [region identifier]);
+}
+@end
