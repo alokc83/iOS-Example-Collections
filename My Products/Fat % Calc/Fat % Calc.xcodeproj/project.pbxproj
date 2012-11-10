@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA5C9D91164E1C50004B094B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5C9D90164E1C50004B094B /* UIKit.framework */; };
+		CA5C9D93164E1C50004B094B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5C9D92164E1C50004B094B /* Foundation.framework */; };
+		CA5C9D95164E1C50004B094B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5C9D94164E1C50004B094B /* CoreGraphics.framework */; };
+		CA5C9D9B164E1C51004B094B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA5C9D99164E1C51004B094B /* InfoPlist.strings */; };
+		CA5C9D9D164E1C51004B094B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5C9D9C164E1C51004B094B /* main.m */; };
+		CA5C9DA1164E1C51004B094B /* fatCalculatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5C9DA0164E1C51004B094B /* fatCalculatorAppDelegate.m */; };
+		CA5C9DA3164E1C51004B094B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5C9DA2164E1C51004B094B /* Default.png */; };
+		CA5C9DA5164E1C51004B094B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5C9DA4164E1C51004B094B /* Default@2x.png */; };
+		CA5C9DA7164E1C51004B094B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5C9DA6164E1C51004B094B /* Default-568h@2x.png */; };
+		CA5C9DAA164E1C51004B094B /* fatCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5C9DA9164E1C51004B094B /* fatCalculatorViewController.m */; };
+		CA5C9DAD164E1C51004B094B /* fatCalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA5C9DAB164E1C51004B094B /* fatCalculatorViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA5C9D8C164E1C50004B094B /* Fat % Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fat % Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5C9D90164E1C50004B094B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CA5C9D92164E1C50004B094B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CA5C9D94164E1C50004B094B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CA5C9D98164E1C51004B094B /* Fat % Calc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fat % Calc-Info.plist"; sourceTree = "<group>"; };
+		CA5C9D9A164E1C51004B094B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA5C9D9C164E1C51004B094B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA5C9D9E164E1C51004B094B /* Fat % Calc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fat % Calc-Prefix.pch"; sourceTree = "<group>"; };
+		CA5C9D9F164E1C51004B094B /* fatCalculatorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fatCalculatorAppDelegate.h; sourceTree = "<group>"; };
+		CA5C9DA0164E1C51004B094B /* fatCalculatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fatCalculatorAppDelegate.m; sourceTree = "<group>"; };
+		CA5C9DA2164E1C51004B094B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CA5C9DA4164E1C51004B094B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CA5C9DA6164E1C51004B094B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CA5C9DA8164E1C51004B094B /* fatCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fatCalculatorViewController.h; sourceTree = "<group>"; };
+		CA5C9DA9164E1C51004B094B /* fatCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fatCalculatorViewController.m; sourceTree = "<group>"; };
+		CA5C9DAC164E1C51004B094B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/fatCalculatorViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA5C9D89164E1C50004B094B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5C9D91164E1C50004B094B /* UIKit.framework in Frameworks */,
+				CA5C9D93164E1C50004B094B /* Foundation.framework in Frameworks */,
+				CA5C9D95164E1C50004B094B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA5C9D81164E1C50004B094B = {
+			isa = PBXGroup;
+			children = (
+				CA5C9D96164E1C51004B094B /* Fat % Calc */,
+				CA5C9D8F164E1C50004B094B /* Frameworks */,
+				CA5C9D8D164E1C50004B094B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA5C9D8D164E1C50004B094B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA5C9D8C164E1C50004B094B /* Fat % Calc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA5C9D8F164E1C50004B094B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA5C9D90164E1C50004B094B /* UIKit.framework */,
+				CA5C9D92164E1C50004B094B /* Foundation.framework */,
+				CA5C9D94164E1C50004B094B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA5C9D96164E1C51004B094B /* Fat % Calc */ = {
+			isa = PBXGroup;
+			children = (
+				CA5C9D9F164E1C51004B094B /* fatCalculatorAppDelegate.h */,
+				CA5C9DA0164E1C51004B094B /* fatCalculatorAppDelegate.m */,
+				CA5C9DA8164E1C51004B094B /* fatCalculatorViewController.h */,
+				CA5C9DA9164E1C51004B094B /* fatCalculatorViewController.m */,
+				CA5C9DAB164E1C51004B094B /* fatCalculatorViewController.xib */,
+				CA5C9D97164E1C51004B094B /* Supporting Files */,
+			);
+			path = "Fat % Calc";
+			sourceTree = "<group>";
+		};
+		CA5C9D97164E1C51004B094B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA5C9D98164E1C51004B094B /* Fat % Calc-Info.plist */,
+				CA5C9D99164E1C51004B094B /* InfoPlist.strings */,
+				CA5C9D9C164E1C51004B094B /* main.m */,
+				CA5C9D9E164E1C51004B094B /* Fat % Calc-Prefix.pch */,
+				CA5C9DA2164E1C51004B094B /* Default.png */,
+				CA5C9DA4164E1C51004B094B /* Default@2x.png */,
+				CA5C9DA6164E1C51004B094B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA5C9D8B164E1C50004B094B /* Fat % Calc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA5C9DB0164E1C51004B094B /* Build configuration list for PBXNativeTarget "Fat % Calc" */;
+			buildPhases = (
+				CA5C9D88164E1C50004B094B /* Sources */,
+				CA5C9D89164E1C50004B094B /* Frameworks */,
+				CA5C9D8A164E1C50004B094B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fat % Calc";
+			productName = "Fat % Calc";
+			productReference = CA5C9D8C164E1C50004B094B /* Fat % Calc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA5C9D83164E1C50004B094B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = fatCalculator;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = AC;
+			};
+			buildConfigurationList = CA5C9D86164E1C50004B094B /* Build configuration list for PBXProject "Fat % Calc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA5C9D81164E1C50004B094B;
+			productRefGroup = CA5C9D8D164E1C50004B094B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA5C9D8B164E1C50004B094B /* Fat % Calc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA5C9D8A164E1C50004B094B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5C9D9B164E1C51004B094B /* InfoPlist.strings in Resources */,
+				CA5C9DA3164E1C51004B094B /* Default.png in Resources */,
+				CA5C9DA5164E1C51004B094B /* Default@2x.png in Resources */,
+				CA5C9DA7164E1C51004B094B /* Default-568h@2x.png in Resources */,
+				CA5C9DAD164E1C51004B094B /* fatCalculatorViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA5C9D88164E1C50004B094B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5C9D9D164E1C51004B094B /* main.m in Sources */,
+				CA5C9DA1164E1C51004B094B /* fatCalculatorAppDelegate.m in Sources */,
+				CA5C9DAA164E1C51004B094B /* fatCalculatorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA5C9D99164E1C51004B094B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA5C9D9A164E1C51004B094B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CA5C9DAB164E1C51004B094B /* fatCalculatorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA5C9DAC164E1C51004B094B /* en */,
+			);
+			name = fatCalculatorViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA5C9DAE164E1C51004B094B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA5C9DAF164E1C51004B094B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA5C9DB1164E1C51004B094B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fat % Calc/Fat % Calc-Prefix.pch";
+				INFOPLIST_FILE = "Fat % Calc/Fat % Calc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA5C9DB2164E1C51004B094B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fat % Calc/Fat % Calc-Prefix.pch";
+				INFOPLIST_FILE = "Fat % Calc/Fat % Calc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA5C9D86164E1C50004B094B /* Build configuration list for PBXProject "Fat % Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA5C9DAE164E1C51004B094B /* Debug */,
+				CA5C9DAF164E1C51004B094B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA5C9DB0164E1C51004B094B /* Build configuration list for PBXNativeTarget "Fat % Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA5C9DB1164E1C51004B094B /* Debug */,
+				CA5C9DB2164E1C51004B094B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA5C9D83164E1C50004B094B /* Project object */;
+}
