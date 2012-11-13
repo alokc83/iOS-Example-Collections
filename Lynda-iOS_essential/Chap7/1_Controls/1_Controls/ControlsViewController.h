@@ -14,8 +14,9 @@
     
 }
 
-@property (nonatomic, retain) UISegmentedControl *colorChooser;
-@property (nonatomic, retain) UITextView *sampleText;
+//not need SEE WWDC2012 session 101
+//@property (nonatomic, retain) UISegmentedControl *colorChooser;
+//@property (nonatomic, retain) UITextView *sampleText;
 
 - (IBAction) colorChanged; 
 

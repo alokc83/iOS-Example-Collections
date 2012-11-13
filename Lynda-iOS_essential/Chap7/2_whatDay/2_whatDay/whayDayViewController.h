@@ -10,9 +10,11 @@
 
 @interface whayDayViewController : UIViewController {
     IBOutlet UIDatePicker *dp;
+   
 }
 
-@property (nonatomic, retain) UIDatePicker *dp;
+//not need SEE WWDC2012 session 101
+//@property (nonatomic, retain) UIDatePicker *dp;
 
 - (IBAction) displayDay ;
 

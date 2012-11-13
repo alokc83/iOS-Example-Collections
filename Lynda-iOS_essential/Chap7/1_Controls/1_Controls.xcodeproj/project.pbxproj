@@ -19,6 +19,9 @@
 		CA4AEDA9163E1F3200113908 /* ControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4AEDA8163E1F3200113908 /* ControlsViewController.m */; };
 		CA4AEDAC163E1F3200113908 /* ControlsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4AEDAA163E1F3200113908 /* ControlsViewController.xib */; };
 		CA4AEDB3163E205500113908 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = CA4AEDB2163E205500113908 /* back.png */; };
+		CA5C9DBC164F148E004B094B /* lynda-com-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5C9DBB164F148E004B094B /* lynda-com-logo.png */; };
+		CA5C9DBF164F1581004B094B /* lynda-com-logo-57px.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5C9DBE164F1581004B094B /* lynda-com-logo-57px.png */; };
+		CA5C9DC1164F1586004B094B /* lynda-com-logo-retins-114.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5C9DC0164F1586004B094B /* lynda-com-logo-retins-114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		CA4AEDA8163E1F3200113908 /* ControlsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControlsViewController.m; sourceTree = "<group>"; };
 		CA4AEDAB163E1F3200113908 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ControlsViewController.xib; sourceTree = "<group>"; };
 		CA4AEDB2163E205500113908 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		CA5C9DBB164F148E004B094B /* lynda-com-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lynda-com-logo.png"; sourceTree = "<group>"; };
+		CA5C9DBE164F1581004B094B /* lynda-com-logo-57px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lynda-com-logo-57px.png"; sourceTree = "<group>"; };
+		CA5C9DC0164F1586004B094B /* lynda-com-logo-retins-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lynda-com-logo-retins-114.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		CA4AED80163E1F3200113908 = {
 			isa = PBXGroup;
 			children = (
+				CA5C9DC0164F1586004B094B /* lynda-com-logo-retins-114.png */,
+				CA5C9DBE164F1581004B094B /* lynda-com-logo-57px.png */,
 				CA4AED95163E1F3200113908 /* 1_Controls */,
 				CA4AED8E163E1F3200113908 /* Frameworks */,
 				CA4AED8C163E1F3200113908 /* Products */,
@@ -98,6 +106,7 @@
 		CA4AED96163E1F3200113908 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA5C9DBB164F148E004B094B /* lynda-com-logo.png */,
 				CA4AEDB2163E205500113908 /* back.png */,
 				CA4AED97163E1F3200113908 /* 1_Controls-Info.plist */,
 				CA4AED98163E1F3200113908 /* InfoPlist.strings */,
@@ -168,6 +177,9 @@
 				CA4AEDA6163E1F3200113908 /* Default-568h@2x.png in Resources */,
 				CA4AEDAC163E1F3200113908 /* ControlsViewController.xib in Resources */,
 				CA4AEDB3163E205500113908 /* back.png in Resources */,
+				CA5C9DBC164F148E004B094B /* lynda-com-logo.png in Resources */,
+				CA5C9DBF164F1581004B094B /* lynda-com-logo-57px.png in Resources */,
+				CA5C9DC1164F1586004B094B /* lynda-com-logo-retins-114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +307,7 @@
 				CA4AEDB1163E1F3200113908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

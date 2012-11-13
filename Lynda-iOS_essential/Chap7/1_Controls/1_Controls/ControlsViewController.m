@@ -13,7 +13,8 @@
 @end
 
 @implementation ControlsViewController
-@synthesize colorChooser, sampleText;
+//not need SEE WWDC2012 session 101
+//@synthesize colorChooser, sampleText;
 
 - (IBAction)colorChanged {
     

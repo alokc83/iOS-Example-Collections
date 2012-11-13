@@ -18,6 +18,8 @@
 		CA17B695163CB4EE004FEB0E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA17B694163CB4EE004FEB0E /* Default-568h@2x.png */; };
 		CA17B698163CB4EE004FEB0E /* basicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA17B697163CB4EE004FEB0E /* basicViewController.m */; };
 		CA17B69B163CB4EE004FEB0E /* basicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA17B699163CB4EE004FEB0E /* basicViewController.xib */; };
+		CA5C9DEB164F1761004B094B /* lynda-com-logo-57px.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5C9DE9164F1761004B094B /* lynda-com-logo-57px.png */; };
+		CA5C9DEC164F1761004B094B /* lynda-com-logo-retins-114.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5C9DEA164F1761004B094B /* lynda-com-logo-retins-114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		CA17B696163CB4EE004FEB0E /* basicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basicViewController.h; sourceTree = "<group>"; };
 		CA17B697163CB4EE004FEB0E /* basicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = basicViewController.m; sourceTree = "<group>"; };
 		CA17B69A163CB4EE004FEB0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/basicViewController.xib; sourceTree = "<group>"; };
+		CA5C9DE9164F1761004B094B /* lynda-com-logo-57px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lynda-com-logo-57px.png"; sourceTree = "<group>"; };
+		CA5C9DEA164F1761004B094B /* lynda-com-logo-retins-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lynda-com-logo-retins-114.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		CA17B685163CB4EE004FEB0E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA5C9DE9164F1761004B094B /* lynda-com-logo-57px.png */,
+				CA5C9DEA164F1761004B094B /* lynda-com-logo-retins-114.png */,
 				CA17B686163CB4EE004FEB0E /* basic-nonstoryboard-Info.plist */,
 				CA17B687163CB4EE004FEB0E /* InfoPlist.strings */,
 				CA17B68A163CB4EE004FEB0E /* main.m */,
@@ -164,6 +170,8 @@
 				CA17B693163CB4EE004FEB0E /* Default@2x.png in Resources */,
 				CA17B695163CB4EE004FEB0E /* Default-568h@2x.png in Resources */,
 				CA17B69B163CB4EE004FEB0E /* basicViewController.xib in Resources */,
+				CA5C9DEB164F1761004B094B /* lynda-com-logo-57px.png in Resources */,
+				CA5C9DEC164F1761004B094B /* lynda-com-logo-retins-114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +299,7 @@
 				CA17B6A0163CB4EE004FEB0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
