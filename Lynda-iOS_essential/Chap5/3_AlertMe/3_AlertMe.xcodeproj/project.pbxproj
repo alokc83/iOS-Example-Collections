@@ -18,7 +18,6 @@
 		CA4AED42163D122900113908 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA4AED41163D122900113908 /* Default-568h@2x.png */; };
 		CA4AED45163D122900113908 /* AlertMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4AED44163D122900113908 /* AlertMeViewController.m */; };
 		CA4AED48163D122900113908 /* AlertMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4AED46163D122900113908 /* AlertMeViewController.xib */; };
-		CA5C9DD4164F1685004B094B /* lynda-com-logo-57px.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5C9DD3164F1685004B094B /* lynda-com-logo-57px.png */; };
 		CA5C9DD7164F16A7004B094B /* lynda-com-logo-57px.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5C9DD6164F16A7004B094B /* lynda-com-logo-57px.png */; };
 		CA5C9DD9164F16BC004B094B /* lynda-com-logo-retins-114.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5C9DD8164F16BC004B094B /* lynda-com-logo-retins-114.png */; };
 /* End PBXBuildFile section */
@@ -40,7 +39,6 @@
 		CA4AED43163D122900113908 /* AlertMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertMeViewController.h; sourceTree = "<group>"; };
 		CA4AED44163D122900113908 /* AlertMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertMeViewController.m; sourceTree = "<group>"; };
 		CA4AED47163D122900113908 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AlertMeViewController.xib; sourceTree = "<group>"; };
-		CA5C9DD3164F1685004B094B /* lynda-com-logo-57px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lynda-com-logo-57px.png"; path = "../lynda-com-logo-57px.png"; sourceTree = "<group>"; };
 		CA5C9DD6164F16A7004B094B /* lynda-com-logo-57px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lynda-com-logo-57px.png"; sourceTree = SOURCE_ROOT; };
 		CA5C9DD8164F16BC004B094B /* lynda-com-logo-retins-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lynda-com-logo-retins-114.png"; path = "../../../../../lynda-com-logo-retins-114.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +102,6 @@
 			children = (
 				CA5C9DD8164F16BC004B094B /* lynda-com-logo-retins-114.png */,
 				CA5C9DD6164F16A7004B094B /* lynda-com-logo-57px.png */,
-				CA5C9DD3164F1685004B094B /* lynda-com-logo-57px.png */,
 				CA4AED33163D122900113908 /* 3_AlertMe-Info.plist */,
 				CA4AED34163D122900113908 /* InfoPlist.strings */,
 				CA4AED37163D122900113908 /* main.m */,
@@ -173,7 +170,6 @@
 				CA4AED40163D122900113908 /* Default@2x.png in Resources */,
 				CA4AED42163D122900113908 /* Default-568h@2x.png in Resources */,
 				CA4AED48163D122900113908 /* AlertMeViewController.xib in Resources */,
-				CA5C9DD4164F1685004B094B /* lynda-com-logo-57px.png in Resources */,
 				CA5C9DD7164F16A7004B094B /* lynda-com-logo-57px.png in Resources */,
 				CA5C9DD9164F16BC004B094B /* lynda-com-logo-retins-114.png in Resources */,
 			);
