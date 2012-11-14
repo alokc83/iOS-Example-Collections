@@ -11,6 +11,9 @@
 @interface cPickerViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
     
     IBOutlet UIPickerView *moodPicker;
+    NSArray *moods; //making avali globally
 }
+
+// no need to create property :)  see WWDC 2012 session 101
 
 @end

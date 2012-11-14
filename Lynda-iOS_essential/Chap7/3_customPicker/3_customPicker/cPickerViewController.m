@@ -14,8 +14,29 @@
 
 @implementation cPickerViewController
 
+//Method for UIPickerViewDataSource
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    
+    return moods.count;
+}
+
+
+//method for UIPickerViewDelegate
+- (NSString *)pickerView:(UIPickerView *)pickerView
+             titleForRow:(NSInteger)row
+            forComponent:(NSInteger)component{
+    return [moods objectAtIndex:row];
+}
+
 - (void)viewDidLoad
 {
+    moods = [[NSArray alloc] initWithObjects:@"Ecstatic",@"Happy",@"Excited",@"Cheerful",@"Fine",
+             @"Tired",@"Maudlin",@"Depressed",@"Overwhelmed", nil];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
