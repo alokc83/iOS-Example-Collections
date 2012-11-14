@@ -18,6 +18,8 @@
 		CA2E2ADE16535B7800B43CED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2E2ADD16535B7800B43CED /* Default-568h@2x.png */; };
 		CA2E2AE116535B7800B43CED /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2E2ADF16535B7800B43CED /* MainStoryboard.storyboard */; };
 		CA2E2AE416535B7800B43CED /* cPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2E2AE316535B7800B43CED /* cPickerViewController.m */; };
+		CA2E2AF71653620000B43CED /* lynda-com-logo-57px.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2E2AF61653620000B43CED /* lynda-com-logo-57px.png */; };
+		CA2E2AF91653620A00B43CED /* lynda-com-logo-retins-114.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2E2AF81653620A00B43CED /* lynda-com-logo-retins-114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		CA2E2AE016535B7800B43CED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CA2E2AE216535B7800B43CED /* cPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cPickerViewController.h; sourceTree = "<group>"; };
 		CA2E2AE316535B7800B43CED /* cPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cPickerViewController.m; sourceTree = "<group>"; };
+		CA2E2AF61653620000B43CED /* lynda-com-logo-57px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lynda-com-logo-57px.png"; sourceTree = "<group>"; };
+		CA2E2AF81653620A00B43CED /* lynda-com-logo-retins-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lynda-com-logo-retins-114.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		CA2E2AB816535B7800B43CED = {
 			isa = PBXGroup;
 			children = (
+				CA2E2AF81653620A00B43CED /* lynda-com-logo-retins-114.png */,
+				CA2E2AF61653620000B43CED /* lynda-com-logo-57px.png */,
 				CA2E2ACD16535B7800B43CED /* 3_customPicker */,
 				CA2E2AC616535B7800B43CED /* Frameworks */,
 				CA2E2AC416535B7800B43CED /* Products */,
@@ -164,6 +170,8 @@
 				CA2E2ADC16535B7800B43CED /* Default@2x.png in Resources */,
 				CA2E2ADE16535B7800B43CED /* Default-568h@2x.png in Resources */,
 				CA2E2AE116535B7800B43CED /* MainStoryboard.storyboard in Resources */,
+				CA2E2AF71653620000B43CED /* lynda-com-logo-57px.png in Resources */,
+				CA2E2AF91653620A00B43CED /* lynda-com-logo-retins-114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

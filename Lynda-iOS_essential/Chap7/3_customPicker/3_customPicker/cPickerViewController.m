@@ -34,6 +34,7 @@
 
 - (void)viewDidLoad
 {
+    
     moods = [[NSArray alloc] initWithObjects:@"Ecstatic",@"Happy",@"Excited",@"Cheerful",@"Fine",
              @"Tired",@"Maudlin",@"Depressed",@"Overwhelmed", nil];
     
