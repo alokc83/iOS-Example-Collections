@@ -12,6 +12,7 @@
     
     IBOutlet UIPickerView *moodPicker;
     NSArray *moods; //making avali globally
+    IBOutlet UILabel *lblMood;
 }
 
 // no need to create property :)  see WWDC 2012 session 101
