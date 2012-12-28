@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0295260C168E59840074D4BE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0295260B168E59840074D4BE /* Icon.png */; };
+		0295260F168E598F0074D4BE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0295260E168E598F0074D4BE /* Icon@2x.png */; };
 		02D54B63168D3551006F28BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D54B62168D3551006F28BB /* UIKit.framework */; };
 		02D54B65168D3551006F28BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D54B64168D3551006F28BB /* Foundation.framework */; };
 		02D54B67168D3551006F28BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D54B66168D3551006F28BB /* CoreGraphics.framework */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0295260B168E59840074D4BE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0295260E168E598F0074D4BE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		02D54B5E168D3551006F28BB /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D54B62168D3551006F28BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		02D54B64168D3551006F28BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,6 +60,8 @@
 		02D54B53168D3551006F28BB = {
 			isa = PBXGroup;
 			children = (
+				0295260E168E598F0074D4BE /* Icon@2x.png */,
+				0295260B168E59840074D4BE /* Icon.png */,
 				02D54B68168D3551006F28BB /* Quiz */,
 				02D54B61168D3551006F28BB /* Frameworks */,
 				02D54B5F168D3551006F28BB /* Products */,
@@ -164,6 +170,8 @@
 				02D54B77168D3552006F28BB /* Default@2x.png in Resources */,
 				02D54B79168D3552006F28BB /* Default-568h@2x.png in Resources */,
 				02D54B7F168D3552006F28BB /* quizViewController.xib in Resources */,
+				0295260C168E59840074D4BE /* Icon.png in Resources */,
+				0295260F168E598F0074D4BE /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +301,7 @@
 				02D54B84168D3552006F28BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
