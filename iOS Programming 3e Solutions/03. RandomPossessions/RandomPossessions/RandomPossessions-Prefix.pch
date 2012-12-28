@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RandomPossessions' target in the 'RandomPossessions' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

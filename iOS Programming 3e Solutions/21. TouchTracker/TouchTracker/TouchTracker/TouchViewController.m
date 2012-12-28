@@ -1,0 +1,19 @@
+//
+//  TouchViewController.m
+//  TouchTracker
+//
+//  Created by joeconway on 9/12/11.
+//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "TouchViewController.h"
+#import "TouchDrawView.h"
+@implementation TouchViewController
+
+- (void)loadView
+{
+    [self setView:[[TouchDrawView alloc] initWithFrame:CGRectZero]];
+}
+
+
+@end

@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE3B4F38140D421800BD6933 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3B4F37140D421800BD6933 /* UIKit.framework */; };
+		BE3B4F3A140D421800BD6933 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3B4F39140D421800BD6933 /* Foundation.framework */; };
+		BE3B4F40140D421800BD6933 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE3B4F3E140D421800BD6933 /* InfoPlist.strings */; };
+		BE3B4F42140D421800BD6933 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3B4F41140D421800BD6933 /* main.m */; };
+		BE3B4F46140D421800BD6933 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3B4F45140D421800BD6933 /* AppDelegate.m */; };
+		BE3B4F4D140D42A000BD6933 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3B4F4C140D42A000BD6933 /* CoreGraphics.framework */; };
+		BE3B4F50140D42B800BD6933 /* HypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3B4F4F140D42B800BD6933 /* HypnosisViewController.m */; };
+		BE3B4F53140D42D700BD6933 /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3B4F52140D42D700BD6933 /* HypnosisView.m */; };
+		BE3B4F56140D443C00BD6933 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3B4F55140D443C00BD6933 /* TimeViewController.m */; };
+		BE3B4F58140D44AE00BD6933 /* TimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE3B4F57140D44AE00BD6933 /* TimeViewController.xib */; };
+		BE3B4F5D140D557500BD6933 /* Hypno.png in Resources */ = {isa = PBXBuildFile; fileRef = BE3B4F59140D557500BD6933 /* Hypno.png */; };
+		BE3B4F5E140D557500BD6933 /* Hypno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE3B4F5A140D557500BD6933 /* Hypno@2x.png */; };
+		BE3B4F5F140D557500BD6933 /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = BE3B4F5B140D557500BD6933 /* Time.png */; };
+		BE3B4F60140D557500BD6933 /* Time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE3B4F5C140D557500BD6933 /* Time@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE3B4F33140D421800BD6933 /* HypnoTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypnoTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3B4F37140D421800BD6933 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BE3B4F39140D421800BD6933 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BE3B4F3D140D421800BD6933 /* HypnoTime-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HypnoTime-Info.plist"; sourceTree = "<group>"; };
+		BE3B4F3F140D421800BD6933 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE3B4F41140D421800BD6933 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE3B4F43140D421800BD6933 /* HypnoTime-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HypnoTime-Prefix.pch"; sourceTree = "<group>"; };
+		BE3B4F44140D421800BD6933 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE3B4F45140D421800BD6933 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE3B4F4C140D42A000BD6933 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BE3B4F4E140D42B800BD6933 /* HypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HypnosisViewController.h; path = HypnoTime/HypnosisViewController.h; sourceTree = "<group>"; };
+		BE3B4F4F140D42B800BD6933 /* HypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HypnosisViewController.m; path = HypnoTime/HypnosisViewController.m; sourceTree = "<group>"; };
+		BE3B4F51140D42D700BD6933 /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisView.h; sourceTree = "<group>"; };
+		BE3B4F52140D42D700BD6933 /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisView.m; sourceTree = "<group>"; };
+		BE3B4F54140D443C00BD6933 /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeViewController.h; path = HypnoTime/TimeViewController.h; sourceTree = "<group>"; };
+		BE3B4F55140D443C00BD6933 /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeViewController.m; path = HypnoTime/TimeViewController.m; sourceTree = "<group>"; };
+		BE3B4F57140D44AE00BD6933 /* TimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimeViewController.xib; path = HypnoTime/TimeViewController.xib; sourceTree = "<group>"; };
+		BE3B4F59140D557500BD6933 /* Hypno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hypno.png; sourceTree = "<group>"; };
+		BE3B4F5A140D557500BD6933 /* Hypno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hypno@2x.png"; sourceTree = "<group>"; };
+		BE3B4F5B140D557500BD6933 /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
+		BE3B4F5C140D557500BD6933 /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE3B4F30140D421800BD6933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3B4F4D140D42A000BD6933 /* CoreGraphics.framework in Frameworks */,
+				BE3B4F38140D421800BD6933 /* UIKit.framework in Frameworks */,
+				BE3B4F3A140D421800BD6933 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE3B4F28140D421800BD6933 = {
+			isa = PBXGroup;
+			children = (
+				BE3B4F59140D557500BD6933 /* Hypno.png */,
+				BE3B4F5A140D557500BD6933 /* Hypno@2x.png */,
+				BE3B4F5B140D557500BD6933 /* Time.png */,
+				BE3B4F5C140D557500BD6933 /* Time@2x.png */,
+				BE3B4F54140D443C00BD6933 /* TimeViewController.h */,
+				BE3B4F55140D443C00BD6933 /* TimeViewController.m */,
+				BE3B4F57140D44AE00BD6933 /* TimeViewController.xib */,
+				BE3B4F4E140D42B800BD6933 /* HypnosisViewController.h */,
+				BE3B4F4F140D42B800BD6933 /* HypnosisViewController.m */,
+				BE3B4F4C140D42A000BD6933 /* CoreGraphics.framework */,
+				BE3B4F3B140D421800BD6933 /* HypnoTime */,
+				BE3B4F36140D421800BD6933 /* Frameworks */,
+				BE3B4F34140D421800BD6933 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE3B4F34140D421800BD6933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE3B4F33140D421800BD6933 /* HypnoTime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE3B4F36140D421800BD6933 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE3B4F37140D421800BD6933 /* UIKit.framework */,
+				BE3B4F39140D421800BD6933 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE3B4F3B140D421800BD6933 /* HypnoTime */ = {
+			isa = PBXGroup;
+			children = (
+				BE3B4F51140D42D700BD6933 /* HypnosisView.h */,
+				BE3B4F52140D42D700BD6933 /* HypnosisView.m */,
+				BE3B4F44140D421800BD6933 /* AppDelegate.h */,
+				BE3B4F45140D421800BD6933 /* AppDelegate.m */,
+				BE3B4F3C140D421800BD6933 /* Supporting Files */,
+			);
+			path = HypnoTime;
+			sourceTree = "<group>";
+		};
+		BE3B4F3C140D421800BD6933 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE3B4F3D140D421800BD6933 /* HypnoTime-Info.plist */,
+				BE3B4F3E140D421800BD6933 /* InfoPlist.strings */,
+				BE3B4F41140D421800BD6933 /* main.m */,
+				BE3B4F43140D421800BD6933 /* HypnoTime-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE3B4F32140D421800BD6933 /* HypnoTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE3B4F49140D421800BD6933 /* Build configuration list for PBXNativeTarget "HypnoTime" */;
+			buildPhases = (
+				BE3B4F2F140D421800BD6933 /* Sources */,
+				BE3B4F30140D421800BD6933 /* Frameworks */,
+				BE3B4F31140D421800BD6933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HypnoTime;
+			productName = HypnoTime;
+			productReference = BE3B4F33140D421800BD6933 /* HypnoTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE3B4F2A140D421800BD6933 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = BE3B4F2D140D421800BD6933 /* Build configuration list for PBXProject "HypnoTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BE3B4F28140D421800BD6933;
+			productRefGroup = BE3B4F34140D421800BD6933 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE3B4F32140D421800BD6933 /* HypnoTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE3B4F31140D421800BD6933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3B4F40140D421800BD6933 /* InfoPlist.strings in Resources */,
+				BE3B4F58140D44AE00BD6933 /* TimeViewController.xib in Resources */,
+				BE3B4F5D140D557500BD6933 /* Hypno.png in Resources */,
+				BE3B4F5E140D557500BD6933 /* Hypno@2x.png in Resources */,
+				BE3B4F5F140D557500BD6933 /* Time.png in Resources */,
+				BE3B4F60140D557500BD6933 /* Time@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE3B4F2F140D421800BD6933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3B4F42140D421800BD6933 /* main.m in Sources */,
+				BE3B4F46140D421800BD6933 /* AppDelegate.m in Sources */,
+				BE3B4F50140D42B800BD6933 /* HypnosisViewController.m in Sources */,
+				BE3B4F53140D42D700BD6933 /* HypnosisView.m in Sources */,
+				BE3B4F56140D443C00BD6933 /* TimeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE3B4F3E140D421800BD6933 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE3B4F3F140D421800BD6933 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE3B4F47140D421800BD6933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE3B4F48140D421800BD6933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE3B4F4A140D421800BD6933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HypnoTime/HypnoTime-Prefix.pch";
+				INFOPLIST_FILE = "HypnoTime/HypnoTime-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BE3B4F4B140D421800BD6933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HypnoTime/HypnoTime-Prefix.pch";
+				INFOPLIST_FILE = "HypnoTime/HypnoTime-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE3B4F2D140D421800BD6933 /* Build configuration list for PBXProject "HypnoTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE3B4F47140D421800BD6933 /* Debug */,
+				BE3B4F48140D421800BD6933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE3B4F49140D421800BD6933 /* Build configuration list for PBXNativeTarget "HypnoTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE3B4F4A140D421800BD6933 /* Debug */,
+				BE3B4F4B140D421800BD6933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE3B4F2A140D421800BD6933 /* Project object */;
+}

@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE7B2FFC14A26B2C0025940C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7B2FFB14A26B2C0025940C /* UIKit.framework */; };
+		BE7B2FFE14A26B2C0025940C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7B2FFD14A26B2C0025940C /* Foundation.framework */; };
+		BE7B300014A26B2C0025940C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7B2FFF14A26B2C0025940C /* CoreGraphics.framework */; };
+		BE7B300614A26B2C0025940C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE7B300414A26B2C0025940C /* InfoPlist.strings */; };
+		BE7B300814A26B2C0025940C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7B300714A26B2C0025940C /* main.m */; };
+		BE7B300C14A26B2C0025940C /* BNRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7B300B14A26B2C0025940C /* BNRAppDelegate.m */; };
+		BE7B301414A26BF70025940C /* BNRExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7B301314A26BF70025940C /* BNRExecutor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE7B2FF714A26B2C0025940C /* Blocky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7B2FFB14A26B2C0025940C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BE7B2FFD14A26B2C0025940C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BE7B2FFF14A26B2C0025940C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BE7B300314A26B2C0025940C /* Blocky-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Blocky-Info.plist"; sourceTree = "<group>"; };
+		BE7B300514A26B2C0025940C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE7B300714A26B2C0025940C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE7B300914A26B2C0025940C /* Blocky-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blocky-Prefix.pch"; sourceTree = "<group>"; };
+		BE7B300A14A26B2C0025940C /* BNRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRAppDelegate.h; sourceTree = "<group>"; };
+		BE7B300B14A26B2C0025940C /* BNRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRAppDelegate.m; sourceTree = "<group>"; };
+		BE7B301214A26BF70025940C /* BNRExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRExecutor.h; sourceTree = "<group>"; };
+		BE7B301314A26BF70025940C /* BNRExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRExecutor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE7B2FF414A26B2C0025940C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE7B2FFC14A26B2C0025940C /* UIKit.framework in Frameworks */,
+				BE7B2FFE14A26B2C0025940C /* Foundation.framework in Frameworks */,
+				BE7B300014A26B2C0025940C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE7B2FEC14A26B2C0025940C = {
+			isa = PBXGroup;
+			children = (
+				BE7B300114A26B2C0025940C /* Blocky */,
+				BE7B2FFA14A26B2C0025940C /* Frameworks */,
+				BE7B2FF814A26B2C0025940C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE7B2FF814A26B2C0025940C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B2FF714A26B2C0025940C /* Blocky.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE7B2FFA14A26B2C0025940C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B2FFB14A26B2C0025940C /* UIKit.framework */,
+				BE7B2FFD14A26B2C0025940C /* Foundation.framework */,
+				BE7B2FFF14A26B2C0025940C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE7B300114A26B2C0025940C /* Blocky */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B300A14A26B2C0025940C /* BNRAppDelegate.h */,
+				BE7B300B14A26B2C0025940C /* BNRAppDelegate.m */,
+				BE7B300214A26B2C0025940C /* Supporting Files */,
+				BE7B301214A26BF70025940C /* BNRExecutor.h */,
+				BE7B301314A26BF70025940C /* BNRExecutor.m */,
+			);
+			path = Blocky;
+			sourceTree = "<group>";
+		};
+		BE7B300214A26B2C0025940C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B300314A26B2C0025940C /* Blocky-Info.plist */,
+				BE7B300414A26B2C0025940C /* InfoPlist.strings */,
+				BE7B300714A26B2C0025940C /* main.m */,
+				BE7B300914A26B2C0025940C /* Blocky-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE7B2FF614A26B2C0025940C /* Blocky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE7B300F14A26B2C0025940C /* Build configuration list for PBXNativeTarget "Blocky" */;
+			buildPhases = (
+				BE7B2FF314A26B2C0025940C /* Sources */,
+				BE7B2FF414A26B2C0025940C /* Frameworks */,
+				BE7B2FF514A26B2C0025940C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blocky;
+			productName = Blocky;
+			productReference = BE7B2FF714A26B2C0025940C /* Blocky.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE7B2FEE14A26B2C0025940C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = BE7B2FF114A26B2C0025940C /* Build configuration list for PBXProject "Blocky" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BE7B2FEC14A26B2C0025940C;
+			productRefGroup = BE7B2FF814A26B2C0025940C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE7B2FF614A26B2C0025940C /* Blocky */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE7B2FF514A26B2C0025940C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE7B300614A26B2C0025940C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE7B2FF314A26B2C0025940C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE7B300814A26B2C0025940C /* main.m in Sources */,
+				BE7B300C14A26B2C0025940C /* BNRAppDelegate.m in Sources */,
+				BE7B301414A26BF70025940C /* BNRExecutor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE7B300414A26B2C0025940C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE7B300514A26B2C0025940C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE7B300D14A26B2C0025940C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE7B300E14A26B2C0025940C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE7B301014A26B2C0025940C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blocky/Blocky-Prefix.pch";
+				INFOPLIST_FILE = "Blocky/Blocky-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BE7B301114A26B2C0025940C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blocky/Blocky-Prefix.pch";
+				INFOPLIST_FILE = "Blocky/Blocky-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE7B2FF114A26B2C0025940C /* Build configuration list for PBXProject "Blocky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE7B300D14A26B2C0025940C /* Debug */,
+				BE7B300E14A26B2C0025940C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE7B300F14A26B2C0025940C /* Build configuration list for PBXNativeTarget "Blocky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE7B301014A26B2C0025940C /* Debug */,
+				BE7B301114A26B2C0025940C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE7B2FEE14A26B2C0025940C /* Project object */;
+}
