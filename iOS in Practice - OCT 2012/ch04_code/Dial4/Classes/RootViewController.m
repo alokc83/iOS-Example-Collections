@@ -1,0 +1,324 @@
+//
+//  RootViewController.m
+//  Dial4
+//
+//  Created by Bear Cahill on 12/21/09.
+//  Copyright Brainwash Inc. 2009. All rights reserved.
+//
+
+#import "RootViewController.h"
+
+
+@implementation RootViewController
+
+/*
+ */
+-(void)doCallDisplayBtn:(id)sender
+{
+	NSString *bbiTitle = @"Display";
+	
+	if (nil != sender && [[sender title] compare:@"Display"] == NSOrderedSame)
+		bbiTitle = @"Call";
+	
+	UIBarButtonItem *bbi = [[UIBarButtonItem alloc] initWithTitle:bbiTitle style:UIBarButtonItemStyleBordered target:self action:@selector(doCallDisplayBtn:)];
+	self.navigationItem.leftBarButtonItem = bbi;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+	[self setTitle:@"Dial4"];
+
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+	[self doCallDisplayBtn:nil];
+}
+
+
+/*
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+*/
+/*
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
+*/
+/*
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+}
+*/
+/*
+- (void)viewDidDisappear:(BOOL)animated {
+	[super viewDidDisappear:animated];
+}
+*/
+
+/*
+ // Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	// Return YES for supported orientations.
+	return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+ */
+
+- (void)didReceiveMemoryWarning {
+	// Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+	
+	// Release any cached data, images, etc that aren't in use.
+}
+
+- (void)viewDidUnload {
+	// Release anything that can be recreated in viewDidLoad or on demand.
+	// e.g. self.myOutlet = nil;
+}
+
+
+#pragma mark Table view methods
+
+// iOS 6
+-(bool)checkAddressBookAuthorizationStatus:(UITableView*)tableView;
+{
+    ABAuthorizationStatus authStatus =
+        ABAddressBookGetAuthorizationStatus();
+
+    if (authStatus != kABAuthorizationStatusAuthorized)
+    {
+        ABAddressBookRequestAccessWithCompletion
+            (addressBook, ^(bool granted, CFErrorRef error)
+        {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (error)
+                    NSLog(@"Error: %@", (__bridge NSError *)error);
+                else if (!granted) {
+                    UIAlertView *av = [[UIAlertView alloc]
+                       initWithTitle:@"Authorization Denied"
+                       message:@"Set permissions in Settings>General>Privacy."
+                       delegate:nil
+                       cancelButtonTitle:nil
+                       otherButtonTitles:@"OK", nil];
+                    [av show];
+                }
+                else
+                {
+                    ABAddressBookRevert(addressBook);
+                    myContacts = [NSArray arrayWithArray:
+                          (__bridge_transfer NSArray*)
+                          ABAddressBookCopyArrayOfAllPeople(addressBook)];
+                    [tableView reloadData];
+                }
+            });
+        });
+    }
+    
+    return authStatus == kABAuthorizationStatusAuthorized;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	if (nil == myContacts)
+	{
+        addressBook = ABAddressBookCreate();
+        if ([self checkAddressBookAuthorizationStatus:tableView])
+            myContacts = [NSArray arrayWithArray:(__bridge_transfer NSArray*)
+                          ABAddressBookCopyArrayOfAllPeople(addressBook)];
+	}
+    return 1;
+}
+
+
+// Customize the number of rows in the table view.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [myContacts count];
+}
+
+-(NSString*)personDisplayText:(ABRecordRef)person
+{
+//	ABRecordRef person = [[myContacts objectAtIndex:rowIndex] retain];
+	
+	NSString *firstName = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonFirstNameProperty);
+	NSString *lastName = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonLastNameProperty);
+
+	NSString *fullName = nil;
+	if (firstName || lastName)
+	{
+		if (ABPersonGetCompositeNameFormat() == kABPersonCompositeNameFormatFirstNameFirst)
+			fullName = [NSString stringWithFormat:@"%@ %@", firstName, lastName];
+		else
+			fullName = [NSString stringWithFormat:@"%@, %@", lastName, firstName];
+	}
+	else
+	{
+		ABMultiValueRef phoneNumbers = ABRecordCopyValue(person,
+														 kABPersonPhoneProperty);
+		if (phoneNumbers && ABMultiValueGetCount(phoneNumbers) > 0)
+		{
+			fullName = (__bridge_transfer NSString*)ABMultiValueCopyValueAtIndex(phoneNumbers, 0);
+			CFRelease(phoneNumbers);
+		}
+	}
+	
+//	CFRelease(person);
+	return fullName;
+
+}
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+		[cell setAccessoryType:UITableViewCellAccessoryNone];
+    }
+    
+	// Configure the cell.
+	[[cell textLabel] setText:[self personDisplayText:objc_unretainedPointer([myContacts objectAtIndex:indexPath.row])]];
+
+	NSData *d = (__bridge_transfer NSData*)ABPersonCopyImageData(objc_unretainedPointer([myContacts objectAtIndex:indexPath.row]));
+	if (nil != d)
+	{
+		UIImage *i = [UIImage imageWithData:d];
+		[[cell imageView] setImage:i];
+	}
+	else
+		[[cell imageView] setImage:nil];
+
+	
+    return cell;
+}
+
+- (void)searchBar:(UISearchBar *)theSearchBar textDidChange:(NSString *)searchText 
+{
+	if ([searchText length] < prevSearchTextLen && prevSearchTextLen != 0)
+	{
+		myContacts = [NSArray arrayWithArray:(__bridge_transfer NSArray*) ABAddressBookCopyArrayOfAllPeople(addressBook)];
+		return;
+	}
+	prevSearchTextLen = [searchText length];
+	
+	NSMutableArray *filteredContacts = [NSMutableArray arrayWithCapacity:10];
+	
+	for (int i=0; i < [myContacts count]; i++)
+	{
+		ABMultiValueRef phoneNumbers = ABRecordCopyValue(objc_unretainedPointer([myContacts objectAtIndex:i]),
+														 kABPersonPhoneProperty);
+		if (phoneNumbers && ABMultiValueGetCount(phoneNumbers) > 0)
+		{
+			for (int j=0; j < ABMultiValueGetCount(phoneNumbers); j++)
+			{
+				NSString *phNum = (__bridge_transfer NSString*)ABMultiValueCopyValueAtIndex(phoneNumbers, j);
+				if ([phNum rangeOfString:searchText].location != NSNotFound)
+				{
+					[filteredContacts addObject:[myContacts objectAtIndex:i]];
+					j = ABMultiValueGetCount(phoneNumbers);
+				}
+			}
+			CFRelease(phoneNumbers);
+		}
+	}
+
+	myContacts = [NSArray arrayWithArray:filteredContacts];
+}
+
+-(void)callThisNumber:(NSString*)phoneNum
+{
+	NSString *url = [NSString stringWithFormat:@"tel:%@", phoneNum];
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];	
+}
+
+-(void)handleRowSelection:(int)rowIndex
+{
+	ABRecordRef person = objc_unretainedPointer([myContacts objectAtIndex:rowIndex]);
+	ABMultiValueRef phoneNumbers = ABRecordCopyValue(person,
+													 kABPersonPhoneProperty);
+
+	if (ABMultiValueGetCount(phoneNumbers) == 1)
+		[self callThisNumber:(__bridge_transfer NSString*)ABMultiValueCopyValueAtIndex(phoneNumbers, 0)];
+	else if (ABMultiValueGetCount(phoneNumbers) > 1)
+	{
+		UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Pick A Number" 
+													  message:@"Which number would you like to call?" 
+													 delegate:self 
+											cancelButtonTitle:@"Cancel" 
+											otherButtonTitles:nil];
+
+		for (int i=0; i < ABMultiValueGetCount(phoneNumbers); i++)
+			[av addButtonWithTitle:(__bridge_transfer NSString*)ABMultiValueCopyValueAtIndex(phoneNumbers, i)];
+
+		[av show];
+	}
+	
+	if (phoneNumbers)
+		CFRelease(phoneNumbers);	
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if (buttonIndex > 0)
+		[self callThisNumber:[alertView buttonTitleAtIndex:buttonIndex]];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	[[tableView cellForRowAtIndexPath:indexPath] setSelected:NO animated:YES];
+	
+	if ([self.navigationItem.leftBarButtonItem.title compare:@"Call"] != NSOrderedSame)
+		[self handleRowSelection:indexPath.row];
+	else
+	{
+		TVCDetails *tvc = [[TVCDetails alloc] initWithStyle:UITableViewStyleGrouped];
+		[tvc setPerson:objc_unretainedPointer([myContacts objectAtIndex:indexPath.row])];
+		[self.navigationController pushViewController:tvc animated:YES];
+	}
+
+}
+
+
+/*
+// Override to support conditional editing of the table view.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
+}
+*/
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+		ABRecordRef person = objc_unretainedPointer([myContacts objectAtIndex:indexPath.row]);
+		CFErrorRef *error;
+		ABAddressBookRemoveRecord(addressBook, person, error);
+		ABAddressBookSave(addressBook, error);
+		myContacts = nil;
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }   
+}
+
+
+/*
+ */
+// Override to support rearranging the table view.
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+}
+
+
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+    return NO;
+}
+
+
+- (void)dealloc {
+	if (addressBook)
+		CFRelease(addressBook);
+}
+
+-(IBAction)doAboutBtn:(id)sender;
+{
+	[self presentModalViewController:vcAbout animated:YES];
+}
+
+@end
+

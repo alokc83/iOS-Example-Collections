@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61C51CF915BB3F8400D519DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C51CF815BB3F8400D519DF /* UIKit.framework */; };
+		61C51CFB15BB3F8400D519DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C51CFA15BB3F8400D519DF /* Foundation.framework */; };
+		61C51CFD15BB3F8400D519DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C51CFC15BB3F8400D519DF /* CoreGraphics.framework */; };
+		61C51D0315BB3F8400D519DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61C51D0115BB3F8400D519DF /* InfoPlist.strings */; };
+		61C51D0515BB3F8400D519DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C51D0415BB3F8400D519DF /* main.m */; };
+		61C51D0915BB3F8400D519DF /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C51D0815BB3F8400D519DF /* MSAppDelegate.m */; };
+		61C51D0C15BB3F8400D519DF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C51D0A15BB3F8400D519DF /* MainStoryboard.storyboard */; };
+		61C51D0F15BB3F8400D519DF /* MSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C51D0E15BB3F8400D519DF /* MSMasterViewController.m */; };
+		61C51D1215BB3F8500D519DF /* MSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C51D1115BB3F8500D519DF /* MSDetailViewController.m */; };
+		61C51D2615BB669400D519DF /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C51D1B15BB669400D519DF /* NSObject+SBJSON.m */; };
+		61C51D2715BB669400D519DF /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C51D1D15BB669400D519DF /* NSString+SBJSON.m */; };
+		61C51D2815BB669400D519DF /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C51D1F15BB669400D519DF /* SBJSON.m */; };
+		61C51D2915BB669400D519DF /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C51D2115BB669400D519DF /* SBJsonBase.m */; };
+		61C51D2A15BB669400D519DF /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C51D2315BB669400D519DF /* SBJsonParser.m */; };
+		61C51D2B15BB669400D519DF /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C51D2515BB669400D519DF /* SBJsonWriter.m */; };
+		61C51D2E15BC40C700D519DF /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C51D2C15BC40C700D519DF /* EventKit.framework */; };
+		61C51D2F15BC40C700D519DF /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C51D2D15BC40C700D519DF /* EventKitUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61C51CF415BB3F8400D519DF /* MeetSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C51CF815BB3F8400D519DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		61C51CFA15BB3F8400D519DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		61C51CFC15BB3F8400D519DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		61C51D0015BB3F8400D519DF /* MeetSocial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeetSocial-Info.plist"; sourceTree = "<group>"; };
+		61C51D0215BB3F8400D519DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		61C51D0415BB3F8400D519DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		61C51D0615BB3F8400D519DF /* MeetSocial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MeetSocial-Prefix.pch"; sourceTree = "<group>"; };
+		61C51D0715BB3F8400D519DF /* MSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAppDelegate.h; sourceTree = "<group>"; };
+		61C51D0815BB3F8400D519DF /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAppDelegate.m; sourceTree = "<group>"; };
+		61C51D0B15BB3F8400D519DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		61C51D0D15BB3F8400D519DF /* MSMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMasterViewController.h; sourceTree = "<group>"; };
+		61C51D0E15BB3F8400D519DF /* MSMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMasterViewController.m; sourceTree = "<group>"; };
+		61C51D1015BB3F8500D519DF /* MSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDetailViewController.h; sourceTree = "<group>"; };
+		61C51D1115BB3F8500D519DF /* MSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDetailViewController.m; sourceTree = "<group>"; };
+		61C51D1915BB669400D519DF /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		61C51D1A15BB669400D519DF /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		61C51D1B15BB669400D519DF /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		61C51D1C15BB669400D519DF /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		61C51D1D15BB669400D519DF /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		61C51D1E15BB669400D519DF /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		61C51D1F15BB669400D519DF /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		61C51D2015BB669400D519DF /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		61C51D2115BB669400D519DF /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		61C51D2215BB669400D519DF /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		61C51D2315BB669400D519DF /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		61C51D2415BB669400D519DF /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		61C51D2515BB669400D519DF /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		61C51D2C15BC40C700D519DF /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		61C51D2D15BC40C700D519DF /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61C51CF115BB3F8400D519DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C51D2E15BC40C700D519DF /* EventKit.framework in Frameworks */,
+				61C51D2F15BC40C700D519DF /* EventKitUI.framework in Frameworks */,
+				61C51CF915BB3F8400D519DF /* UIKit.framework in Frameworks */,
+				61C51CFB15BB3F8400D519DF /* Foundation.framework in Frameworks */,
+				61C51CFD15BB3F8400D519DF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61C51CE915BB3F8400D519DF = {
+			isa = PBXGroup;
+			children = (
+				61C51D2C15BC40C700D519DF /* EventKit.framework */,
+				61C51D2D15BC40C700D519DF /* EventKitUI.framework */,
+				61C51CFE15BB3F8400D519DF /* MeetSocial */,
+				61C51CF715BB3F8400D519DF /* Frameworks */,
+				61C51CF515BB3F8400D519DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61C51CF515BB3F8400D519DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61C51CF415BB3F8400D519DF /* MeetSocial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61C51CF715BB3F8400D519DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61C51CF815BB3F8400D519DF /* UIKit.framework */,
+				61C51CFA15BB3F8400D519DF /* Foundation.framework */,
+				61C51CFC15BB3F8400D519DF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61C51CFE15BB3F8400D519DF /* MeetSocial */ = {
+			isa = PBXGroup;
+			children = (
+				61C51D1815BB668500D519DF /* JSON */,
+				61C51D0715BB3F8400D519DF /* MSAppDelegate.h */,
+				61C51D0815BB3F8400D519DF /* MSAppDelegate.m */,
+				61C51D0A15BB3F8400D519DF /* MainStoryboard.storyboard */,
+				61C51D0D15BB3F8400D519DF /* MSMasterViewController.h */,
+				61C51D0E15BB3F8400D519DF /* MSMasterViewController.m */,
+				61C51D1015BB3F8500D519DF /* MSDetailViewController.h */,
+				61C51D1115BB3F8500D519DF /* MSDetailViewController.m */,
+				61C51CFF15BB3F8400D519DF /* Supporting Files */,
+			);
+			path = MeetSocial;
+			sourceTree = "<group>";
+		};
+		61C51CFF15BB3F8400D519DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61C51D0015BB3F8400D519DF /* MeetSocial-Info.plist */,
+				61C51D0115BB3F8400D519DF /* InfoPlist.strings */,
+				61C51D0415BB3F8400D519DF /* main.m */,
+				61C51D0615BB3F8400D519DF /* MeetSocial-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61C51D1815BB668500D519DF /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				61C51D1915BB669400D519DF /* JSON.h */,
+				61C51D1A15BB669400D519DF /* NSObject+SBJSON.h */,
+				61C51D1B15BB669400D519DF /* NSObject+SBJSON.m */,
+				61C51D1C15BB669400D519DF /* NSString+SBJSON.h */,
+				61C51D1D15BB669400D519DF /* NSString+SBJSON.m */,
+				61C51D1E15BB669400D519DF /* SBJSON.h */,
+				61C51D1F15BB669400D519DF /* SBJSON.m */,
+				61C51D2015BB669400D519DF /* SBJsonBase.h */,
+				61C51D2115BB669400D519DF /* SBJsonBase.m */,
+				61C51D2215BB669400D519DF /* SBJsonParser.h */,
+				61C51D2315BB669400D519DF /* SBJsonParser.m */,
+				61C51D2415BB669400D519DF /* SBJsonWriter.h */,
+				61C51D2515BB669400D519DF /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61C51CF315BB3F8400D519DF /* MeetSocial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C51D1515BB3F8500D519DF /* Build configuration list for PBXNativeTarget "MeetSocial" */;
+			buildPhases = (
+				61C51CF015BB3F8400D519DF /* Sources */,
+				61C51CF115BB3F8400D519DF /* Frameworks */,
+				61C51CF215BB3F8400D519DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeetSocial;
+			productName = MeetSocial;
+			productReference = 61C51CF415BB3F8400D519DF /* MeetSocial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61C51CEB15BB3F8400D519DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MS;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = BrainwashInc.com;
+			};
+			buildConfigurationList = 61C51CEE15BB3F8400D519DF /* Build configuration list for PBXProject "MeetSocial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 61C51CE915BB3F8400D519DF;
+			productRefGroup = 61C51CF515BB3F8400D519DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61C51CF315BB3F8400D519DF /* MeetSocial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61C51CF215BB3F8400D519DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C51D0315BB3F8400D519DF /* InfoPlist.strings in Resources */,
+				61C51D0C15BB3F8400D519DF /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61C51CF015BB3F8400D519DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C51D0515BB3F8400D519DF /* main.m in Sources */,
+				61C51D0915BB3F8400D519DF /* MSAppDelegate.m in Sources */,
+				61C51D0F15BB3F8400D519DF /* MSMasterViewController.m in Sources */,
+				61C51D1215BB3F8500D519DF /* MSDetailViewController.m in Sources */,
+				61C51D2615BB669400D519DF /* NSObject+SBJSON.m in Sources */,
+				61C51D2715BB669400D519DF /* NSString+SBJSON.m in Sources */,
+				61C51D2815BB669400D519DF /* SBJSON.m in Sources */,
+				61C51D2915BB669400D519DF /* SBJsonBase.m in Sources */,
+				61C51D2A15BB669400D519DF /* SBJsonParser.m in Sources */,
+				61C51D2B15BB669400D519DF /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		61C51D0115BB3F8400D519DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C51D0215BB3F8400D519DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		61C51D0A15BB3F8400D519DF /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C51D0B15BB3F8400D519DF /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61C51D1315BB3F8500D519DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		61C51D1415BB3F8500D519DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61C51D1615BB3F8500D519DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeetSocial/MeetSocial-Prefix.pch";
+				INFOPLIST_FILE = "MeetSocial/MeetSocial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		61C51D1715BB3F8500D519DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeetSocial/MeetSocial-Prefix.pch";
+				INFOPLIST_FILE = "MeetSocial/MeetSocial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61C51CEE15BB3F8400D519DF /* Build configuration list for PBXProject "MeetSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C51D1315BB3F8500D519DF /* Debug */,
+				61C51D1415BB3F8500D519DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61C51D1515BB3F8500D519DF /* Build configuration list for PBXNativeTarget "MeetSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C51D1615BB3F8500D519DF /* Debug */,
+				61C51D1715BB3F8500D519DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61C51CEB15BB3F8400D519DF /* Project object */;
+}

@@ -1,0 +1,57 @@
+//
+//  WhereAmIParkedViewController.h
+//  WhereAmIParked
+//
+//  Created by Bear Cahill on 1/29/10.
+//  Copyright Brainwash Inc. 2010. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <MapKit/MKAnnotation.h>
+
+#import "VCAbout.h"
+
+@interface SpotAnnotation : NSObject <MKAnnotation>
+{
+	CLLocationCoordinate2D coordinate;
+	NSString *title;
+	NSString *subtitle;
+}
+
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *subtitle;
+
+@end
+
+
+@interface WhereAmIParkedViewController : UIViewController <MKMapViewDelegate, MKReverseGeocoderDelegate, UIImagePickerControllerDelegate> {
+
+	IBOutlet MKMapView *mapParking;
+
+	IBOutlet UITextView *tvNote;
+	IBOutlet UIButton *btnDone;
+	
+	IBOutlet UIImagePickerController *picController;
+	IBOutlet UIViewController *vcDisplayPic;
+	IBOutlet UIImageView *ivPic;
+
+	IBOutlet VCAbout* vcAbout;
+	
+}
+- (IBAction)doBtnDoneAbout:(id)sender;
+
+-(IBAction)doPicBtn:(id)sender;
+-(IBAction)doShowPicBtn:(id)sender;
+-(IBAction)doDonePicBtn:(id)sender;
+
+
+-(IBAction)doParkBtn:(id)sender;
+-(IBAction)doNoteBtn:(id)sender;
+-(IBAction)doDoneBtn:(id)sender;
+
+-(IBAction)doAboutBtn:(id)sender;
+
+@end
+

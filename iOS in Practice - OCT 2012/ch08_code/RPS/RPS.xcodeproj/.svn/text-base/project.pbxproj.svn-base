@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		611AC5A112316348007607E0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 611AC5A012316348007607E0 /* StoreKit.framework */; };
+		614AE7EB13E8866400469E7B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614AE7EA13E8866400469E7B /* AVFoundation.framework */; };
+		6167F98812317925009BC7C0 /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 6167F98512317925009BC7C0 /* rock.png */; };
+		6167F98912317925009BC7C0 /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = 6167F98612317925009BC7C0 /* scissors.png */; };
+		6167F98A12317925009BC7C0 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 6167F98712317925009BC7C0 /* paper.png */; };
+		6169BA63125503D4001D96D5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6169BA62125503D4001D96D5 /* Default.png */; };
+		6169BA68125504E5001D96D5 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 6169BA64125504E5001D96D5 /* iTunesArtwork.png */; };
+		6169BA69125504E5001D96D5 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6169BA65125504E5001D96D5 /* icon@2x.png */; };
+		6169BA6A125504E5001D96D5 /* icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6169BA66125504E5001D96D5 /* icon-iPad.png */; };
+		6169BA6B125504E5001D96D5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6169BA67125504E5001D96D5 /* icon.png */; };
+		61A5E442123140FC00D63F06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A5E441123140FC00D63F06 /* UIKit.framework */; };
+		61A5E444123140FC00D63F06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A5E443123140FC00D63F06 /* Foundation.framework */; };
+		61A5E446123140FC00D63F06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A5E445123140FC00D63F06 /* CoreGraphics.framework */; };
+		61A5E44B123140FC00D63F06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61A5E449123140FC00D63F06 /* InfoPlist.strings */; };
+		61A5E44D123140FC00D63F06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A5E44C123140FC00D63F06 /* main.m */; };
+		61A5E450123140FC00D63F06 /* RPSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A5E44F123140FC00D63F06 /* RPSAppDelegate.m */; };
+		61A5E453123140FC00D63F06 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A5E451123140FC00D63F06 /* MainWindow.xib */; };
+		61A5E456123140FC00D63F06 /* RPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A5E455123140FC00D63F06 /* RPSViewController.m */; };
+		61A5E459123140FC00D63F06 /* RPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A5E457123140FC00D63F06 /* RPSViewController.xib */; };
+		61A5E46112314CFA00D63F06 /* APNSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A5E46012314CFA00D63F06 /* APNSender.m */; };
+		61D2FF0F12368717006645DD /* UtilGameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D2FF0E12368717006645DD /* UtilGameCenter.m */; };
+		61DB852A12317CA6002B5050 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61DB852912317CA6002B5050 /* GameKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		610A93F112CA678600A462F0 /* dist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dist.plist; sourceTree = "<group>"; };
+		611AC5A012316348007607E0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		614AE7EA13E8866400469E7B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6167F98512317925009BC7C0 /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
+		6167F98612317925009BC7C0 /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.png; sourceTree = "<group>"; };
+		6167F98712317925009BC7C0 /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		6169BA62125503D4001D96D5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6169BA64125504E5001D96D5 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		6169BA65125504E5001D96D5 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		6169BA66125504E5001D96D5 /* icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-iPad.png"; sourceTree = "<group>"; };
+		6169BA67125504E5001D96D5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		61A5E43E123140FC00D63F06 /* RPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61A5E441123140FC00D63F06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		61A5E443123140FC00D63F06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		61A5E445123140FC00D63F06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		61A5E447123140FC00D63F06 /* RPS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RPS-Info.plist"; sourceTree = "<group>"; };
+		61A5E448123140FC00D63F06 /* RPS_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPS_Prefix.pch; sourceTree = "<group>"; };
+		61A5E44A123140FC00D63F06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		61A5E44C123140FC00D63F06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		61A5E44E123140FC00D63F06 /* RPSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSAppDelegate.h; sourceTree = "<group>"; };
+		61A5E44F123140FC00D63F06 /* RPSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSAppDelegate.m; sourceTree = "<group>"; };
+		61A5E452123140FC00D63F06 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		61A5E454123140FC00D63F06 /* RPSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSViewController.h; sourceTree = "<group>"; };
+		61A5E455123140FC00D63F06 /* RPSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSViewController.m; sourceTree = "<group>"; };
+		61A5E458123140FC00D63F06 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RPSViewController.xib; sourceTree = "<group>"; };
+		61A5E45F12314CFA00D63F06 /* APNSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APNSender.h; path = ../APNSender.h; sourceTree = "<group>"; };
+		61A5E46012314CFA00D63F06 /* APNSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APNSender.m; path = ../APNSender.m; sourceTree = "<group>"; };
+		61D2FF0D12368717006645DD /* UtilGameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilGameCenter.h; sourceTree = "<group>"; };
+		61D2FF0E12368717006645DD /* UtilGameCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilGameCenter.m; sourceTree = "<group>"; };
+		61DB852912317CA6002B5050 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61A5E43B123140FC00D63F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614AE7EB13E8866400469E7B /* AVFoundation.framework in Frameworks */,
+				61A5E442123140FC00D63F06 /* UIKit.framework in Frameworks */,
+				61A5E444123140FC00D63F06 /* Foundation.framework in Frameworks */,
+				61A5E446123140FC00D63F06 /* CoreGraphics.framework in Frameworks */,
+				611AC5A112316348007607E0 /* StoreKit.framework in Frameworks */,
+				61DB852A12317CA6002B5050 /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61A5E42F123140FC00D63F06 = {
+			isa = PBXGroup;
+			children = (
+				614AE7EA13E8866400469E7B /* AVFoundation.framework */,
+				61A5E436123140FC00D63F06 /* Classes */,
+				61A5E437123140FC00D63F06 /* Other Sources */,
+				61A5E438123140FC00D63F06 /* Resources */,
+				61A5E439123140FC00D63F06 /* Frameworks */,
+				61A5E43F123140FC00D63F06 /* Products */,
+				610A93F112CA678600A462F0 /* dist.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		61A5E436123140FC00D63F06 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				61D2FF0C12368705006645DD /* GameCenter */,
+				61A5E44E123140FC00D63F06 /* RPSAppDelegate.h */,
+				61A5E44F123140FC00D63F06 /* RPSAppDelegate.m */,
+				61A5E454123140FC00D63F06 /* RPSViewController.h */,
+				61A5E455123140FC00D63F06 /* RPSViewController.m */,
+				61A5E45F12314CFA00D63F06 /* APNSender.h */,
+				61A5E46012314CFA00D63F06 /* APNSender.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		61A5E437123140FC00D63F06 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				61A5E448123140FC00D63F06 /* RPS_Prefix.pch */,
+				61A5E44C123140FC00D63F06 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		61A5E438123140FC00D63F06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6169BA64125504E5001D96D5 /* iTunesArtwork.png */,
+				6169BA65125504E5001D96D5 /* icon@2x.png */,
+				6169BA66125504E5001D96D5 /* icon-iPad.png */,
+				6169BA67125504E5001D96D5 /* icon.png */,
+				6169BA62125503D4001D96D5 /* Default.png */,
+				6167F98512317925009BC7C0 /* rock.png */,
+				6167F98612317925009BC7C0 /* scissors.png */,
+				6167F98712317925009BC7C0 /* paper.png */,
+				61A5E447123140FC00D63F06 /* RPS-Info.plist */,
+				61A5E449123140FC00D63F06 /* InfoPlist.strings */,
+				61A5E451123140FC00D63F06 /* MainWindow.xib */,
+				61A5E457123140FC00D63F06 /* RPSViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		61A5E439123140FC00D63F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61DB852912317CA6002B5050 /* GameKit.framework */,
+				611AC5A012316348007607E0 /* StoreKit.framework */,
+				61A5E441123140FC00D63F06 /* UIKit.framework */,
+				61A5E443123140FC00D63F06 /* Foundation.framework */,
+				61A5E445123140FC00D63F06 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61A5E43F123140FC00D63F06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61A5E43E123140FC00D63F06 /* RPS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61D2FF0C12368705006645DD /* GameCenter */ = {
+			isa = PBXGroup;
+			children = (
+				61D2FF0D12368717006645DD /* UtilGameCenter.h */,
+				61D2FF0E12368717006645DD /* UtilGameCenter.m */,
+			);
+			name = GameCenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61A5E43D123140FC00D63F06 /* RPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61A5E45C123140FC00D63F06 /* Build configuration list for PBXNativeTarget "RPS" */;
+			buildPhases = (
+				61A5E43A123140FC00D63F06 /* Sources */,
+				61A5E43B123140FC00D63F06 /* Frameworks */,
+				61A5E43C123140FC00D63F06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPS;
+			productName = RPS;
+			productReference = 61A5E43E123140FC00D63F06 /* RPS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61A5E431123140FC00D63F06 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 61A5E434123140FC00D63F06 /* Build configuration list for PBXProject "RPS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 61A5E42F123140FC00D63F06;
+			productRefGroup = 61A5E43F123140FC00D63F06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61A5E43D123140FC00D63F06 /* RPS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61A5E43C123140FC00D63F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61A5E44B123140FC00D63F06 /* InfoPlist.strings in Resources */,
+				61A5E453123140FC00D63F06 /* MainWindow.xib in Resources */,
+				61A5E459123140FC00D63F06 /* RPSViewController.xib in Resources */,
+				6167F98812317925009BC7C0 /* rock.png in Resources */,
+				6167F98912317925009BC7C0 /* scissors.png in Resources */,
+				6167F98A12317925009BC7C0 /* paper.png in Resources */,
+				6169BA63125503D4001D96D5 /* Default.png in Resources */,
+				6169BA68125504E5001D96D5 /* iTunesArtwork.png in Resources */,
+				6169BA69125504E5001D96D5 /* icon@2x.png in Resources */,
+				6169BA6A125504E5001D96D5 /* icon-iPad.png in Resources */,
+				6169BA6B125504E5001D96D5 /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61A5E43A123140FC00D63F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61A5E44D123140FC00D63F06 /* main.m in Sources */,
+				61A5E450123140FC00D63F06 /* RPSAppDelegate.m in Sources */,
+				61A5E456123140FC00D63F06 /* RPSViewController.m in Sources */,
+				61A5E46112314CFA00D63F06 /* APNSender.m in Sources */,
+				61D2FF0F12368717006645DD /* UtilGameCenter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		61A5E449123140FC00D63F06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61A5E44A123140FC00D63F06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		61A5E451123140FC00D63F06 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61A5E452123140FC00D63F06 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		61A5E457123140FC00D63F06 /* RPSViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61A5E458123140FC00D63F06 /* en */,
+			);
+			name = RPSViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		610A93EC12CA676000A462F0 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Adhoc;
+		};
+		610A93ED12CA676000A462F0 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "~/Brainwash/book/chapters/ch09/ch09_code/RPS/dist.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RPS_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "RPS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				PRODUCT_NAME = RPS;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.2;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Adhoc;
+		};
+		610A93EE12CA676200A462F0 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Distribution;
+		};
+		610A93EF12CA676200A462F0 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "~/Brainwash/book/chapters/ch09/ch09_code/RPS/dist.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RPS_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "RPS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				PRODUCT_NAME = RPS;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.2;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		61A5E45A123140FC00D63F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		61A5E45B123140FC00D63F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+		61A5E45D123140FC00D63F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "~/Brainwash/book/chapters/ch09/ch09_code/RPS/dist.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RPS_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "RPS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				PRODUCT_NAME = RPS;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		61A5E45E123140FC00D63F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "~/Brainwash/book/chapters/ch09/ch09_code/RPS/dist.plist";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RPS_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "RPS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				PRODUCT_NAME = RPS;
+				SDKROOT = iphoneos4.2;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61A5E434123140FC00D63F06 /* Build configuration list for PBXProject "RPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61A5E45A123140FC00D63F06 /* Debug */,
+				61A5E45B123140FC00D63F06 /* Release */,
+				610A93EC12CA676000A462F0 /* Adhoc */,
+				610A93EE12CA676200A462F0 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61A5E45C123140FC00D63F06 /* Build configuration list for PBXNativeTarget "RPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61A5E45D123140FC00D63F06 /* Debug */,
+				61A5E45E123140FC00D63F06 /* Release */,
+				610A93ED12CA676000A462F0 /* Adhoc */,
+				610A93EF12CA676200A462F0 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61A5E431123140FC00D63F06 /* Project object */;
+}

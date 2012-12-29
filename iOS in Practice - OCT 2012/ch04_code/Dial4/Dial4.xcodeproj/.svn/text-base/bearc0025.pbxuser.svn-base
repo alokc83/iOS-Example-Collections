@@ -1,0 +1,183 @@
+// !$*UTF8*$!
+{
+	09B141C010FB8D4900CCCD79 /* VCAbout.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 260}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 274}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Dial4 */ = {
+		activeExec = 0;
+		executables = (
+			61F57502115D30E70082B5CD /* Dial4 */,
+		);
+	};
+	28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {792, 743}}";
+			sepNavSelRange = "{390, 34}";
+			sepNavVisRange = "{0, 430}";
+		};
+	};
+	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {792, 3861}}";
+			sepNavSelRange = "{5068, 0}";
+			sepNavVisRange = "{4161, 1609}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 61F57502115D30E70082B5CD /* Dial4 */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Dial4 */;
+		codeSenseManager = 61F5751C115D31120082B5CD /* Code sense */;
+		executables = (
+			61F57502115D30E70082B5CD /* Dial4 */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					614,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					574,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 311627432;
+			PBXWorkspaceStateSaveDate = 311627432;
+		};
+		perUserProjectItems = {
+			611B07D7129329C600959252 /* PBXTextBookmark */ = 611B07D7129329C600959252 /* PBXTextBookmark */;
+			611B07D8129329C600959252 /* PBXTextBookmark */ = 611B07D8129329C600959252 /* PBXTextBookmark */;
+			617E6BD112037D540077496E /* PBXTextBookmark */ = 617E6BD112037D540077496E /* PBXTextBookmark */;
+			61F5753C115D31E50082B5CD /* PBXBookmark */ = 61F5753C115D31E50082B5CD /* PBXBookmark */;
+			61F5753D115D31E50082B5CD /* PBXTextBookmark */ = 61F5753D115D31E50082B5CD /* PBXTextBookmark */;
+		};
+		sourceControlManager = 61F5751B115D31120082B5CD /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	611B07D7129329C600959252 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 162";
+		rLen = 0;
+		rLoc = 4505;
+		rType = 0;
+		vrLen = 1628;
+		vrLoc = 4074;
+	};
+	611B07D8129329C600959252 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 177";
+		rLen = 0;
+		rLoc = 5068;
+		rType = 0;
+		vrLen = 1609;
+		vrLoc = 4161;
+	};
+	617E6BD112037D540077496E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 23";
+		rLen = 34;
+		rLoc = 390;
+		rType = 0;
+		vrLen = 430;
+		vrLoc = 0;
+	};
+	61F57502115D30E70082B5CD /* Dial4 */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Dial4;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	61F5751B115D31120082B5CD /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	61F5751C115D31120082B5CD /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	61F5753C115D31E50082B5CD /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 09B141E610FB8E9800CCCD79 /* Default.png */;
+	};
+	61F5753D115D31E50082B5CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 09B141C010FB8D4900CCCD79 /* VCAbout.h */;
+		name = "VCAbout.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 274;
+		vrLoc = 0;
+	};
+}

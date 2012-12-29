@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2818" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1900"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="11">
+            <objects>
+                <navigationController restorationIdentifier="MSNavCon" id="3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GjI-QG-mAe" kind="relationship" relationship="rootViewController" id="OSy-l0-YoZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2" y="121"/>
+        </scene>
+        <!--Master View Controller-->
+        <scene sceneID="dyB-zg-HyP">
+            <objects>
+                <viewController storyboardIdentifier="MSSearchInput" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GjI-QG-mAe" customClass="MSMasterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2R0-vs-UPY">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" text="" id="2JJ-dx-jOA">
+                                <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <connections>
+                                    <outlet property="delegate" destination="GjI-QG-mAe" id="gCH-j7-orP"/>
+                                    <segue destination="7eA-dJ-Jfv" kind="push" identifier="" id="KG5-lV-Azy"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Qhz-wD-Kdl">
+                                <segments>
+                                    <segment title="Zip Code"/>
+                                    <segment title="Keyword"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="rcP-Ll-K7q">
+                                <segments>
+                                    <segment title="Groups"/>
+                                    <segment title="Events"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2JJ-dx-jOA" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="BAT-Rq-2lI"/>
+                            <constraint firstItem="rcP-Ll-K7q" firstAttribute="top" secondItem="Qhz-wD-Kdl" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="LTx-j3-1kd"/>
+                            <constraint firstAttribute="trailing" secondItem="Qhz-wD-Kdl" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="RA1-iW-jQI"/>
+                            <constraint firstAttribute="trailing" secondItem="rcP-Ll-K7q" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ZzX-uq-BKi"/>
+                            <constraint firstItem="2JJ-dx-jOA" firstAttribute="leading" secondItem="2R0-vs-UPY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="b9h-UQ-hfo"/>
+                            <constraint firstItem="Qhz-wD-Kdl" firstAttribute="leading" secondItem="2R0-vs-UPY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="chG-TE-7mC"/>
+                            <constraint firstItem="rcP-Ll-K7q" firstAttribute="leading" secondItem="2R0-vs-UPY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="eHq-mo-WBf"/>
+                            <constraint firstItem="Qhz-wD-Kdl" firstAttribute="top" secondItem="2R0-vs-UPY" secondAttribute="top" constant="13" id="ktY-O7-7mT"/>
+                            <constraint firstItem="2JJ-dx-jOA" firstAttribute="top" secondItem="rcP-Ll-K7q" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="peE-d5-4sU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2qm-h1-eWl"/>
+                    <connections>
+                        <outlet property="segSearchGroupsOrEvents" destination="rcP-Ll-K7q" id="5j1-yu-Zdb"/>
+                        <outlet property="segSearchZipOrKeyword" destination="Qhz-wD-Kdl" id="B0F-bP-lnq"/>
+                        <outlet property="tfSearchText" destination="2JJ-dx-jOA" id="c1W-qB-hUw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ud-RH-5Vl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="147"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="dym-uv-jrD">
+            <objects>
+                <collectionViewController storyboardIdentifier="MSResults" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7eA-dJ-Jfv" customClass="MSDetailViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="MSCollView" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="s7S-yY-X5e">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NO1-Mn-leQ">
+                            <size key="itemSize" width="90" height="130"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="" reuseIdentifier="ResultsCell" id="tzz-bR-T3Q">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="130"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="130"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="6O4-Wi-BDF">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="90" id="hUn-QR-LvU"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" text="Label" textAlignment="center" autoshrinkMode="minimumFontSize" preferredMaxLayoutWidth="90" id="7mI-94-plz">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="JJK-Qp-txL"/>
+                                            </constraints>
+                                            <nil key="highlightedColor"/>
+                                            <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="7mI-94-plz" firstAttribute="leading" secondItem="tzz-bR-T3Q" secondAttribute="leading" type="default" id="Q5q-lL-FID"/>
+                                    <constraint firstItem="6O4-Wi-BDF" firstAttribute="leading" secondItem="tzz-bR-T3Q" secondAttribute="leading" type="default" id="Uuf-7l-Mic"/>
+                                    <constraint firstAttribute="bottom" secondItem="7mI-94-plz" secondAttribute="bottom" constant="4" id="VN9-Vt-NbP"/>
+                                    <constraint firstItem="6O4-Wi-BDF" firstAttribute="top" secondItem="tzz-bR-T3Q" secondAttribute="top" type="default" id="aQ4-3W-1rn"/>
+                                    <constraint firstItem="7mI-94-plz" firstAttribute="trailing" secondItem="6O4-Wi-BDF" secondAttribute="trailing" type="default" id="cMB-Zv-Jfo"/>
+                                    <constraint firstItem="7mI-94-plz" firstAttribute="trailing" secondItem="tzz-bR-T3Q" secondAttribute="trailing" type="default" id="eHR-Q0-ihg"/>
+                                </constraints>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="7eA-dJ-Jfv" id="1kK-nj-dbV"/>
+                            <outlet property="delegate" destination="7eA-dJ-Jfv" id="Qn4-06-22x"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="2qQ-S0-T3a"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j9W-XX-Qpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="160"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="MSDetailViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MSDetailViewController.h"/>
+        </class>
+        <class className="MSMasterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MSMasterViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="segSearchGroupsOrEvents" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="segSearchZipOrKeyword" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="tfSearchText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

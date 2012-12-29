@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		613438041487149200A2DD8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613438031487149200A2DD8C /* UIKit.framework */; };
+		613438061487149200A2DD8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613438051487149200A2DD8C /* Foundation.framework */; };
+		613438081487149200A2DD8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613438071487149200A2DD8C /* CoreGraphics.framework */; };
+		6134380A1487149200A2DD8C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613438091487149200A2DD8C /* CoreData.framework */; };
+		613438101487149200A2DD8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6134380E1487149200A2DD8C /* InfoPlist.strings */; };
+		613438121487149200A2DD8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 613438111487149200A2DD8C /* main.m */; };
+		613438161487149300A2DD8C /* PlayMyListsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 613438151487149300A2DD8C /* PlayMyListsAppDelegate.m */; };
+		613438191487149300A2DD8C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613438171487149300A2DD8C /* MainStoryboard.storyboard */; };
+		6134381C1487149300A2DD8C /* PlayMyLists.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6134381A1487149300A2DD8C /* PlayMyLists.xcdatamodeld */; };
+		6134381F1487149300A2DD8C /* PlayMyListsMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6134381E1487149300A2DD8C /* PlayMyListsMasterViewController.m */; };
+		613438221487149300A2DD8C /* PlayMyListsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 613438211487149300A2DD8C /* PlayMyListsDetailViewController.m */; };
+		6134382A1487216800A2DD8C /* AppPlayList.m in Sources */ = {isa = PBXBuildFile; fileRef = 613438291487216800A2DD8C /* AppPlayList.m */; };
+		6134382D1487216800A2DD8C /* PlayListTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6134382C1487216800A2DD8C /* PlayListTrack.m */; };
+		61343830148722AC00A2DD8C /* VCPlayListItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 6134382F148722AC00A2DD8C /* VCPlayListItems.m */; };
+		61573F251487488500B4D868 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61573F241487488500B4D868 /* MediaPlayer.framework */; };
+		61573F2814874ADF00B4D868 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 61573F2714874ADF00B4D868 /* Icon.png */; };
+		61573F2A14874AE600B4D868 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61573F2914874AE600B4D868 /* Icon@2x.png */; };
+		61573F2C14874AED00B4D868 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 61573F2B14874AED00B4D868 /* Default.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		613437FF1487149200A2DD8C /* PlayMyLists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayMyLists.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		613438031487149200A2DD8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		613438051487149200A2DD8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		613438071487149200A2DD8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		613438091487149200A2DD8C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6134380D1487149200A2DD8C /* PlayMyLists-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlayMyLists-Info.plist"; sourceTree = "<group>"; };
+		6134380F1487149200A2DD8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		613438111487149200A2DD8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		613438131487149200A2DD8C /* PlayMyLists-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlayMyLists-Prefix.pch"; sourceTree = "<group>"; };
+		613438141487149200A2DD8C /* PlayMyListsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayMyListsAppDelegate.h; sourceTree = "<group>"; };
+		613438151487149300A2DD8C /* PlayMyListsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayMyListsAppDelegate.m; sourceTree = "<group>"; };
+		613438181487149300A2DD8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6134381B1487149300A2DD8C /* PlayMyLists.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlayMyLists.xcdatamodel; sourceTree = "<group>"; };
+		6134381D1487149300A2DD8C /* PlayMyListsMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayMyListsMasterViewController.h; sourceTree = "<group>"; };
+		6134381E1487149300A2DD8C /* PlayMyListsMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayMyListsMasterViewController.m; sourceTree = "<group>"; };
+		613438201487149300A2DD8C /* PlayMyListsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayMyListsDetailViewController.h; sourceTree = "<group>"; };
+		613438211487149300A2DD8C /* PlayMyListsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayMyListsDetailViewController.m; sourceTree = "<group>"; };
+		613438281487216800A2DD8C /* AppPlayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPlayList.h; sourceTree = "<group>"; };
+		613438291487216800A2DD8C /* AppPlayList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPlayList.m; sourceTree = "<group>"; };
+		6134382B1487216800A2DD8C /* PlayListTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayListTrack.h; sourceTree = "<group>"; };
+		6134382C1487216800A2DD8C /* PlayListTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayListTrack.m; sourceTree = "<group>"; };
+		6134382E148722AC00A2DD8C /* VCPlayListItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCPlayListItems.h; path = ../VCPlayListItems.h; sourceTree = "<group>"; };
+		6134382F148722AC00A2DD8C /* VCPlayListItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCPlayListItems.m; path = ../VCPlayListItems.m; sourceTree = "<group>"; };
+		61573F241487488500B4D868 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		61573F2714874ADF00B4D868 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		61573F2914874AE600B4D868 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		61573F2B14874AED00B4D868 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		613437FC1487149200A2DD8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61573F251487488500B4D868 /* MediaPlayer.framework in Frameworks */,
+				613438041487149200A2DD8C /* UIKit.framework in Frameworks */,
+				613438061487149200A2DD8C /* Foundation.framework in Frameworks */,
+				613438081487149200A2DD8C /* CoreGraphics.framework in Frameworks */,
+				6134380A1487149200A2DD8C /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		613437F41487149200A2DD8C = {
+			isa = PBXGroup;
+			children = (
+				6134380B1487149200A2DD8C /* PlayMyLists */,
+				613438021487149200A2DD8C /* Frameworks */,
+				613438001487149200A2DD8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		613438001487149200A2DD8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				613437FF1487149200A2DD8C /* PlayMyLists.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		613438021487149200A2DD8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61573F241487488500B4D868 /* MediaPlayer.framework */,
+				613438031487149200A2DD8C /* UIKit.framework */,
+				613438051487149200A2DD8C /* Foundation.framework */,
+				613438071487149200A2DD8C /* CoreGraphics.framework */,
+				613438091487149200A2DD8C /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6134380B1487149200A2DD8C /* PlayMyLists */ = {
+			isa = PBXGroup;
+			children = (
+				6134382E148722AC00A2DD8C /* VCPlayListItems.h */,
+				6134382F148722AC00A2DD8C /* VCPlayListItems.m */,
+				613438141487149200A2DD8C /* PlayMyListsAppDelegate.h */,
+				613438151487149300A2DD8C /* PlayMyListsAppDelegate.m */,
+				613438171487149300A2DD8C /* MainStoryboard.storyboard */,
+				6134381D1487149300A2DD8C /* PlayMyListsMasterViewController.h */,
+				6134381E1487149300A2DD8C /* PlayMyListsMasterViewController.m */,
+				613438201487149300A2DD8C /* PlayMyListsDetailViewController.h */,
+				613438211487149300A2DD8C /* PlayMyListsDetailViewController.m */,
+				6134381A1487149300A2DD8C /* PlayMyLists.xcdatamodeld */,
+				6134382B1487216800A2DD8C /* PlayListTrack.h */,
+				6134382C1487216800A2DD8C /* PlayListTrack.m */,
+				613438281487216800A2DD8C /* AppPlayList.h */,
+				613438291487216800A2DD8C /* AppPlayList.m */,
+				6134380C1487149200A2DD8C /* Supporting Files */,
+			);
+			path = PlayMyLists;
+			sourceTree = "<group>";
+		};
+		6134380C1487149200A2DD8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61573F2B14874AED00B4D868 /* Default.png */,
+				61573F2914874AE600B4D868 /* Icon@2x.png */,
+				61573F2714874ADF00B4D868 /* Icon.png */,
+				6134380D1487149200A2DD8C /* PlayMyLists-Info.plist */,
+				6134380E1487149200A2DD8C /* InfoPlist.strings */,
+				613438111487149200A2DD8C /* main.m */,
+				613438131487149200A2DD8C /* PlayMyLists-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		613437FE1487149200A2DD8C /* PlayMyLists */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 613438251487149300A2DD8C /* Build configuration list for PBXNativeTarget "PlayMyLists" */;
+			buildPhases = (
+				613437FB1487149200A2DD8C /* Sources */,
+				613437FC1487149200A2DD8C /* Frameworks */,
+				613437FD1487149200A2DD8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayMyLists;
+			productName = PlayMyLists;
+			productReference = 613437FF1487149200A2DD8C /* PlayMyLists.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		613437F61487149200A2DD8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 613437F91487149200A2DD8C /* Build configuration list for PBXProject "PlayMyLists" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 613437F41487149200A2DD8C;
+			productRefGroup = 613438001487149200A2DD8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				613437FE1487149200A2DD8C /* PlayMyLists */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		613437FD1487149200A2DD8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613438101487149200A2DD8C /* InfoPlist.strings in Resources */,
+				613438191487149300A2DD8C /* MainStoryboard.storyboard in Resources */,
+				61573F2814874ADF00B4D868 /* Icon.png in Resources */,
+				61573F2A14874AE600B4D868 /* Icon@2x.png in Resources */,
+				61573F2C14874AED00B4D868 /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		613437FB1487149200A2DD8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613438121487149200A2DD8C /* main.m in Sources */,
+				613438161487149300A2DD8C /* PlayMyListsAppDelegate.m in Sources */,
+				6134381C1487149300A2DD8C /* PlayMyLists.xcdatamodeld in Sources */,
+				6134381F1487149300A2DD8C /* PlayMyListsMasterViewController.m in Sources */,
+				613438221487149300A2DD8C /* PlayMyListsDetailViewController.m in Sources */,
+				6134382A1487216800A2DD8C /* AppPlayList.m in Sources */,
+				6134382D1487216800A2DD8C /* PlayListTrack.m in Sources */,
+				61343830148722AC00A2DD8C /* VCPlayListItems.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6134380E1487149200A2DD8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6134380F1487149200A2DD8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		613438171487149300A2DD8C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				613438181487149300A2DD8C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		613438231487149300A2DD8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		613438241487149300A2DD8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		613438261487149300A2DD8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlayMyLists/PlayMyLists-Prefix.pch";
+				INFOPLIST_FILE = "PlayMyLists/PlayMyLists-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		613438271487149300A2DD8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlayMyLists/PlayMyLists-Prefix.pch";
+				INFOPLIST_FILE = "PlayMyLists/PlayMyLists-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		613437F91487149200A2DD8C /* Build configuration list for PBXProject "PlayMyLists" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613438231487149300A2DD8C /* Debug */,
+				613438241487149300A2DD8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		613438251487149300A2DD8C /* Build configuration list for PBXNativeTarget "PlayMyLists" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613438261487149300A2DD8C /* Debug */,
+				613438271487149300A2DD8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6134381A1487149300A2DD8C /* PlayMyLists.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6134381B1487149300A2DD8C /* PlayMyLists.xcdatamodel */,
+			);
+			currentVersion = 6134381B1487149300A2DD8C /* PlayMyLists.xcdatamodel */;
+			path = PlayMyLists.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 613437F61487149200A2DD8C /* Project object */;
+}

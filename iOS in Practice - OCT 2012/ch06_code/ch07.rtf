@@ -1,0 +1,322 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf320
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red92\green38\blue153;\red46\green13\blue110;\red196\green26\blue22;
+\red170\green13\blue145;\red100\green56\blue32;\red63\green110\blue116;\red28\green0\blue207;\red38\green71\blue75;
+}
+\margl1440\margr1440\vieww11780\viewh19020\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\fs24 \cf0 Section 1: Settings Bundles in iPhone Projects\
+\
+\pard\pardeftab720\ql\qnatural
+
+\f1 \cf0 \
+---------\
+
+\f0 Technique 1: Adding Settings to an Xcode Project\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+images 1-5\
+\
+- create a view-based project\
+- add Settings.Bundle (
+\f1 Settings Bundle template found under Resources)\
+- run and quit, view settings in the Settings app\
+- how to view it:\
+\pard\pardeftab720\ql\qnatural
+\cf0 Expand the 
+\i Settings.bundle
+\i0  to display the 
+\i Root.plist
+\i0  file which by default will contain an Array named 
+\i PreferenceSpecifiers
+\i0  containing four dictionary items. To make it easier to edit this file you can inform Xcode that it is an iPhone settings bundle. Select the 
+\i Root.plist
+\i0  file, click on the Root entry in the detail view to ensure it is selected and then from the Xcode view menu select 
+\i Property List Type -> iPhone Settings plist
+\i0 .\
+- change the values, delete the last one\
+- run and set\
+\
+--------\
+Technique 2: Initializing iPhone Settings\
+\
+- until they're set, they have no value: in applicationDidFinishLaunching:\
+\
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 	\cf2 NSUserDefaults\cf0  *settings = [\cf2 NSUserDefaults\cf0  \cf3 standardUserDefaults\cf0 ];\
+	\cf2 NSObject\cf0  *timeSettings = [settings \cf3 objectForKey\cf0 :\cf4 @"timeSettings"\cf0 ];\
+	\
+	\cf5 if\cf0  (\cf5 nil\cf0  == timeSettings)\
+	\{		\
+		\cf2 NSDictionary\cf0  *appDefaults = [\cf2 NSDictionary\cf0  \cf3 dictionaryWithObject\cf0 :\cf4 @"5"\cf0  \cf3 forKey\cf0 :\cf4 @"timeSettings"\cf0 ];\
+		[settings \cf3 registerDefaults\cf0 :appDefaults];\
+		[settings \cf3 synchronize\cf0 ];	\
+	\}\
+\pard\pardeftab720\ql\qnatural
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\
+---------\
+Technique 3: Accessing Settings values\
+\
+images: 6\
+\
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 -(\cf5 void\cf0 )viewWillAppear:(\cf5 BOOL\cf0 )animated\
+\{\
+	\cf2 NSUserDefaults\cf0  *settings = [\cf2 NSUserDefaults\cf0  \cf3 standardUserDefaults\cf0 ];\
+	timeSettings = [[settings \cf3 objectForKey\cf0 :\cf4 @"timeSettings"\cf0 ] \cf3 intValue\cf0 ];\
+	autoStart = [[settings \cf3 objectForKey\cf0 :\cf4 @"autoStart"\cf0 ] \cf3 boolValue\cf0 ];\
+	\
+	\cf3 NSLog\cf0 (\cf4 @"timeSettings: %d autoStart: %d"\cf0 , timeSettings, autoStart);\
+\}\
+\pard\pardeftab720\ql\qnatural
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+-------\
+Technique 4: Setting the Settings Icon\
+\
+image: 6b\
+\
+http://developer.apple.com/iphone/library/documentation/userexperience/conceptual/mobilehig/IconsImages/IconsImages.html\
+\
+- create a 29x29 version of your app icon (and optionally a 58x58 version)\
+- add to project\
+- set the CFBundleIconFile to "icon" no file extension (right click and select 'Show Ray Keys/Values')\
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+---------\
+\pard\pardeftab720\ql\qnatural
+\cf0 Section 2: Runtime UI and Time-based Changes\
+\
+Technique 5: Rounding View Corners\
+\
+images: 7-8\
+\
+- add QuartzCore.framework\
+- create UI (image 7)\
+- create outlets in code\
+\
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+
+\f2\fs22 \cf6 \CocoaLigature0 #import \cf4 <UIKit/UIKit.h>\cf6 \
+#import \cf4 <QuartzCore/QuartzCore.h>\cf6 \
+\pard\pardeftab720\ql\qnatural
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+
+\f2\fs22 \cf5 \CocoaLigature0 @interface\cf0  TimeDownViewController : UIViewController \{\
+\
+	\cf5 IBOutlet\cf0  \cf2 UILabel\cf0  *\cf7 lblTimer\cf0 , *\cf7 lblTitle\cf0 ;\
+	\
+\}\
+\
+\cf5 @end\cf0 \
+\pard\pardeftab720\ql\qnatural
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+- wire it up in IB\
+- in viewWillAppear\
+\
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 	[\cf7 lblTimer\cf0 .\cf2 layer\cf0  \cf3 setCornerRadius\cf0 :\cf8 5.0\cf0 ];\
+	[\cf7 lblTitle\cf0 .\cf2 layer\cf0  \cf3 setCornerRadius\cf0 :\cf8 5.0\cf0 ];\
+\pard\pardeftab720\ql\qnatural
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+ \
+\pard\pardeftab720\ql\qnatural
+\cf0 ---------\
+Technique 6: Creating a Repeating Timer\
+
+\b \
+image 9
+\b0 \
+\
+- init the time length\
+- check the autostart and start the timer (viewWillAppear) - declare/release secTimer\
+\
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 	\cf7 timeSettings\cf0  *= \cf8 60\cf0 ;\
+    [\cf7 lblTimer\cf0  \cf3 setText\cf0 :\cf4 @""\cf0 ];\
+	\cf5 if\cf0  (\cf7 autoStart\cf0 )\
+		setTimer = [[\cf2 NSTimer\cf0  \cf3 scheduledTimerWithTimeInterval\cf0 :\cf8 1.0\cf0  \cf3 target\cf0 :\cf5 self\cf0  \cf3 selector\cf0 :\cf5 @selector\cf0 (\cf9 oneSecond\cf0 :) \cf3 userInfo\cf0 :\cf5 nil\cf0  \cf3 repeats\cf0 :\cf5 YES\cf0 ] retain];
+\f1\fs24 \CocoaLigature1 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+- handle the oneSecond: timer\
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 -(\cf5 void\cf0 )oneSecond:(\cf2 NSTimer\cf0 *)timer;\
+\{\
+	\cf7 timeSettings\cf0 --;\
+	\cf5 if\cf0  (\cf7 timeSettings\cf0  > \cf8 -1\cf0 )\
+		[\cf7 lblTimer\cf0  \cf3 setText\cf0 :[\cf2 NSString\cf0  \cf3 stringWithFormat\cf0 :\cf4 @"%d:%02d"\cf0 , \cf7 timeSettings\cf0 /\cf8 60\cf0 , \cf7 timeSettings\cf0 %\cf8 60\cf0 ]];\
+	\cf5 else\cf0  \
+    \{\
+		[secTimer \cf3 invalidate\cf0 ];\
+        secTimer = nil;\
+    \}\
+\}\
+\pard\pardeftab720\ql\qnatural
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+(invalidate stops and releases the timer)\
+\
+- in the Settings, set the timer to 1 (min) and autostart to "On" to test it (image 9)\
+\
+---------\
+Section 3: Playing Audio and Vibration\
+\
+Technique 7: Playing a Sound\
+\
+- add AVFoundation framework\
+- add a sound file (e.g., beeps.mp3) to the Resources\
+- 
+\f2\fs22 \cf6 \CocoaLigature0 #import \cf4 <AVFoundation/AVFoundation.h>\cf6 \
+
+\f1\fs24 \cf0 \CocoaLigature1 - 
+\f2\fs22 \CocoaLigature0 	\cf2 AVAudioPlayer\cf0  *\cf7 aAudioPlayer\cf0 ;\
+
+\f1\fs24 \CocoaLigature1 \
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 -(\cf5 void\cf0 )playSound:(\cf2 NSString\cf0 *)soundFileName\
+\{\
+	\cf2 NSString\cf0  *aFilePath = [[\cf2 NSBundle\cf0  \cf3 mainBundle\cf0 ] \cf3 pathForResource\cf0 :soundFileName \cf3 ofType\cf0 :\cf4 @"mp3"\cf0 ];\
+	\cf5 if\cf0  (\cf5 nil\cf0  != \cf7 aAudioPlayer\cf0 )\
+	\{\
+		[\cf7 aAudioPlayer\cf0  \cf3 stop\cf0 ];\
+		[\cf7 aAudioPlayer\cf0  \cf3 release\cf0 ];\
+	\}\
+	\cf7 aAudioPlayer\cf0  =[[\cf2 AVAudioPlayer\cf0  \cf3 alloc\cf0 ] \cf3 initWithContentsOfURL\cf0 :[\cf2 NSURL\cf0  \cf3 fileURLWithPath\cf0 :aFilePath] \cf3 error\cf0 :\cf5 NULL\cf0 ];\
+	[\cf7 aAudioPlayer\cf0  \cf3 stop\cf0 ];\
+	[\cf7 aAudioPlayer\cf0  \cf3 play\cf0 ];\
+\}\
+\pard\pardeftab720\ql\qnatural
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+- add code to oneSecond: in else after invalidate\
+- 
+\f2\fs22 \CocoaLigature0 		[\cf5 self\cf0  \cf9 playSound\cf0 :\cf4 @"beeps"\cf0 ]; \
+
+\f1\fs24 \CocoaLigature1 \
+\
+[aAudioPlayer release] in dealloc\
+\
+---------\
+Technique 8: Vibrating the iPhone\
+\
+- add AudioToolbox framework\
+- 
+\f2\fs22 \cf6 \CocoaLigature0 #import \cf4 <AudioToolbox/AudioToolbox.h>\cf6 \
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 -(\cf5 void\cf0 )vibrate;\
+\{\
+	AudioServicesPlaySystemSound (kSystemSoundID_Vibrate);\
+\}\
+\pard\pardeftab720\ql\qnatural
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+- add call [self vibrate] in else after playSound call\
+\
+---------\
+Section 4: Detect and Handling Shaking\
+\
+Technique 9: Detecting Shaking\
+\
+- delegate\
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+
+\f2\fs22 \cf5 \CocoaLigature0 @interface\cf0  TimeDownViewController : UIViewController <UIAccelerometerDelegate>\
+\
+- in viewWillAppear (or viewDidLoad)\
+	\cf5 if\cf0  ([\cf2 UIAccelerometer\cf0  \cf3 sharedAccelerometer\cf0 ].\cf2 delegate\cf0  == \cf5 nil\cf0 )\
+		[\cf2 UIAccelerometer\cf0  \cf3 sharedAccelerometer\cf0 ].\cf2 delegate\cf0  = \cf5 self\cf0 ;\
+
+\f1\fs24 \CocoaLigature1 \
+- 
+\f2\fs22 \cf7 \CocoaLigature0 prevAcceleration - declare, property, synthesize, release\
+\
+- method to determine if it's moving enough:\
+\cf0 -(\cf5 BOOL\cf0 )shakingEnoughFromPrev:(\cf2 UIAcceleration\cf0 *) prevShake \
+				 toThisShake:(\cf2 UIAcceleration\cf0 *) thisShake \
+		   withThisThreshold:(\cf5 double\cf0 ) shakeThreshold;\
+\{\
+	\cf5 double\cf0  dX = \cf3 fabs\cf0 (prevShake.\cf2 x\cf0  - thisShake.\cf2 x\cf0 );\
+	\cf5 double\cf0  dY = \cf3 fabs\cf0 (prevShake.\cf2 y\cf0  - thisShake.\cf2 y\cf0 );\
+	\cf5 double\cf0  dZ = \cf3 fabs\cf0 (prevShake.\cf2 z\cf0  - thisShake.\cf2 z\cf0 );\
+	\
+	\cf5 return\cf0  (dX > shakeThreshold && dY > shakeThreshold) ||\
+		   (dX > shakeThreshold && dZ > shakeThreshold) ||\
+		   (dY > shakeThreshold && dZ > shakeThreshold);\
+\}\
+\
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+\cf7 \
+- check motion \
+\
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+\cf0 - (\cf5 void\cf0 ) accelerometer:(\cf2 UIAccelerometer\cf0  *)accelerometer didAccelerate:(\cf2 UIAcceleration\cf0  *)acceleration \{\
+	\
+	\cf5 if\cf0  (\cf5 self\cf0 .\cf7 prevAcceleration\cf0 ) \
+	\{\
+		\cf5 if\cf0  (!\cf7 isShaking\cf0  && \cf9 shakingEnough\cf0 (\cf5 self\cf0 .\cf7 prevAcceleration\cf0 , acceleration, \cf8 0.5\cf0 )) \
+			\cf7 isShaking\cf0  = \cf5 YES\cf0 ;\
+	\}\
+	\
+	\cf5 self\cf0 .\cf7 prevAcceleration\cf0  = acceleration;\
+\
+\}\
+\pard\pardeftab720\ql\qnatural
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+---------\
+Technique 10: Handling Shaking\
+\
+- when settting to YES, prompt user for Start (handleShake method w/ below)\
+\
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 			\cf2 UIActionSheet\cf0  *as = [[[\cf2 UIActionSheet\cf0  \cf3 alloc\cf0 ] \cf3 initWithTitle\cf0 :\cf4 @"Start Timer"\cf0  \cf3 delegate\cf0 :\cf5 self\cf0  \cf3 cancelButtonTitle\cf0 :\cf4 @"Cancel"\cf0  \
+											   \cf3 destructiveButtonTitle\cf0 :\cf5 nil\cf0  \cf3 otherButtonTitles\cf0 :\cf4 @"Start"\cf0 , \cf5 nil\cf0 ] \cf3 autorelease\cf0 ];\
+			[as \cf3 showInView\cf0 :\cf5 self\cf0 .\cf3 view\cf0 ];\
+\pard\pardeftab720\ql\qnatural
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+- make TimeDownViewController implement 
+\f2\fs22 \CocoaLigature0 UIActionSheetDelegate\
+-- and reset the time and timer if necessary:\
+\
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+\cf0 - (\cf5 void\cf0 )actionSheet:(\cf2 UIActionSheet\cf0  *)actionSheet clickedButtonAtIndex:(\cf2 NSInteger\cf0 )buttonIndex\
+\{\
+	\cf5 if\cf0  (\cf8 0\cf0  == buttonIndex)\
+	\{\
+		[\cf7 lblTimer\cf0  \cf3 setText\cf0 :\cf4 @""\cf0 ];\
+		\cf2 NSUserDefaults\cf0  *settings = [\cf2 NSUserDefaults\cf0  \cf3 standardUserDefaults\cf0 ];\
+\
+		\cf7 timeSettings\cf0  = [[settings \cf3 objectForKey\cf0 :\cf4 @"timeSettings"\cf0 ] \cf3 intValue\cf0 ];\
+		\cf7 timeSettings\cf0  *= \cf8 60\cf0 ;\
+\
+		\cf5 if\cf0  (!\cf7 secTimer\cf0 )\
+			\cf7 secTimer\cf0  = [[\cf2 NSTimer\cf0  \cf3 scheduledTimerWithTimeInterval\cf0 :\cf8 1.0\cf0  \
+											 \cf3 target\cf0 :\cf5 self\cf0  \cf3 selector\cf0 :\cf5 @selector\cf0 (\cf9 oneSecond\cf0 :) \cf3 userInfo\cf0 :\cf5 nil\cf0  \cf3 repeats\cf0 :\cf5 YES\cf0 ] \cf3 retain\cf0 ];\
+	\}\
+	\cf7 isShaking\cf0  = \cf5 NO\cf0 ;\
+\}\
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+
+\f1\fs24 \CocoaLigature1 \
+}

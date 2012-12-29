@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* iTunesAPIDemoAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {968, 542}}";
+			sepNavSelRange = "{193, 24}";
+			sepNavVisRange = "{0, 460}";
+		};
+	};
+	1D3623250D0F684500981E51 /* iTunesAPIDemoAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {968, 1261}}";
+			sepNavSelRange = "{2031, 0}";
+			sepNavVisRange = "{826, 1924}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* MusicSearch */ = {
+		activeExec = 0;
+		executables = (
+			61DE2EFC12DFC7CC00C17A1F /* MusicSearch */,
+		);
+	};
+	28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {968, 827}}";
+			sepNavSelRange = "{655, 0}";
+			sepNavVisRange = "{0, 656}";
+		};
+	};
+	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {968, 3731}}";
+			sepNavSelRange = "{4582, 21}";
+			sepNavVisRange = "{4695, 2244}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 61DE2EFC12DFC7CC00C17A1F /* MusicSearch */;
+		activeSDKPreference = iphonesimulator4.2;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* MusicSearch */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* MusicSearch */,
+		);
+		breakpoints = (
+			616AE97312E97AAC0004B4DE /* RootViewController.m:213 */,
+			616AE9AD12E97BA00004B4DE /* RootViewController.m:194 */,
+			6134FA1E12E9A583000A8288 /* RootViewController.m:61 */,
+			6134FA2C12E9A69B000A8288 /* RootViewController.m:72 */,
+			61DBEA8F12F313540083AF73 /* RootViewController.m:219 */,
+		);
+		codeSenseManager = 61DE2F0112DFC7EB00C17A1F /* Code sense */;
+		executables = (
+			61DE2EFC12DFC7CC00C17A1F /* MusicSearch */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					790,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					750,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 318546783;
+			PBXWorkspaceStateSaveDate = 318546783;
+		};
+		perUserProjectItems = {
+			6134F94312E99462000A8288 /* PBXTextBookmark */ = 6134F94312E99462000A8288 /* PBXTextBookmark */;
+			6134F95412E995EA000A8288 /* PBXTextBookmark */ = 6134F95412E995EA000A8288 /* PBXTextBookmark */;
+			6134FA3B12EA303A000A8288 /* PBXTextBookmark */ = 6134FA3B12EA303A000A8288 /* PBXTextBookmark */;
+			6134FA3E12EA303A000A8288 /* PBXTextBookmark */ = 6134FA3E12EA303A000A8288 /* PBXTextBookmark */;
+			6134FA6512EA3D67000A8288 /* PBXTextBookmark */ = 6134FA6512EA3D67000A8288 /* PBXTextBookmark */;
+			6134FA6612EA3D67000A8288 /* PBXBookmark */ = 6134FA6612EA3D67000A8288 /* PBXBookmark */;
+			6134FA6712EA3D67000A8288 /* PBXBookmark */ = 6134FA6712EA3D67000A8288 /* PBXBookmark */;
+			6134FA6812EA3D67000A8288 /* PlistBookmark */ = 6134FA6812EA3D67000A8288 /* PlistBookmark */;
+			616AE97712E97AB60004B4DE /* PBXTextBookmark */ = 616AE97712E97AB60004B4DE /* PBXTextBookmark */;
+			619A5CCA12FCA37400762CA7 /* PBXTextBookmark */ = 619A5CCA12FCA37400762CA7 /* PBXTextBookmark */;
+			619A5CCE12FCA37D00762CA7 /* PBXTextBookmark */ = 619A5CCE12FCA37D00762CA7 /* PBXTextBookmark */;
+			61DBEA9112F313560083AF73 /* PBXTextBookmark */ = 61DBEA9112F313560083AF73 /* PBXTextBookmark */;
+			61DBEA9212F313560083AF73 /* PBXTextBookmark */ = 61DBEA9212F313560083AF73 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 61DE2F0012DFC7EB00C17A1F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	6134F8FC12E98E00000A8288 /* SVCSplitVController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {968, 802}}";
+			sepNavSelRange = "{205, 21}";
+			sepNavVisRange = "{0, 385}";
+		};
+	};
+	6134F8FD12E98E00000A8288 /* SVCSplitVController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {968, 2028}}";
+			sepNavSelRange = "{1576, 0}";
+			sepNavVisRange = "{544, 2079}";
+		};
+	};
+	6134F93C12E99440000A8288 /* VCRotates.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {968, 802}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 219}";
+		};
+	};
+	6134F93D12E99440000A8288 /* VCRotates.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {968, 897}}";
+			sepNavSelRange = "{306, 0}";
+			sepNavVisRange = "{41, 1613}";
+		};
+	};
+	6134F94312E99462000A8288 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6134F93C12E99440000A8288 /* VCRotates.h */;
+		name = "VCRotates.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 219;
+		vrLoc = 0;
+	};
+	6134F95412E995EA000A8288 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6134F93D12E99440000A8288 /* VCRotates.m */;
+		name = "VCRotates.m: 15";
+		rLen = 0;
+		rLoc = 306;
+		rType = 0;
+		vrLen = 1613;
+		vrLoc = 41;
+	};
+	6134FA1E12E9A583000A8288 /* RootViewController.m:61 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		functionName = "-doBtnSearch:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 61;
+		modificationTime = 317920167.080755;
+		originalNumberOfMultipleMatches = 1;
+		state = 0;
+	};
+	6134FA2C12E9A69B000A8288 /* RootViewController.m:72 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		functionName = "-hideAdBanner:";
+		hitCount = 2;
+		ignoreCount = 0;
+		lineNumber = 72;
+		modificationTime = 317920172.534399;
+		originalNumberOfMultipleMatches = 1;
+		state = 0;
+	};
+	6134FA3B12EA303A000A8288 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61DE2F4A12DFCC1100C17A1F /* JSON.h */;
+		name = "JSON.h: 16";
+		rLen = 0;
+		rLoc = 730;
+		rType = 0;
+		vrLen = 2297;
+		vrLoc = 0;
+	};
+	6134FA3E12EA303A000A8288 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6134F8FC12E98E00000A8288 /* SVCSplitVController.h */;
+		name = "SVCSplitVController.h: 11";
+		rLen = 21;
+		rLoc = 205;
+		rType = 0;
+		vrLen = 385;
+		vrLoc = 0;
+	};
+	6134FA6512EA3D67000A8288 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* iTunesAPIDemoAppDelegate.h */;
+		name = "iTunesAPIDemoAppDelegate.h: 11";
+		rLen = 24;
+		rLoc = 193;
+		rType = 0;
+		vrLen = 460;
+		vrLoc = 0;
+	};
+	6134FA6612EA3D67000A8288 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 6134FA4B12EA34D8000A8288 /* Icon.png */;
+	};
+	6134FA6712EA3D67000A8288 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 6134FA4A12EA34D8000A8288 /* Icon-iPad.png */;
+	};
+	6134FA6812EA3D67000A8288 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* iTunesAPIDemo-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = "/Users/bearc0025/Brainwash/researchapps/iTunesAPIDemo/iTunesAPIDemo/iTunesAPIDemo-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	616AE97312E97AAC0004B4DE /* RootViewController.m:213 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		functionName = "-actionSheet:clickedButtonAtIndex:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 213;
+		modificationTime = 317921961.7678639;
+		originalNumberOfMultipleMatches = 1;
+		state = 0;
+	};
+	616AE97712E97AB60004B4DE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* iTunesAPIDemoAppDelegate.m */;
+		name = "iTunesAPIDemoAppDelegate.m: 59";
+		rLen = 0;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 1924;
+		vrLoc = 826;
+	};
+	616AE9AD12E97BA00004B4DE /* RootViewController.m:194 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		functionName = "-getFilePath";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 194;
+		modificationTime = 317920167.078831;
+		originalNumberOfMultipleMatches = 1;
+		state = 0;
+	};
+	619A5CCA12FCA37400762CA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		rLen = 21;
+		rLoc = 4582;
+		rType = 0;
+	};
+	619A5CCE12FCA37D00762CA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 166";
+		rLen = 21;
+		rLoc = 4582;
+		rType = 0;
+		vrLen = 2244;
+		vrLoc = 4695;
+	};
+	61DBEA8F12F313540083AF73 /* RootViewController.m:219 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		functionName = "-actionSheet:clickedButtonAtIndex:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 219;
+		modificationTime = 317920167.083988;
+		originalNumberOfMultipleMatches = 1;
+		state = 0;
+	};
+	61DBEA9112F313560083AF73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 30";
+		rLen = 0;
+		rLoc = 655;
+		rType = 0;
+		vrLen = 656;
+		vrLoc = 0;
+	};
+	61DBEA9212F313560083AF73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6134F8FD12E98E00000A8288 /* SVCSplitVController.m */;
+		name = "SVCSplitVController.m: 50";
+		rLen = 0;
+		rLoc = 1576;
+		rType = 0;
+		vrLen = 2079;
+		vrLoc = 544;
+	};
+	61DE2EFC12DFC7CC00C17A1F /* MusicSearch */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = MusicSearch;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	61DE2F0012DFC7EB00C17A1F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	61DE2F0112DFC7EB00C17A1F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	61DE2F4A12DFCC1100C17A1F /* JSON.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {968, 802}}";
+			sepNavSelRange = "{730, 0}";
+			sepNavVisRange = "{0, 2297}";
+		};
+	};
+}
