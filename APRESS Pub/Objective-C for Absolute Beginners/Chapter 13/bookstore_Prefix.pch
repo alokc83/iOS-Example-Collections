@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'bookstore' target in the 'bookstore' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import <Cocoa/Cocoa.h>
+#endif

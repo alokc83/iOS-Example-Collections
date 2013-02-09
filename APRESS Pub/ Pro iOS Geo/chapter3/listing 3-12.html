@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>
+      Styled map
+    </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+    <style type="text/css">
+      html{height:100%;} body{height:100%;margin:0px; padding:0px; } #map_canvas{height:100%;width:100%;}
+    </style>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBa6jRCpFGLh691Ve_Srm5a7KPqi-HlrW0&sensor=false">
+    </script>
+    <script type="text/javascript">
+        
+      function initialize() {
+          
+          //Create 1. a JSON object containing style rules.
+                    var customStyle =[
+                            {
+                            featureType:"landscape.man_made",
+                            elementType:"labels",
+                            stylers:[
+                                     {visibility:"off"}
+                                     ]
+                            }
+                            ]
+          
+          
+          /* Create a new StyledMapType object passing it the previously created JSON object and indicating 
+           a name for the new map type.*/
+          var styledMap = new google.maps.StyledMapType(customStyle,
+                                                        {name: "No man made feat."});
+          
+          var myOptions = {
+          center: new google.maps.LatLng(53.344104, -6.267494),
+          zoom: 14,
+          
+              //Include the new MapTypeId to add to the map type control.
+          mapTypeControlOptions: {
+                  mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+              }
+          };
+          
+          var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+          
+          //Link the MapTypeId with the styled map type created
+          map.mapTypes.set('map_style', styledMap);
+          
+          //Set the new map type ID so that is shown as default map type
+          map.setMapTypeId('map_style');          
+      }
+    </script>
+  </head>
+  
+  <body onload="initialize()">
+    <div id="map_canvas">
+    </div>
+  </body>
+
+</html>

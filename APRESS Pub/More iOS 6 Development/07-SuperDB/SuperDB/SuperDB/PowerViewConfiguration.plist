@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>sections</key>
+	<array>
+		<dict>
+			<key>rows</key>
+			<array>
+				<dict>
+					<key>key</key>
+					<string>name</string>
+					<key>class</key>
+					<string>SuperDBEditCell</string>
+					<key>label</key>
+					<string>Name</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>rows</key>
+			<array>
+				<dict>
+					<key>key</key>
+					<string>source</string>
+					<key>class</key>
+					<string>SuperDBEditCell</string>
+					<key>label</key>
+					<string>Source</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

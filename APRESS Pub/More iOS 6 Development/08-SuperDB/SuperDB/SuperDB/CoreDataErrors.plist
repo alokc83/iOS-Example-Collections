@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1550</key>
+	<string>generic validation error</string>
+	<key>1560</key>
+	<string>generic message for error containing multiple validation errors</string>
+	<key>1570</key>
+	<string>non-optional property with a nil value</string>
+	<key>1580</key>
+	<string>to-many relationship with too few destination objects</string>
+	<key>1590</key>
+	<string>bounded, to-many relationship with too many destination objects</string>
+	<key>1600</key>
+	<string>relationship with NSDeleteRuleDeny is non-empty</string>
+	<key>1610</key>
+	<string>numerical value is too large</string>
+	<key>1620</key>
+	<string>numerical value is too small</string>
+	<key>1630</key>
+	<string>date value is too late</string>
+	<key>1640</key>
+	<string>date value is too soon</string>
+	<key>1650</key>
+	<string>date value fails to match date pattern</string>
+	<key>1660</key>
+	<string>string value is too long</string>
+	<key>1670</key>
+	<string>string value is too short</string>
+	<key>1680</key>
+	<string>string value fails to match pattern</string>
+	<key>132000</key>
+	<string>can&apos;t acquire a lock in a managed object context</string>
+	<key>132010</key>
+	<string>can&apos;t acquire a lock in a persistent store coordinator</string>
+	<key>133000</key>
+	<string>attempt to fire a fault pointing to an object that does not exist (we can see the store, we can&apos;t see the object)</string>
+	<key>133010</key>
+	<string>an object being saved has a relationship containing an object from another store</string>
+	<key>133020</key>
+	<string>merge policy failed - unable to complete merging</string>
+	<key>134000</key>
+	<string>unknown persistent store type/format/version</string>
+	<key>134010</key>
+	<string>returned by persistent store coordinator if a store is accessed that does not match the specified type</string>
+	<key>134020</key>
+	<string>store returned an error for save operation (database level errors ie missing table, no permissions)</string>
+	<key>134030</key>
+	<string>unclassified save error - something we depend on returned an error</string>
+	<key>134040</key>
+	<string>one or more of the stores returned an error during save (stores/objects that failed will be in userInfo)</string>
+	<key>134050</key>
+	<string>an unresolved merge conflict was encountered during a save.  userInfo has NSPersistentStoreSaveConflictsErrorKey</string>
+	<key>134060</key>
+	<string>general Core Data error</string>
+	<key>134070</key>
+	<string>the persistent store operation failed </string>
+	<key>134080</key>
+	<string>an error occurred while attempting to open the persistent store</string>
+	<key>134090</key>
+	<string>failed to connect to the persistent store within the specified timeout (see NSPersistentStoreTimeoutOption)</string>
+	<key>134091</key>
+	<string>an NSPersistentStore subclass was passed an NSPersistentStoreRequest that it did not understand</string>
+	<key>134100</key>
+	<string>entity version hashes incompatible with data model</string>
+	<key>134110</key>
+	<string>general migration error</string>
+	<key>134120</key>
+	<string>migration failed due to manual cancellation</string>
+	<key>134130</key>
+	<string>migration failed due to missing source data model</string>
+	<key>134140</key>
+	<string>migration failed due to missing mapping model</string>
+	<key>134150</key>
+	<string>migration failed due to a problem with the source data store</string>
+	<key>134160</key>
+	<string>migration failed due to a problem with the destination data store</string>
+	<key>134170</key>
+	<string>migration failed during processing of the entity migration policy </string>
+	<key>134180</key>
+	<string>general SQLite error </string>
+	<key>134190</key>
+	<string>inferred mapping model creation error</string>
+	<key>134200</key>
+	<string>general error encountered while importing external records</string>
+</dict>
+</plist>

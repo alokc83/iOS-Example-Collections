@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>
+      Simple styled map
+    </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon-precomposed" href="http://www.progettaremappeonline.it/apress/code/worldicon.png"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+    <style type="text/css">
+      html{height:100%;} body{height:100%;margin:0px; padding:0px; } #map_canvas{height:100%;width:100%;}
+    </style>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBa6jRCpFGLh691Ve_Srm5a7KPqi-HlrW0&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var coordinates = new google.maps.LatLng(53.344104, -6.267494);
+        var myOptions = {
+          center: coordinates,
+          zoom: 14,
+          mapTypeControl: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP      
+        }
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+          
+          var customStyle =[
+                            {
+                            featureType:"landscape.man_made",
+                            elementType:"labels",
+                            stylers:[
+                                     {visibility:"off"}
+                                     ]
+                            }
+                            ]
+          
+          //Set the custom style
+          map.setOptions({styles: customStyle});
+      }
+    </script>
+  </head>
+  
+  <body onload="initialize()">
+    <div id="map_canvas">
+    </div>
+  </body>
+
+</html>

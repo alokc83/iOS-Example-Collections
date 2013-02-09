@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2818" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1900"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView translatesAutoresizingMaskIntoConstraints="NO" contentMode="scaleToFill" id="mmU-aN-K7P">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mmU-aN-K7P" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="CGG-b6-x8M"/>
+                            <constraint firstItem="mmU-aN-K7P" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="dDe-Ga-uKW"/>
+                            <constraint firstItem="mmU-aN-K7P" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="g6a-iB-D2p"/>
+                            <constraint firstItem="mmU-aN-K7P" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="nlr-oP-6rV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="mmU-aN-K7P" id="vrv-oi-23m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

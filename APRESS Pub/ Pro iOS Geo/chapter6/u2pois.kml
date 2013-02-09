@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>u2pois.kml</name>
+	<Style id="s_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl3">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>U2&apos;s Dublin</name>
+		<open>1</open>
+		<Placemark>
+			<name>The O2 (The Point Depot Theater)</name>
+			<open>1</open>
+			<description><![CDATA[<div style="width:230px">
+<img src="http://www.progettaremappeonline.it/apress/code/u2images/theO2.jpg"/><br /><br />
+<strong>Address: </strong>North Wall Quay, Dublin 1<br />
+<strong>Status: </strong>Existing<br />
+<strong>Description: </strong>Once a Victorian train depot, it became Ireland's top live music theatre with the name of The Point Depot Theatre. U2 recorded some of the studio portions of Rattle & Hum here, and the makeshift recording facility is featured in the relative movie during Desire. <br /> After becoming a concert hall, U2 played their famous Christmas 1989, <a href="http://youtu.be/ngNFTeOnQ_M" target="blank">New Year's 1990</a> shows here. <br />The Point Depot Theater was closed in summer 2007 and totally renovated. In December 2008 the Point Deport was reopened as "The O2". <br /></div>]]></description>
+			<LookAt>
+				<longitude>-6.228818865583015</longitude>
+				<latitude>53.34655898635227</latitude>
+				<altitude>0</altitude>
+				<heading>-13.1072626297364</heading>
+				<tilt>5.625554233216847</tilt>
+				<range>589.0753454790794</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin4</styleUrl>
+			<Point>
+				<coordinates>-6.228319954291245,53.34747186290674,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>East Link Bridge</name>
+			<open>1</open>
+			<description><![CDATA[<div style="width:230px">
+<img src="http://www.progettaremappeonline.it/apress/code/u2images/eastlinkbridge.jpg"/><br /><br />
+<strong>Address: </strong>Not available<br />
+<strong>Status: </strong>Existing<br />
+<strong>Description: </strong>The bridge, in a raised state, features as the entry point to Dublin in the music video for the song <a href='http://www.youtube.com/watch?v=LHcP4MWABGY' target='blank'>Pride (In The Name Of Love)</a>.<br /></div>]]></description>
+			<LookAt>
+				<longitude>12.25184885689488</longitude>
+				<latitude>42.04923397042758</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1618080598603351</heading>
+				<tilt>0</tilt>
+				<range>63783.08171960114</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Point>
+				<coordinates>-6.227400000000001,53.3457,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lock by Grand Canal Docks</name>
+			<open>1</open>
+			<description><![CDATA[<div style="width:230px"><img src="http://www.progettaremappeonline.it/apress/code/u2images/grandcanaldocks.jpg"/><br /><br />
+<strong>Address: </strong>Not available<br />
+<strong>Status: </strong>existing<br />
+<strong>Description: </strong>the cover picture of October was shot by the eastern lock of Gran Canal Docks.<br /></div>]]></description>
+			<LookAt>
+				<longitude>12.25184885689488</longitude>
+				<latitude>42.04923397042758</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1618080598603351</heading>
+				<tilt>0</tilt>
+				<range>63783.08171960114</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Point>
+				<coordinates>-6.230446,53.34337100000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Windmill Lane Studios/U2 Wall</name>
+			<description><![CDATA[<div style="width:230px">
+<img src="http://www.progettaremappeonline.it/apress/code/u2images/windmillstd.jpg"/><br /><br />
+<strong>Address: </strong>4 Windmill Lane<br />
+<strong>Status: </strong>not existing anymore<br />
+<strong>Description: </strong>In Windmill Lane Studios, also known as the 'U2 studio', U2 recorded their first albums. Here Boy, October, the single A Celebration, and War came to life as well as U2 first EP U2Three. In 1989 the Windmill Lane Recording Studios moved to Ringsend Road but the legendary U2 Wall is still located here, covered with tributes from U2 fans from all the world. <br /></div>]]></description>
+			<LookAt>
+				<longitude>12.25184885689488</longitude>
+				<latitude>42.04923397042758</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1618080598603351</heading>
+				<tilt>0</tilt>
+				<range>63783.08171960114</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Point>
+				<coordinates>-6.245921,53.345914,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hanover Quay Studios</name>
+			<description><![CDATA[<div style="width:230px">
+<img src="http://www.progettaremappeonline.it/apress/code/u2images/hanoverquaystudios.jpg" /><br /><br />
+<strong>Address: </strong>The Sound Studio, Hanover Quay, Dublin 4<br />
+<strong>Status: </strong>existing<br />
+<strong>Description: </strong>U2's recording headquarters since 1994. Much of the work on recent albums was done here, in a modest building overlooking the Grand Canal basin. This studio should have been closed down in 2009-2010 and been demolished as part of the city's plans for docklands revitalization. U2 were supposed to move into a new studio down the road a bit to the east in the yet-to-be-built U2 Tower whose project has, however, been suspended because of the economic downturn. <br /></div>]]></description>
+			<LookAt>
+				<longitude>-6.235895171066923</longitude>
+				<latitude>53.34452126583017</latitude>
+				<altitude>0</altitude>
+				<heading>0.007341922637852816</heading>
+				<tilt>6.315247794107863</tilt>
+				<range>668.6836161733505</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<gx:balloonVisibility>1</gx:balloonVisibility>
+			<Point>
+				<coordinates>-6.235223476166832,53.34400986876317,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Dockers Pub</name>
+			<description><![CDATA[<div style="width:230px">
+<img src="http://www.progettaremappeonline.it/apress/code/u2images/thedockerspub"/><br /><br />
+<strong>Address: </strong>5 Sir John Rogerson's Quay, Dublin 4<br />
+<strong>Status: </strong>not existing anymore<br />
+<strong>Description: </strong>U2 used to frequent the Dockers Pub when they were recording in the nearby Windmill Lane and Hanover Quay Studios. Due to building works in the docks the Dockers Pub has unfortunately been closed since September 2004.<br /></div>]]></description>
+			<LookAt>
+				<longitude>-6.239785738759802</longitude>
+				<latitude>53.34591429916032</latitude>
+				<altitude>0</altitude>
+				<heading>0.004219846963676185</heading>
+				<tilt>6.31280496834808</tilt>
+				<range>177.1243162531304</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<coordinates>-6.240271511721328,53.34602369260365,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

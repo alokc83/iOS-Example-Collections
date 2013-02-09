@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html> 
+<head>	<title>Canvas Test</title>
+	<script>
+		window.onload = function() {
+			var ctxElement = document.getElementById('canvasTest02');
+				var ctx = ctxElement.getContext("2d");
+				if (ctx) {
+					ctx.fillStyle = "#F00";
+					ctx.fillRect(0,0, ctx.canvas.width, ctx.canvas.height);
+			}
+		}
+	</script></head><body>
+	<h1>Canvas Example 02</h1>
+	<canvas id="canvasTest02" width="400" height="300">Please Enable Javascript Engine</canvas></body></html>

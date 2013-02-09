@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> 
+<head>	<title>Canvas Test</title>
+	<script>
+		window.onload = function() {
+			var ctxElement = document.getElementById('canvasTest07');
+				var ctx = ctxElement.getContext("2d");
+				if (ctx) {
+				
+	                var img = document.getElementById("spartan");
+
+	                ctx.arc(ctx.canvas.width/2, ctx.canvas.height/2, 150,0,2*Math.PI);
+                    ctx.clip();
+
+                   	ctx.drawImage(img,0,0);
+				 
+}
+		}
+	</script></head><body>
+	<h1>Canvas Example 07</h1>
+	<canvas id="canvasTest07" width="800" height="200">Please Enable Javascript Engine</canvas>
+	<img id="spartan" src="pics/canvas_spartan.jpg" /></body></html>

@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D6E21B9165E6F3100A67239 /* starIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D6E21B8165E6F3100A67239 /* starIcon.png */; };
+		7DAECCF6165A41DC00F08C0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAECCF5165A41DC00F08C0A /* UIKit.framework */; };
+		7DAECCF8165A41DC00F08C0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAECCF7165A41DC00F08C0A /* Foundation.framework */; };
+		7DAECCFA165A41DC00F08C0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAECCF9165A41DC00F08C0A /* CoreGraphics.framework */; };
+		7DAECD00165A41DC00F08C0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DAECCFE165A41DC00F08C0A /* InfoPlist.strings */; };
+		7DAECD02165A41DC00F08C0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAECD01165A41DC00F08C0A /* main.m */; };
+		7DAECD06165A41DC00F08C0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAECD05165A41DC00F08C0A /* AppDelegate.m */; };
+		7DAECD08165A41DC00F08C0A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DAECD07165A41DC00F08C0A /* Default.png */; };
+		7DAECD0A165A41DD00F08C0A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DAECD09165A41DC00F08C0A /* Default@2x.png */; };
+		7DAECD0C165A41DD00F08C0A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DAECD0B165A41DD00F08C0A /* Default-568h@2x.png */; };
+		7DAECD0F165A41DD00F08C0A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAECD0D165A41DD00F08C0A /* MainStoryboard.storyboard */; };
+		7DAECD12165A41DD00F08C0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAECD11165A41DD00F08C0A /* ViewController.m */; };
+		7DAECD19165A421400F08C0A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAECD18165A421400F08C0A /* MapKit.framework */; };
+		7DAECD1C165A47CA00F08C0A /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAECD1B165A47CA00F08C0A /* CustomAnnotation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D6E21B8165E6F3100A67239 /* starIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starIcon.png; sourceTree = "<group>"; };
+		7DAECCF1165A41DC00F08C0A /* Custom Annotation Object Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom Annotation Object Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DAECCF5165A41DC00F08C0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7DAECCF7165A41DC00F08C0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7DAECCF9165A41DC00F08C0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7DAECCFD165A41DC00F08C0A /* Custom Annotation Object Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Custom Annotation Object Example-Info.plist"; sourceTree = "<group>"; };
+		7DAECCFF165A41DC00F08C0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7DAECD01165A41DC00F08C0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7DAECD03165A41DC00F08C0A /* Custom Annotation Object Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Custom Annotation Object Example-Prefix.pch"; sourceTree = "<group>"; };
+		7DAECD04165A41DC00F08C0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7DAECD05165A41DC00F08C0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7DAECD07165A41DC00F08C0A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7DAECD09165A41DC00F08C0A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7DAECD0B165A41DD00F08C0A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7DAECD0E165A41DD00F08C0A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7DAECD10165A41DD00F08C0A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7DAECD11165A41DD00F08C0A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7DAECD18165A421400F08C0A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7DAECD1A165A47CA00F08C0A /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		7DAECD1B165A47CA00F08C0A /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DAECCEE165A41DC00F08C0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAECD19165A421400F08C0A /* MapKit.framework in Frameworks */,
+				7DAECCF6165A41DC00F08C0A /* UIKit.framework in Frameworks */,
+				7DAECCF8165A41DC00F08C0A /* Foundation.framework in Frameworks */,
+				7DAECCFA165A41DC00F08C0A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DAECCE6165A41DC00F08C0A = {
+			isa = PBXGroup;
+			children = (
+				7DAECD18165A421400F08C0A /* MapKit.framework */,
+				7DAECCFB165A41DC00F08C0A /* Custom Annotation Object Example */,
+				7DAECCF4165A41DC00F08C0A /* Frameworks */,
+				7DAECCF2165A41DC00F08C0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DAECCF2165A41DC00F08C0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DAECCF1165A41DC00F08C0A /* Custom Annotation Object Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DAECCF4165A41DC00F08C0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DAECCF5165A41DC00F08C0A /* UIKit.framework */,
+				7DAECCF7165A41DC00F08C0A /* Foundation.framework */,
+				7DAECCF9165A41DC00F08C0A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DAECCFB165A41DC00F08C0A /* Custom Annotation Object Example */ = {
+			isa = PBXGroup;
+			children = (
+				7DAECD04165A41DC00F08C0A /* AppDelegate.h */,
+				7DAECD05165A41DC00F08C0A /* AppDelegate.m */,
+				7DAECD0D165A41DD00F08C0A /* MainStoryboard.storyboard */,
+				7DAECD10165A41DD00F08C0A /* ViewController.h */,
+				7DAECD1A165A47CA00F08C0A /* CustomAnnotation.h */,
+				7DAECD1B165A47CA00F08C0A /* CustomAnnotation.m */,
+				7DAECD11165A41DD00F08C0A /* ViewController.m */,
+				7D6E21B8165E6F3100A67239 /* starIcon.png */,
+				7DAECCFC165A41DC00F08C0A /* Supporting Files */,
+			);
+			path = "Custom Annotation Object Example";
+			sourceTree = "<group>";
+		};
+		7DAECCFC165A41DC00F08C0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DAECCFD165A41DC00F08C0A /* Custom Annotation Object Example-Info.plist */,
+				7DAECCFE165A41DC00F08C0A /* InfoPlist.strings */,
+				7DAECD01165A41DC00F08C0A /* main.m */,
+				7DAECD03165A41DC00F08C0A /* Custom Annotation Object Example-Prefix.pch */,
+				7DAECD07165A41DC00F08C0A /* Default.png */,
+				7DAECD09165A41DC00F08C0A /* Default@2x.png */,
+				7DAECD0B165A41DD00F08C0A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DAECCF0165A41DC00F08C0A /* Custom Annotation Object Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DAECD15165A41DD00F08C0A /* Build configuration list for PBXNativeTarget "Custom Annotation Object Example" */;
+			buildPhases = (
+				7DAECCED165A41DC00F08C0A /* Sources */,
+				7DAECCEE165A41DC00F08C0A /* Frameworks */,
+				7DAECCEF165A41DC00F08C0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Custom Annotation Object Example";
+			productName = "Custom Annotation Object Example";
+			productReference = 7DAECCF1165A41DC00F08C0A /* Custom Annotation Object Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DAECCE8165A41DC00F08C0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Giacomo Andreucci";
+			};
+			buildConfigurationList = 7DAECCEB165A41DC00F08C0A /* Build configuration list for PBXProject "Custom Annotation Object Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DAECCE6165A41DC00F08C0A;
+			productRefGroup = 7DAECCF2165A41DC00F08C0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DAECCF0165A41DC00F08C0A /* Custom Annotation Object Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DAECCEF165A41DC00F08C0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAECD00165A41DC00F08C0A /* InfoPlist.strings in Resources */,
+				7DAECD08165A41DC00F08C0A /* Default.png in Resources */,
+				7DAECD0A165A41DD00F08C0A /* Default@2x.png in Resources */,
+				7DAECD0C165A41DD00F08C0A /* Default-568h@2x.png in Resources */,
+				7DAECD0F165A41DD00F08C0A /* MainStoryboard.storyboard in Resources */,
+				7D6E21B9165E6F3100A67239 /* starIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DAECCED165A41DC00F08C0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAECD02165A41DC00F08C0A /* main.m in Sources */,
+				7DAECD06165A41DC00F08C0A /* AppDelegate.m in Sources */,
+				7DAECD12165A41DD00F08C0A /* ViewController.m in Sources */,
+				7DAECD1C165A47CA00F08C0A /* CustomAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7DAECCFE165A41DC00F08C0A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DAECCFF165A41DC00F08C0A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7DAECD0D165A41DD00F08C0A /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DAECD0E165A41DD00F08C0A /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DAECD13165A41DD00F08C0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7DAECD14165A41DD00F08C0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DAECD16165A41DD00F08C0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Custom Annotation Object Example/Custom Annotation Object Example-Prefix.pch";
+				INFOPLIST_FILE = "Custom Annotation Object Example/Custom Annotation Object Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7DAECD17165A41DD00F08C0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Custom Annotation Object Example/Custom Annotation Object Example-Prefix.pch";
+				INFOPLIST_FILE = "Custom Annotation Object Example/Custom Annotation Object Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DAECCEB165A41DC00F08C0A /* Build configuration list for PBXProject "Custom Annotation Object Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DAECD13165A41DD00F08C0A /* Debug */,
+				7DAECD14165A41DD00F08C0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DAECD15165A41DD00F08C0A /* Build configuration list for PBXNativeTarget "Custom Annotation Object Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DAECD16165A41DD00F08C0A /* Debug */,
+				7DAECD17165A41DD00F08C0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DAECCE8165A41DC00F08C0A /* Project object */;
+}
