@@ -1,8 +1,0 @@
-//
-// Prefix header for all source files of the 'TemplateMethod' target in the 'TemplateMethod' project
-//
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-    #import <UIKit/UIKit.h>
-#endif

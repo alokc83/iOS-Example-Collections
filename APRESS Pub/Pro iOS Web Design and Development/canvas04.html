@@ -1,44 +1,0 @@
-<!DOCTYPE html>
-<html> 
-<head>	<title>Canvas Test</title>
-	<script>
-		window.onload = function() {
-			var ctxElement = document.getElementById('canvasTest04');
-				var ctx = ctxElement.getContext("2d");
-				if (ctx) {
-				
-					ctx.strokeStyle="#F00";
-					ctx.lineWidth=10;
-					
-					ctx.beginPath();
-					ctx.moveTo(50,10);
-					ctx.lineTo(50,390);
-					ctx.moveTo(450,10);
-					ctx.lineTo(450,390);
-					ctx.stroke();
-					
-					ctx.lineWidth = 80;
-					ctx.strokeStyle="#000";
-					
-					ctx.lineCap="butt";
-					ctx.beginPath();
-					ctx.moveTo(50,50);
-					ctx.lineTo(450,50);
-					ctx.stroke();						
-					
-					ctx.lineCap="round";
-					ctx.beginPath();
-					ctx.moveTo(50,200);
-					ctx.lineTo(450,200);
-					ctx.stroke();						
-					
-					ctx.lineCap="square";
-					ctx.beginPath();
-					ctx.moveTo(50,350);
-					ctx.lineTo(450,350);
-					ctx.stroke();
-			}
-		}
-	</script></head><body>
-	<h1>Canvas Example 04</h1>
-	<canvas id="canvasTest04" width="600" height="600">Please Enable Javascript Engine</canvas></body></html>

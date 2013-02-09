@@ -1,33 +1,0 @@
-<!DOCTYPE html>
-<html> 
-<head>	<title>Canvas Test</title>
-	<script>
-		window.onload = function() {
-			var ctxElement = document.getElementById('canvasTest05');
-				var ctx = ctxElement.getContext("2d");
-				if (ctx) {
-				
-					ctx.strokeStyle = "#F00";
-					ctx.fillStyle = "#CCC";
-					ctx.lineWidth = 10;
-					
-					ctx.fillRect(25,25,180,200);
-					ctx.strokeRect(25,25,180,200);
-
-					ctx.save();
-					
-					ctx.strokeStyle = "#000";
-					ctx.fillStyle = "#FFF";
-					ctx.lineWidth = 5;
-					ctx.fillRect(230,25,180,200);
-					ctx.strokeRect(230,25,180,200);
-					
-					ctx.restore();
-					
-					ctx.fillRect(435, 25, 180, 200);
-					ctx.strokeRect(435,25,180,200);
-}
-		}
-	</script></head><body>
-	<h1>Canvas Example 05</h1>
-	<canvas id="canvasTest05" width="800" height="600">Please Enable Javascript Engine</canvas></body></html>

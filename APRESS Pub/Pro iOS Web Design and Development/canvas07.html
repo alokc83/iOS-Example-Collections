@@ -1,29 +1,0 @@
-<!DOCTYPE html>
-<html> 
-<head>	<title>Canvas Test</title>
-	<script>
-		window.onload = function() {
-			var ctxElement = document.getElementById('canvasTest06');
-				var ctx = ctxElement.getContext("2d");
-				if (ctx) {
-				
-					ctx.strokeStyle = "#C00";
-					ctx.fillStyle = "#CCC";
-					ctx.lineWidth = 5;
-					
-					ctx.beginPath();
-				    ctx.moveTo(75,25);
-				    ctx.quadraticCurveTo(25,25,25,62.5);
-				    ctx.quadraticCurveTo(25,100,30,100);
-				    ctx.quadraticCurveTo(50,120,130,125);
-				    ctx.quadraticCurveTo(140,1000,160,100);
-				    ctx.quadraticCurveTo(100,60,120,40);
-				    ctx.quadraticCurveTo(125,25,75,25);
-				    
-				    ctx.stroke();
-				 
-}
-		}
-	</script></head><body>
-	<h1>Canvas Example 06</h1>
-	<canvas id="canvasTest06" width="800" height="600">Please Enable Javascript Engine</canvas></body></html>
