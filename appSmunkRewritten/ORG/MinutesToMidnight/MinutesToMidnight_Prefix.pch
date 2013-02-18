@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'MinutesToMidnight' target in the 'MinutesToMidnight' project
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#endif

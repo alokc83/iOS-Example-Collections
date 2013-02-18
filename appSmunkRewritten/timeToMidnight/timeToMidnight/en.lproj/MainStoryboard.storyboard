@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Ttm View Controller-->
@@ -15,7 +15,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="TICKING CLOCK WILL BE HERE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qio-vD-t1v">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="148" id="pEr-T9-fpw"/>
-                                    <constraint firstAttribute="width" constant="296" id="zvc-3q-7IL"/>
+                                    <constraint firstAttribute="width" constant="296" type="user" id="zvc-3q-7IL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.32368378050000002" green="0.89304517660000005" blue="0.023645361949999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -24,10 +24,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Qio-vD-t1v" firstAttribute="top" secondItem="3" secondAttribute="top" constant="126" id="F1w-eA-f7A"/>
-                            <constraint firstItem="Qio-vD-t1v" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="13" id="jlH-Yh-6xF"/>
+                            <constraint firstItem="Qio-vD-t1v" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="user" id="OXr-a0-QnQ"/>
+                            <constraint firstItem="Qio-vD-t1v" firstAttribute="leading" relation="lessThanOrEqual" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="fu0-GM-QoO"/>
+                            <constraint firstAttribute="centerY" secondItem="Qio-vD-t1v" secondAttribute="centerY" type="user" id="yox-hH-pCK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countdownLabel" destination="Qio-vD-t1v" id="vmT-lK-9wu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -39,6 +43,9 @@
         </class>
         <class className="ttmViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ttmViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="countdownLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

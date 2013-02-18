@@ -293,6 +293,7 @@
 				CA2E2A371653128000B43CED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

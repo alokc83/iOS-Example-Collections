@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ttmViewController : UIViewController
+{
+    NSTimer *timer;
+    
+}
+@property (weak, nonatomic) IBOutlet UILabel *countdownLabel;
+
+- (void)updateLabel;
 
 @end
